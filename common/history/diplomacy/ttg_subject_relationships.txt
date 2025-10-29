@@ -1,0 +1,106 @@
+﻿DIPLOMACY = {
+	c:GBR ?= {
+		create_diplomatic_pact = {
+			country = c:ABU
+			type = protectorate
+		}
+		create_diplomatic_pact = {
+			country = c:ION
+			type = protectorate
+		}
+		create_diplomatic_pact = {
+			country = c:BIC
+			type = chartered_company
+		}
+		create_diplomatic_pact = {
+			country = c:SIL
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:ORG
+			type = colony
+		}
+		create_diplomatic_pact = {
+			country = c:HAN
+			type = personal_union
+		}
+		create_diplomatic_pact = {
+			country = c:SAF
+			type = colony
+		}
+		
+		### AMERICA FUCKYEAH ###
+		create_diplomatic_pact = {
+			country = c:USA
+			type = colony
+		}
+		### OH CANADA ###
+		# Province of Upper Canada
+		create_diplomatic_pact = {
+			country = c:ONT
+			type = colony
+		}
+		# Province of Lower Canada
+		create_diplomatic_pact = {
+			country = c:QUE
+			type = colony
+		}
+		# New Brunswick
+		create_diplomatic_pact = {
+			country = c:NBS
+			type = colony
+		}
+		# Nova Scotia
+		create_diplomatic_pact = {
+			country = c:NVS
+			type = colony
+		}
+		# Hudson Bay Company has a weird autonomous charter
+		create_diplomatic_pact = {
+			country = c:HBC
+			type = chartered_company
+		}
+
+		### AUSTRALIA ###
+		# Colony of New South Wales
+		create_diplomatic_pact = {
+			country = c:NSW
+			type = colony
+		}
+		# Colony of Western Australia
+		create_diplomatic_pact = {
+			country = c:WAS
+			type = colony
+		}
+		# Colony of South Australia, established in February 1836
+		create_diplomatic_pact = {
+			country = c:SAS
+			type = colony
+		}
+		# Colony of Tasmania, historically called Van Dieman's Land until 1856
+		create_diplomatic_pact = {
+			country = c:TAS
+			type = colony
+		}
+		# Colony of Ceylon
+		create_diplomatic_pact = {
+			country = c:BCE
+			type = colony
+		}
+		# United Tribes of New Zealand
+		create_diplomatic_pact = {
+			country = c:UNT
+			type = protectorate
+		}
+		# Kaurna
+		create_diplomatic_pact = {
+			country = c:KAU
+			type = protectorate
+		}
+		# Mosquito Kingdom
+		create_diplomatic_pact = {
+			country = c:MKT
+			type = protectorate
+		}
+	}
+}
