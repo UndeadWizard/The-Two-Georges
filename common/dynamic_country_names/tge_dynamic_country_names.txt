@@ -1,0 +1,38 @@
+USA = {
+	dynamic_country_name = {
+		name = dyn_c_north_american_union
+		adjective = dyn_c_north_american_union_adj
+
+		is_main_tag_only = yes
+		priority = 1
+
+		trigger = {
+			exists = c:GBR
+			c:GBR = {
+				has_diplomatic_pact = {
+					who = c:USA
+					type = colony
+					is_initiator = yes
+				}
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_united_sovereign_archduchy
+		adjective = dyn_c_united_sovereign_archduchy_adj
+
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+			c:GBR = {
+				has_diplomatic_pact != {
+					who = c:USA
+					type = colony
+					is_initiator = yes
+				}
+			}
+		}
+	}
+}
