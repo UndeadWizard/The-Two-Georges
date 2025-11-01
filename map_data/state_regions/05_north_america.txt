@@ -342,23 +342,6 @@ STATE_MISSOURI = {
         undiscovered_amount = 50
     }
 }
-STATE_IOWA = {
-    id = 283
-    subsistence_building = "building_subsistence_farms"
-    provinces = { "x002D4B" "x03E9D3" "x1080C0" "x1E7531" "x25962B" "x2BB21D" "x356047" "x3E306D" "x4A5F7A" "x4C181C" "x4F3BC6" "x5832CE" "x5BA80C" "x606DBE" "x63CD4F" "x6EE453" "x71153F" "x72D1EA" "x764D7B" "x83139C" "x8DB752" "x9000C0" "x9080C0" "x91CECE" "x97AC4F" "x996F37" "x9A3850" "x9DE484" "x9F7290" "xAB3179" "xAC772A" "xAF2D84" "xB4D320" "xC24F5B" "xC6264B" "xCA1F38" "xCD67AD" "xCF483D" "xD0ED5A" "xD348EA" "xD4B435" "xDD39CE" "xE08573" "xE31CFC" "xE46361" "xE8429C" "xF90AE8" }
-    traits = { "state_trait_mississippi_river" }
-    city = "xE8429C"
-    farm = "xD348EA"
-    mine = "x6EE453"
-    wood = "x4C181C"
-    arable_land = 240
-    arable_resources = { "bg_maize_farms" "bg_livestock_ranches" "bg_tobacco_plantations" }
-    capped_resources = {
-        bg_coal_mining = 64
-        bg_sulfur_mining = 40
-        bg_logging = 11
-    }
-}
 
 STATE_MINNESOTA = {
     id = 284
@@ -491,8 +474,19 @@ STATE_TENNESSEE = {
 STATE_MISSISSIPPI = {
     id = 291
     subsistence_building = "building_subsistence_farms"
-    provinces = { }
+    provinces = { "x002D4B" "x03E9D3" "x1080C0" "x1E7531" "x25962B" "x2BB21D" "x356047" "x3E306D" "x4A5F7A" "x4C181C" "x4F3BC6" "x5832CE" "x5BA80C" "x606DBE" "x63CD4F" "x6EE453" "x71153F" "x72D1EA" "x764D7B" "x83139C" "x8DB752" "x9000C0" "x9080C0" "x91CECE" "x97AC4F" "x996F37" "x9A3850" "x9DE484" "x9F7290" "xAB3179" "xAC772A" "xAF2D84" "xB4D320" "xC24F5B" "xC6264B" "xCA1F38" "xCD67AD" "xCF483D" "xD0ED5A" "xD348EA" "xD4B435" "xDD39CE" "xE08573" "xE31CFC" "xE46361" "xE8429C" "xF90AE8" }
     traits = { "state_trait_mississippi_river" "state_trait_american_chestnuts" }
+    city = "xE8429C"
+    farm = "xD348EA"
+    mine = "x6EE453"
+    wood = "x4C181C"
+    arable_land = 240
+    arable_resources = { "bg_maize_farms" "bg_livestock_ranches" "bg_tobacco_plantations" }
+    capped_resources = {
+        bg_coal_mining = 64
+        bg_sulfur_mining = 40
+        bg_logging = 11
+    }
 }
 
 STATE_ALABAMA = {
@@ -505,9 +499,9 @@ STATE_ALABAMA = {
     }
     traits = { "state_trait_american_chestnuts" }
     city = "x489DF2"
-    farm = "xEE9129"
+    farm = "x2958AE"
     mine = "x966D03"
-    wood = "xE8D1CA"
+    wood = "x6D0DAC"
     arable_land = 240
     arable_resources = { "bg_maize_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_tobacco_plantations" "bg_sugar_plantations" }
     capped_resources = {
@@ -1088,9 +1082,9 @@ STATE_TEXAS = {
     }
     traits = { "state_trait_rio_grande_river" }
     city = "x1B9E2A"
-    port = "x803040"
+    port = "x80B040"
     farm = "x18F9D5"
-    mine = "x803040"
+    mine = "x80B040"
     wood = "x39DB21"
     arable_land = 500
     arable_resources = { "bg_maize_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_sugar_plantations" "bg_vineyard_plantations" }
