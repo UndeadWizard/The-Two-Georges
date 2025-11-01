@@ -1,0 +1,18 @@
+﻿FSA = {
+	use_culture_states = yes
+
+	required_states_fraction = 0.75
+
+	ai_will_do = { always = yes }
+
+	possible = {
+		has_law_or_variant = law_type:law_slavery_banned
+		c:GBR = {
+			has_diplomatic_pact != {
+				who = c:USA
+				type = colony
+				is_initiator = yes
+			}
+		}
+	}
+}

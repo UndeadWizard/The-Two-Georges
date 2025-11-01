@@ -1,4 +1,4 @@
-USA = {
+﻿USA = {
 	dynamic_country_name = {
 		name = dyn_c_north_american_union
 		adjective = dyn_c_north_american_union_adj

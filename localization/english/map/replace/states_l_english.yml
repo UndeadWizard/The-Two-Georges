@@ -1,4 +1,7 @@
 ﻿l_english:
-
+ STATE_NEW_MEXICO:0 "Nueva Mexico"
  STATE_INDIANA:0 "Tippecanoe"
- STATE_WISCONSIN:0 "New Guernsey"
+ STATE_OHIO:0 "Miami"
+ STATE_KENTUCKY:0 "Franklin"
+ STATE_ALBERTA:0 "Albertus"
+ STATE_BRITISH_COLUMBIA:1 "Vancouver"

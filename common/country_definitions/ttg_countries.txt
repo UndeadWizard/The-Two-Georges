@@ -11,3 +11,81 @@
 	secondary_unit_color  = { 150 190 210 }
 	tertiary_unit_color = { 5 5 90 }
 }
+
+MEX = {
+	color = { 56 143 53 }
+
+	country_type = colonial
+	tier = principality
+
+	#173  242  175
+
+	tier = kingdom
+
+	cultures = { mexican }
+	capital = STATE_MEXICO
+	is_named_from_capital = yes
+}
+
+GUA = {
+	color = { 115 194 251 }
+
+	country_type = colonial
+	tier = principality
+
+	cultures = { central_american }
+	capital = STATE_GUATEMALA
+	is_named_from_capital = yes
+}
+
+CLM = {
+	color = { 255  234  168 }
+
+	country_type = colonial
+	tier = principality
+
+	cultures = { north_andean }
+	capital = STATE_CUNDINAMARCA
+}
+
+VNZ = {
+	color = { 255  176  140 }
+
+	country_type = colonial
+	tier = principality
+
+	cultures = { north_andean }
+	capital = STATE_MIRANDA
+}
+
+PEU = {
+	color = { 124  140  162 }
+
+	country_type = colonial
+	tier = principality
+
+	cultures = { south_andean }
+	capital = STATE_LIMA
+}
+
+CHL = {
+	color = { 236  159  89 }
+
+	country_type = colonial
+	tier = principality
+
+	cultures = { south_andean }
+	capital = STATE_SANTIAGO
+}
+
+ARG = {
+	color = { 101  102  163 }
+
+	country_type = colonial
+	tier = principality
+	
+	tier = kingdom
+
+	cultures = { platinean }
+	capital = STATE_BUENOS_AIRES
+}

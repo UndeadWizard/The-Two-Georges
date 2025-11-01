@@ -21,7 +21,7 @@
 		}
 	}
 	s:STATE_LOUISIANA = {
-		region_state:USA = {
+		region_state:MEX = {
 			create_pop = {
 				culture = cajun
 				religion = catholic
@@ -382,7 +382,7 @@
 		}
 	}
 	s:STATE_ARKANSAS = {
-		region_state:USA = {
+		region_state:MEX = {
 			create_pop = {
 				culture = cajun
 				religion = catholic
@@ -408,7 +408,7 @@
 		}
 	}
 	s:STATE_MISSOURI = {
-		region_state:USA = {
+		region_state:MEX = {
 			create_pop = {
 				culture = cajun
 				religion = catholic
@@ -447,29 +447,23 @@
 		}
 	}
 	s:STATE_IOWA = {
-		region_state:USA = {
+		region_state:LKT = {
 			create_pop = {
 				culture = algonquian
-				size = 12000
+				size = 16000
 			}
 			create_pop = {
 				culture = dakota
 				size = 8000
 			}
-			create_pop = {
-				culture = yankee
-				size = 23992
-			}
 		}
 	}
 	s:STATE_MINNESOTA = {
-		region_state:USA = {
+		region_state:LKT = {
 			create_pop = {
 				culture = algonquian
 				size = 16000
 			}
-		}
-		region_state:LKT = {
 			create_pop = {
 				culture = dakota
 				size = 22000
@@ -477,59 +471,40 @@
 		}
 	}
 	s:STATE_WISCONSIN = {
-		region_state:USA = {
+		region_state:CTF = {
 			create_pop = {
 				culture = algonquian
-				size = 8000
-			}
-			create_pop = {
-				culture = yankee
-				size = 28004
+				size = 36000
 			}
 		}
 	}
 	s:STATE_INDIANA = {
-		region_state:USA = {
+		region_state:CTF = {
 			create_pop = {
-				culture = yankee
-				size = 631504
-			}
-			create_pop = {
-				culture = irish
-				size = 4004
-			}
-			create_pop = {
-				culture = north_german
-				size = 20000
-			}
-			create_pop = {
-				culture = afro_american
-				size = 8000
+				culture = algonquian
+				size = 42000
 			}
 		}
 	}
 	s:STATE_MICHIGAN = {
-		region_state:USA = {
-			create_pop = {
-				culture = yankee
-				size = 123996
-			}
+		region_state:CTF = {
 			create_pop = {
 				culture = algonquian
-				size = 12000
+				size = 68000
 			}
 			create_pop = {
 				culture = siouan
-				size = 4000
+				size = 6000
 			}
-			create_pop = {
-				culture = irish
-				size = 8000
-			}
+		}
+		region_state:USA = {
 			create_pop = {
 				culture = yankee
-				religion = catholic
-				size = 4004
+				size = 18000
+			}
+			create_pop = {
+				culture = siouan
+				size = 1000
 			}
 		}
 	}
@@ -537,7 +512,7 @@
 		region_state:USA = {
 			create_pop = {
 				culture = yankee
-				size = 1092200
+				size = 892200
 			}
 			create_pop = {
 				culture = afro_american
@@ -612,7 +587,7 @@
 		}
 	}
 	s:STATE_MISSISSIPPI = {
-		region_state:USA = {
+		region_state:MEX = {
 			create_pop = {
 				culture = dixie
 				size = 172804
@@ -629,10 +604,10 @@
 		}
 	}
 	s:STATE_ALABAMA = {
-		region_state:USA = {
+		region_state:SEQ = {
 			create_pop = {
 				culture = dixie
-				size = 329008
+				size = 100000
 			}
 			create_pop = {
 				culture = afro_american
@@ -678,6 +653,12 @@
 				size = 3000
 			}
 		}
+		region_state:MEX = {
+			create_pop = {
+				culture = mexican
+				size = 10000
+			}
+		}
 		region_state:SML = {
 			create_pop = {
 				culture = muskogean
@@ -690,7 +671,7 @@
 		region_state:USA = {
 			create_pop = {
 				culture = dixie
-				size = 329836
+				size = 529836
 			}
 			create_pop = {
 				culture = dixie
@@ -824,14 +805,10 @@
 		}
 	}
 	s:STATE_ILLINOIS = {
-		region_state:USA = {
+		region_state:CTF = {
 			create_pop = {
-				culture = yankee
-				size = 452400
-			}
-			create_pop = {
-				culture = afro_american
-				size = 4000
+				culture = algonquian
+				size = 60000
 			}
 		}
 	}
@@ -1323,7 +1300,7 @@
 		}
 	}
 	s:STATE_TEXAS = {
-		region_state:TEX = {
+		region_state:MEX = {
 			create_pop = {
 				culture = dixie
 				size = 42224

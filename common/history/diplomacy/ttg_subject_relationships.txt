@@ -1,4 +1,42 @@
 ﻿DIPLOMACY = {
+	c:SPA ?= {
+		create_diplomatic_pact = {
+			country = c:CUB
+			type = colony
+		}
+		create_diplomatic_pact = {
+			country = c:PHI
+			type = colony
+		}
+		create_diplomatic_pact = {
+			country = c:MEX
+			type = colony
+		}
+		create_diplomatic_pact = {
+			country = c:GUA
+			type = colony
+		}
+		create_diplomatic_pact = {
+			country = c:CLM
+			type = colony
+		}
+		create_diplomatic_pact = {
+			country = c:VNZ
+			type = colony
+		}
+		create_diplomatic_pact = {
+			country = c:PEU
+			type = colony
+		}
+		create_diplomatic_pact = {
+			country = c:CHL
+			type = colony
+		}
+		create_diplomatic_pact = {
+			country = c:ARG
+			type = colony
+		}
+	}
 	c:GBR ?= {
 		create_diplomatic_pact = {
 			country = c:ABU
