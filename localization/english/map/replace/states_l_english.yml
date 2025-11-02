@@ -1,5 +1,6 @@
 ﻿l_english:
- STATE_NEW_MEXICO:0 "Nueva Mexico"
+ STATE_NEW_MEXICO:0 "Nuevo México"
+ STATE_CALIFORNIA:0 "Alta California"
  STATE_INDIANA:0 "Tippecanoe"
  STATE_OHIO:0 "Miami"
  STATE_KENTUCKY:0 "Franklin"

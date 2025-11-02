@@ -3,16 +3,10 @@
 
 	required_states_fraction = 0.75
 
-	ai_will_do = { always = yes }
+	ai_will_do = { always = no }
 
 	possible = {
 		has_law_or_variant = law_type:law_slavery_banned
-		c:GBR = {
-			has_diplomatic_pact != {
-				who = c:USA
-				type = colony
-				is_initiator = yes
-			}
-		}
+		is_subject_of != GBR
 	}
 }

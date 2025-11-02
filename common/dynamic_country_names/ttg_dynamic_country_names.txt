@@ -26,13 +26,7 @@
 
 		trigger = {
 			coa_def_monarchy_flag_trigger = yes
-			c:GBR = {
-				has_diplomatic_pact != {
-					who = c:USA
-					type = colony
-					is_initiator = yes
-				}
-			}
+			is_subject_of != GBR
 		}
 	}
 }
