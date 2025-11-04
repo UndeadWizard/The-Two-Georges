@@ -164,6 +164,25 @@
 		}
 	}
 	s:STATE_OREGON = {
+		region_state:ABS = {
+			create_pop = {
+				culture = siouan
+				size = 33000
+			}
+		}
+		region_state:BNN = {
+			create_pop = {
+				culture = paiute
+				size = 20000
+			}
+		}
+		region_state:SLS = {
+			create_pop = {
+				culture = salish
+				#size = 5500 # historical increased for gameplay
+				size = 8600
+			}
+		}
 		region_state:ORG = {
 			create_pop = {
 				culture = yankee
@@ -181,10 +200,7 @@
 				culture = nez_perce
 				size = 4000
 			}
-		}
-	}
-	s:STATE_IDAHO = {
-		region_state:ORG = {
+			
 			create_pop = {
 				culture = paiute
 				size = 3000
@@ -198,16 +214,11 @@
 				size = 500
 			}
 		}
+		
 		region_state:NZP = {
 			create_pop = {
 				culture = nez_perce
 				size = 40000
-			}
-		}
-		region_state:BNN = {
-			create_pop = {
-				culture = paiute
-				size = 20000
 			}
 		}
 	}
@@ -228,99 +239,37 @@
 				size = 11200
 			}
 		}
-		region_state:UTE = {
-			create_pop = {
-				culture = paiute
-				size = 4000
-			}
-			create_pop = {
-				culture = apache
-				size = 4000
-			}
-		}
 	}
 	s:STATE_WYOMING = {
 		region_state:LKT = {
 			create_pop = {
 				culture = siouan
-				size = 14000
+				size = 23000
 			}
 		}
 		region_state:ARP = {
 			create_pop = {
 				culture = siouan
-				size = 4000
+				size = 7000
 			}
 		}
 		region_state:BNN = {
 			create_pop = {
 				culture = paiute
-				size = 12000
+				size = 16000
 			}
 		}
 		region_state:SLS = {
 			create_pop = {
 				culture = salish
 				#size = 1300 #historical increased for gameplay
-				size = 5600
-			}
-		}
-		region_state:ABS = {
-			create_pop = {
-				culture = siouan
-				size = 6500
-			}
-		}
-	}
-	s:STATE_MONTANA = {
-		region_state:ABS = {
-			create_pop = {
-				culture = siouan
-				size = 33000
-			}
-		}
-		region_state:LKT = {
-			create_pop = {
-				culture = dakota
-				size = 8000
-			}
-		}
-		region_state:BLF = {
-			create_pop = {
-				culture = siouan
-				size = 14000
-			}
-		}
-		region_state:SLS = {
-			create_pop = {
-				culture = salish
-				#size = 5500 # historical increased for gameplay
 				size = 8600
 			}
 		}
-	}
-	s:STATE_NORTH_DAKOTA = {
-		# DKT had 22000
-		region_state:LKT = {
-			create_pop = {
-				culture = dakota
-				size = 30000
-			}
+		region_state:ABS = {
 			create_pop = {
 				culture = siouan
-				size = 10000
-			}
-		}
-	}
-	s:STATE_SOUTH_DAKOTA = {
-		region_state:LKT = {
-			create_pop = {
-				culture = dakota
-				size = 34000
-			}
-			create_pop = {
-				culture = siouan
-				size = 4000
+				size = 8500
 			}
 		}
 	}
@@ -587,19 +536,14 @@
 		}
 	}
 	s:STATE_MISSISSIPPI = {
-		region_state:MEX = {
+		region_state:LKT = {
 			create_pop = {
-				culture = dixie
-				size = 172804
+				culture = dakota
+				size = 64000
 			}
 			create_pop = {
-				culture = afro_american
-				size = 943 # 519 free in 1830, 1366 free in 1840
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = afro_american
-				size = 87057
+				culture = siouan
+				size = 20000
 			}
 		}
 	}
@@ -927,7 +871,11 @@
 		region_state:UTE = {
 			create_pop = {
 				culture = paiute
-				size = 11000
+				size = 22000
+			}
+			create_pop = {
+				culture = apache
+				size = 4000
 			}
 		}
 	}
@@ -1160,7 +1108,7 @@
 		region_state:BLF = {
 			create_pop = {
 				culture = siouan
-				size = 15400
+				size = 30000
 			}
 			create_pop = {
 				culture = metis
