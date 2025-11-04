@@ -1,9 +1,7 @@
 ﻿canada_unite_can = {
 	is_shown = {
-		OR = {
-			country_has_primary_culture = cu:anglo_canadian
-			country_has_primary_culture = cu:franco_canadian
-		}
+		exists = c:USA
+		root = c:USA
 		is_subject = yes
 		any_neighbouring_state = {
 			owner = {
