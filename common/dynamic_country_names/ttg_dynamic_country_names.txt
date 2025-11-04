@@ -11,7 +11,7 @@
 			c:GBR = {
 				has_diplomatic_pact = {
 					who = c:USA
-					type = colony
+					type = dominion
 					is_initiator = yes
 				}
 			}

@@ -70,7 +70,7 @@
 		### AMERICA FUCKYEAH ###
 		create_diplomatic_pact = {
 			country = c:USA
-			type = colony
+			type = dominion
 		}
 		### OH CANADA ###
 		# Province of Upper Canada

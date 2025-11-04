@@ -22,7 +22,6 @@ STATES = {
 			}
 		}
 
-		add_homeland = cu:dixie
 		add_homeland = cu:afro_american
 		add_homeland = cu:cajun
 		add_homeland = cu:afro_antillean
@@ -276,6 +275,8 @@ STATES = {
 			owned_provinces = {
 				x2D7D62 xA4C2F6 xA5A929 xAF6E5B x96D61E x184A57 xEE82BD x9EA3FF x3EB1F2 x198845 x746873 x002DE6 xF03169 xF3479B x3816BA xAB7707 xF3C4FA x43E5A3 x9FB4C1 x18D7A9 xBD89ED x224996 xA5970F
 				x47FA09 x6466A1 x1C9F35 x8B54D5 xAD862C xD56C26 x993FC6 x026750 x0F89B6 x11EFF8 x904080 x60CAD8
+
+				x6B9ADF x17EF0F x5080C0 x8F4ECF x532C36 x8CE0D2 x7AD306
 			}
 		}
 		create_state = {
@@ -505,11 +506,10 @@ STATES = {
 				xBDF621 xC5E30A x03F3AE xFF83EB xAB7F2A xDEFE70 x4DCFD1 xCCC204 x1E5DFD
 				xDFFB08 xEE7CFB x71C380
 				x00A0C0 x108319 x29243C x57556B x9A9297 xE3F82F xECA010 xF3CD0C
-				x5080C0 x17EF0F
 				xB7F25B xBB73D1 x98A328 xE5FDC3 x17235E x9255F2 x9D100E x647FB6 x329C17 xCE5B60 xDD5888 xD000C0 x3160D9 xEF51A8 x080BEC x913BCB x7A9921 x0020C0 x0EADCE x96B71E xB5FEC3 xBEFC85
-                x8F0750 xF3EC53 x6B9ADF
+                x8F0750 xF3EC53
 				
-				x8F4ECF x532C36 x7AD306 x8CE0D2 xF276CA x6FE856 x176E1A x6E68EF x78F2DF x14E86D x91A08A x4D2CA3 x7A9D37
+				xF276CA x6FE856 x176E1A x6E68EF x78F2DF x14E86D x91A08A x4D2CA3 x7A9D37
 				x56C14E x40F27A xB182F3 xAD6F67 xB7A857 x74D214
 			}
 		}
@@ -687,12 +687,9 @@ STATES = {
 			}
 		}
 
-		add_homeland = cu:dixie
-		add_homeland = cu:afro_american
 		add_homeland = cu:mexican
 		add_homeland = cu:comanche
 		add_claim = c:MEX
-		add_claim = c:TEX
 	}
 	s:STATE_YUKON_TERRITORY = {
 		create_state = {

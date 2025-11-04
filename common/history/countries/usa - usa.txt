@@ -22,6 +22,11 @@
 		activate_law = law_type:law_no_womens_rights # Women couldn't hold property until ~1839
 		
 		add_modifier = usa_capital_intact
+
+		set_institution_investment_level = {
+			institution = institution_colonial_affairs
+			level = 2
+		}
 		
 		set_institution_investment_level = {
 			institution = institution_schools

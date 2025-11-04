@@ -4,7 +4,7 @@
 	country_type = colonial
 	tier = principality
 
-	cultures = { yankee dixie }
+	cultures = { yankee afro_american }
 	capital = STATE_DISTRICT_OF_COLUMBIA
 
 	primary_unit_color = { 20 20 120 }
