@@ -49,14 +49,18 @@ STATE_LOUISIANA = {
 STATE_NEW_YORK = {
     id = 267
     subsistence_building = "building_subsistence_farms"
-    provinces = { "x01D042" "x05187E" "x195B49" "x1BAD55" "x235E9F" "x260926" "x2CA754" "x300080" "x308000" "x377E55" "x38C881" "x3CB274" "x42D496" "x4B0747" "x70C080" "x73A16C" "x75F2A6" "x8C059D" "x9484F3" "x99CB10" "x9CC56A" "xA6BED5" "xA7B5FE" "xB00080" "xB08000" "xB343E6" "xBA53D0" "xD534B1" "xDB0967" "xE217B5" "xE7BE2D" "xEC2EAA" "xEDC7DA" "xFC18F1" "xFCF1BE" "x142566" "x30F1AF" "x34FFC4" "x38CCDA" "x3FA10D" "xB0C040" "x8C787A" "x606D4F" "x533151" "xC4DED4" "x345319" "xB7EDCF"}
+    provinces = {
+    "x1BAD55" "x260926" "x300080" "x377E55" "x75F2A6" "x9CC56A" "xB08000"
+    "xBA53D0" "xD534B1" "xDB0967" "xFC18F1" "x142566" "x30F1AF" "x34FFC4"
+    "x38CCDA" "x3FA10D" "xB0C040"
+    }
     traits = { "state_trait_niagara_falls" "state_trait_american_chestnuts" "state_trait_new_york_harbor" }
     city = "xE217B5"
     port = "x377E55"
     farm = "x01D042"
     mine = "x9CC56A"
     wood = "xD534B1"
-    arable_land = 145
+    arable_land = 100
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_vineyard_plantations" "bg_tobacco_plantations" }
     capped_resources = {
         bg_iron_mining = 65
@@ -545,7 +549,7 @@ STATE_DELAWARE = {
 STATE_PENNSYLVANIA = {
     id = 297
     subsistence_building = "building_subsistence_farms"
-    provinces = { "x038B77" "x0804CE" "x242311" "x265ADC" "x308080" "x4CB9DF" "x501463" "x56401E" "x67DB6F" "x691121" "x6C494D" "x703866" "x75195D" "x7CF534"  "x976E86" "xAC9DC0" "xACC198" "xAF1AEE" "xB00000" "xBC1A94" "xC0C080" "xCDBD85" "xDD6B3C" "xE2ACEE" "xF08080" "xF1C228" "x413E60" "xC786AB"}
+    provinces = { "x038B77" "x0804CE" "x242311" "x265ADC" "x308080" "x4CB9DF" "x501463" "x56401E" "x67DB6F" "x691121" "x6C494D" "x703866" "x75195D" "x7CF534"  "x976E86" "xAC9DC0" "xACC198" "xAF1AEE" "xB00000" "xBC1A94" "xC0C080" "xCDBD85" "xDD6B3C" "xE2ACEE" "xF08080" "xF1C228" "x413E60"}
     traits = { "state_trait_ohio_river" "state_trait_appalachian_coal" "state_trait_american_chestnuts" }
     city = "xB00000"
     farm = "xC0C080"
@@ -683,6 +687,27 @@ STATE_NEW_HAMPSHIRE = {
         bg_fishing = 2
     }
     naval_exit_id = 3017
+}
+
+STATE_VERMONT = {
+    id = 304
+    subsistence_building = "building_subsistence_farms"
+    provinces = { 
+        "x195B49" "x8C059D" "xE217B5" "x70C080" "x2CA754" "x4B0747" "xB343E6" "x308000" "x38C881" "x01D042" "xE7BE2D"
+        "xA6BED5" "xEDC7DA" "x3CB274" "x235E9F" "xA7B5FE" "x42D496" "xB00080" "x05187E" "x9484F3" "xEC2EAA" "x73A16C"
+        "xFCF1BE" "x99CB10" "x8C787A" "x606D4F" "x533151" "xC4DED4" "x345319" "xB7EDCF" "xC786AB"
+    }
+    traits = { "state_trait_american_chestnuts" }
+    city = "xE217B5"
+    farm = "x235E9F"
+    mine = "x99CB10"
+    wood = "x308000"
+    arable_land = 125
+    arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_tobacco_plantations" }
+    capped_resources = {
+        bg_iron_mining = 18
+        bg_logging = 14
+    }
 }
 
 STATE_MAINE = {

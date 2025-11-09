@@ -52,6 +52,13 @@
 				size = 16000
 			}
 		}
+		region_state:SEQ = {
+			create_pop = {
+				culture = cherokee
+				religion = catholic
+				size = 15292
+			}
+		}
 	}
 	s:STATE_NEW_YORK = {
 		region_state:USA = {
@@ -76,21 +83,6 @@
 			create_pop = {
 				culture = irish
 				size = 16000
-			}
-		}
-		region_state:IRO = {
-			create_pop = {
-				culture = iroquoian
-				size = 60000
-			}
-			create_pop = {
-				culture = yankee
-				religion = catholic
-				size = 5000
-			}
-			create_pop = {
-				culture = afro_american
-				size = 2000
 			}
 		}
 	}
@@ -431,7 +423,13 @@
 		region_state:CTF = {
 			create_pop = {
 				culture = algonquian
-				size = 42000
+				size = 42420
+			}
+		}
+		region_state:USA = {
+			create_pop = {
+				culture = yankee
+				size = 22432
 			}
 		}
 	}
@@ -449,11 +447,11 @@
 		region_state:USA = {
 			create_pop = {
 				culture = yankee
-				size = 18000
+				size = 44512
 			}
 			create_pop = {
 				culture = siouan
-				size = 1000
+				size = 1524
 			}
 		}
 	}
@@ -755,6 +753,12 @@
 				size = 60000
 			}
 		}
+		region_state:USA = {
+			create_pop = {
+				culture = yankee
+				size = 15215
+			}
+		}
 	}
 	s:STATE_RHODE_ISLAND = {
 		region_state:USA = {
@@ -811,10 +815,19 @@
 		}
 	}
 	s:STATE_VERMONT = {
-		region_state:USA = {
+		region_state:IRO = {
+			create_pop = {
+				culture = iroquoian
+				size = 95212
+			}
 			create_pop = {
 				culture = yankee
-				size = 282848
+				religion = catholic
+				size = 1450
+			}
+			create_pop = {
+				culture = afro_american
+				size = 7000
 			}
 		}
 	}

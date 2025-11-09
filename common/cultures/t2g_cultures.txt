@@ -1,0 +1,365 @@
+﻿new_englander= {
+	color= rgb{ 135 235 137 }
+	religion = protestant
+	heritage = heritage_north_american_settler
+	language = language_anglophone
+
+	obsessions = {
+		coffee
+		tea
+	}
+
+	traditions = { }
+
+	male_common_first_names = {
+		Albert Alexander Aeneas Andrew Aaron Alton Atlee Asa Ambrose Abner Alvin August Abraham Abel Abijah Alonzo Ansel Amos Absalom
+		Alfred Angus Archibald Arthur Christopher Colin Donald Edmund Emerson Ely
+		Bartholomew Benjamin Byron Benedict Barnabas Bildad
+		Charles Cyrus Chester Cassius Calvin Cornelius Conrad Caleb Cephas Clarence Colcord
+		Daniel David Dwight
+		Ezekiel Enoch Elihu Edward Eugene_2 Eustace Edwin Elam Ezra Ebenezer Elijah Emory Ephraim Erasmus Elton Erastus Emerick
+		Frederick Francis Franklin
+		Grenville George Gregory Grover Gabriel Gorham Gordon
+		Henry Hannibal Hugh Horatio Horace Hiram Harold Hazen Hector Herbert Hamilton
+		Isaac Isaiah Irving Ichabod
+		Joshua Joseph John James Jacob Jesse Joel Jeremiah Jeffrey Judah Jonas Jedediah Jonathan Josiah
+		Mackenzie Mark Matthew Michael Marshall Milo Montgomery Maxwell Milton
+		Nicholas Noah Nathaniel Newton Nelson Norman
+		Obadiah Othniel Oswald Orson Orville Oscar Otis Oliver Orrin Owen Ormsby
+		Patrick Paul Peter Philip Phineas Philemon Purley Palmetus Philetus
+		Quentin Quincy
+		Rutherford Richard Robert Rufus Roger Randolph Reuben
+		Samuel Seth Silas Simon Sidney Sylvester Shubael Sydney Solomon
+		Stephen
+		Thomas Theodore Thaddeus
+		Ulysses Upton
+		Victor Valentine_2
+		William Walter Winfield Wesley Wilbur Wendell
+		Zacheus Zebulon Zachary Zalmon Zadok
+	}
+
+	female_common_first_names = {
+		Amanda Anna Alice Adaline Adelaide Augusta Antoinette Alida Addie Ariel Ada Agnes Agatha Almira Arlevia Azubah
+		Amelia Anne Berengera
+		Catharine Charlotte Clara Cynthia Charity Cordelia Cornelia Clementina Constance
+		Delia Deborah Delima
+		Elizabeth Evelina Emily Esther Eliza Ellen Eunice Emma Estelle Eudora Eleanor Ella Eleura Elnora Edith Ethel Ethelinda Euphemia Eva Elida Ethelwyn
+		Frances Florence Faith Florena
+		Georgina Gertrude Geraldine Grace Graceanna Glathia Grizelda
+		Hannah Henriette Helen Harriette Hephzibah Huldah Harriet Helena Hortense
+		Isabella Ida
+		Jane Julia Judith Josephine
+		Katie
+		Lucy Louisa Lavilla Lydia Lilian Lucretia Luetta Leonora Lily
+		Mabel Mary Mildred Melissa Minerva Martha Matilda Marjorie Malvina Mahala Margaret
+		Nancy Nellie
+		Olive
+		Phoebe Pamela Puella Pamelia Pauline Pearl
+		Roxana Ruth Rebecca Rosa Rachel Rhoda Rosanna
+		Susannah Satronia Sylvia Sarah
+		Ursula
+		Victoria Virna
+		Winifred
+		Yda
+		Zara Zeruviah
+	}
+
+	noble_last_names = {
+		Adams Appleton
+		Boylston Bradlee
+		Cabot Choate Chaffee Crowninshield Cushing
+		Dana Delano Dudley
+		Emerson Endicott Emmet
+		Forbes
+		Gillett Goelet Glazier
+		Hallowell Holmes
+		Lodge Lowell
+		Minot McKune McCallum
+		Norcross
+		Otis
+		Peabody Putnam
+		Quincy
+		Roosevelt
+		Saltonstall Sears Sedgwick Schuyler
+		Tarbox Thayer Thorndike
+		Wigglesworth Winthrop Winslow
+
+		Abbott Acheson Allan
+		Bishop Byng Baby Boulton Bowen
+		Colborne Clark Clarkson Crookshanks
+		Dickson Duncan
+		Elmsley
+		FitzGibbon
+		Galt Gates
+		Hamilton-Temple-Blackwood Hagerman Heward
+		Jarvis Jones
+		Kempt
+		Lambton Lansdowne Lennox Lisgar Lorne
+		Macdonald Monck Macaulay MacNab McGill McGillivray Mountain Munro
+		Nichol
+		Osgoode
+		Preston Powell
+		Robinson
+		Stanley Shaw Sherwood Smith Strachan Sewell Stewart
+		Thomson
+		Whitworth-Aylmer
+		Young
+	}
+
+	common_last_names = {
+		Arthur Abbot Abercrombie Allen Andrews Ayres Armstrong Agassiz Akerman Aldrich Atherton Alger
+		Brown Buchanan Buford Black Baldwin Butler Blair Bogy Bryan Blaine Barker Belknap Bell Bennett Barnum Boyle Briggs Buckingham Burling Burnside Brinsmade Brodhead Ballou Brushwiller Blinn Beeman Boyce Berger Burleigh Blodgett Bitgood
+		Cooper Carpenter Clay Cass Chamberlain Clark Colfax Cleveland Clarkson Chandler Cortelyou Claflin Cameron Campbell Coffey Carr Catlin Casey Cobb Coburn Cook Cox Craig Crittenden Crocker Custer Chetwood Cambreleng Coffinberry Childs Croman Coyle Culver Conk Corbin Crouch Claggett Clevenger
+		Daniels Dayton Dumont Douglas Depre Davies Dana Doolittle Doubleday Dyer Dunn Draper Dodge Doty Dornblaser Dewel Dussean
+		Everett English Eaton Egan Elliott Ewing
+		Fillmore Floyd Frelinghuysen Fairbanks Fess Fletcher Fairchild Farnsworth Fraser Foster Fry Fuller French Fowler Fiske Fitts Foss Fesler Faxon Fifield
+		Grant Green Garrison Granger Greeley Garfield Garcelon Gilbert Gibbs Griffin Gurney Goldsborough Glascock Grannis Grinstead Gould Goldrick Goodwin Grimes Gooding
+		Halleck Hall Hancock Harrison Hendricks Hobart Hanna Hitchcock Hooker Hackleman Harris Hawkins Hawley Heckman Humphreys Hunt Hunter Hayes Hollingsworth Hammatt Hoag Hammerslough Hodgeman Hutling Hammer Hagaman Holden Heffernan Huldy Hamblen Herrick Hurlbutt Hazeltine
+		Ingalls Irion Isbell
+		Johnson Jewell Jackson Jones Judkins
+		King Kern Kearny Kelley Kane Kilpatrick Kiddoo Keyes Kimball Kinnard Kirk Kennon Knowlton Kneeland Kittredge
+		Lightner Logan Lacey Lane Leggett Lightburn Littlejohn Lockwood Lytle Long Lasaliere Livermore Leavitt Loverin
+		McClellan Merritt Miller Marsh Mansfield Manson Martindale McArthur McCall McClernand McIntosh McPherson Meade Meigs Meredith Miles Morris Morton Murray McKinley McKeon McLaren McMahon Macomber Mattingly Meloon Meacham
+
+		Atkinson Affleck Armour Alway Armstrong
+		Bates Beavan Beckwith Bernard Bethune Bishop Blewett Bowell Bradford Beattie Bowes Beard Beaty Boswell Burke Beasley Bidwell Beardsley Burnham Burritt Burwell
+		Calder Campbell Caron Churchill Clark Coleman Conan Corrigan Crawford Currie Curzon Cushing Coulebourn Cameron Coventry Cleary Clay Croll Coatsworth Church Crysler Cumming Cook Caldwell Chisholm Cornwall Cartwright
+		Deeks Dickey Diggs Dougall Duncan Dougall Davis Drake Dunlop Detlor Duncombe
+		Ewing Elliott
+		Field Fleming Foster Fothergill Ferrie
+		Garner Graham Guthrie Gurnett Geary Gordon Gowan
+		Harrison Hayes Herbert Holmes Hughes Horne Hanna Howell Harman Howland Hocken Hiltz Hornor Hagerman Hunter Hotham
+		Ingersoll
+		Jennings Jones Jackson Jarvis
+		Katzmann Kemp Kennedy King Kearns
+		Langton Lawson Lefevre Leprohon Lefferty
+		Mackenzie MacNab Maitland McDonald McIlwraith McIsaac McKellar Merrick Mewburn Mitchell Montgomery Moodie Morin Mountcastle Murray MacDonell McGregor Mason Morrison Medcalf Manning Morris McMurrich Maguire McBride Macdonell Matthews McCall McLean Malloch Marks Mathewson McCarger Merritt Murney Manahan McCrae McMicking Moore
+		Neil Newhall Norton
+		Oliver
+		Panet Parke Patterson Piers Pope Pottinger Perry Peterson Playter Prince Parke
+		Rae Robertson Rogers Ross Richards Robinson Read Randal Rolph Rykert Ruttan
+		Sedgewick Shaw Sheard Sivell Smith Strong Scott Smythe Shepard Sullivan Sheard Simpson Scollick Shaver Shade Salmon
+		Thompson Tisdale Tonge Traill Trenholme Tworney Tuson Thomson Thorburn
+		Urquhart
+		Vail Vining
+		Walker Walshe Wether
+	}
+}
+
+californio= {
+	color=hsv{ 0.99 0.50 0.65 }
+	religion = catholic
+	heritage = heritage_latin_american_settler
+	language = language_hispanophone
+
+	obsessions = {
+		liquor
+	}
+
+	traditions = { }
+	male_common_first_names = {
+		Adrian_2
+		Agustin
+		Ambrosio
+		Amilcar
+		Anastasio
+		Andres
+		Antonio
+		Bernardo
+		Blas
+		Dionisio
+		Eleuterio
+		Emeterio
+		Emiliano
+		Emilio
+		Enrique
+		Ernesto
+		Fausto
+		Felipe
+		Francisco
+		Francisco_Javier
+		Felix
+		Flavio
+		Gabriel
+		Gaspar
+		Genovevo
+		Gregorio
+		Ignacio
+		Jeronimo
+		Joaquin
+		Jesus
+		JosE_
+		Jose_Manuel
+		Jose_Maria
+		Juan
+		Juan_Bautista
+		Justo
+		Lazaro
+		Manuel
+		Mariano
+		Martin_2
+		Melchor
+		Miguel
+		Moises
+		Nicolas_2
+		Pablo
+		Pascual
+		Pedro
+		Policarpio
+		Porfirio
+		Ramon
+		Reynaldo
+		Ricardo
+		Romulo
+		Salvador
+		Sebastian
+		Tiburcio
+		Tomas
+		Valentin
+		Valeriano
+		Venustiano
+		Vicente
+		Victoriano
+		Alvaro
+		Angel
+	}
+	female_common_first_names = {
+		Carlota
+		Carmen
+		Camerina
+		Concepcion
+		Cristina
+		Eulalia
+		Gertrudis
+		Ignacia
+		Isabel
+		Josefa
+		Laureana
+		Leona
+		Luisa
+		Manuela
+		Maria
+		Mercedes
+		Rita
+		Teodora
+	}
+	noble_last_names = {
+		Diaz_2
+		Huarte
+		de_Ampudia
+		de_Cos
+		de_Iturbide
+		Lerdo_de_Tejada
+		de_Romay
+		de_Terreros
+		de_Yermo
+	}
+	common_last_names = {
+		Aceituno
+		Alarcon
+		Almonte
+		Arciniegas
+		Arguello
+		Arista
+		Ayanegui
+		Baranda
+		Barberena
+		Barragan
+		Berriozabal
+		Betanzos
+		Bocanegra
+		Bravo
+		Bustamante
+		Bustillos
+		Canalizo
+		Carracosa
+		Carranza
+		Carreon
+		Caserta
+		Castellanos
+		Ceron
+		Cervantes
+		Coello
+		Comonfort
+		Corona
+		Corra
+		Corral
+		Correa
+		Corzo
+		Couto
+		Echeverria
+		Escandon
+		Escobedo
+		Esquinca
+		Fagoaga
+		Farfan
+		Fernandez_del_Valle
+		Flores
+		Fuentes
+		Garza
+		Gonzalez
+		Guerrero
+		Godoy
+		Gomez
+		Hinojosa
+		Hoyos
+		Huerta
+		Kosterlitzky
+		Lara
+		Larrainzar
+		Lozada
+		Lopez_de_Santa_Anna
+		Magana
+		Magon
+		Maldonado
+		Martinez_del_Rio
+		Mejia
+		Miramon
+		Moguel
+		Molina
+		Muzquiz
+		Obregon
+		Ogazon
+		Ojeda
+		Ortega
+		Palacio
+		Palafox
+		Parada
+		Parres
+		Pedraza
+		Pimentel
+		Pineda
+		Pineiro
+		Preciado
+		Rabasa
+		Ramos
+		Reyes
+		Rincon_Gallardo
+		Robles
+		Rodriguez
+		Rojas
+		Ruiz_2
+		Salas
+		Sarmaniego_del_Castillo
+		Sanchez
+		Tajonar
+		Tovilla
+		Trejo
+		Utrilla
+		Villa
+		Villalobos
+		Vazquez
+		Vazquez_de_la_Cadena
+		Velasco
+		Woll
+		Zapata
+		Zaragoza
+		Zuloaga
+		Alvarez
+		Zimbron
+	}
+	ethnicities = {
+		1 = south_american
+	}
+	graphics = european
+}

@@ -140,5 +140,13 @@
 			country = c:MKT
 			type = protectorate
 		}
+		#Iroquois
+		create_diplomatic_pact = {
+			country = c:IRO
+			type = protectorate
+		}
+	}
+	c:USA ?= {
+		
 	}
 }

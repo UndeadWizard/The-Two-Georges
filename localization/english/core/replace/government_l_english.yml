@@ -1,0 +1,4 @@
+﻿l_english:
+ gov_dominion_american_presidential:0 "American Dominion"
+ gov_dominion_american_presidential_desc:2 "George Washington's delegation and the resulting agreement led to the formation of a new [concept_government_type]. Under a Governor-General who represents Britian, a great deal of autonomy was given to the American colonies.\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+ RULER_TITLE_GOVERNOR_GENERAL:0 "Governor-General"
