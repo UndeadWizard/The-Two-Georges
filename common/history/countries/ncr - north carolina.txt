@@ -1,10 +1,10 @@
 ﻿COUNTRIES = {
-	c:USA ?= {
+	c:NCR ?= {
 		set_tax_level = low
 		
 		effect_starting_technology_tier_2_tech = yes
 		
-		set_market_capital = STATE_NEW_YORK		
+		set_market_capital = STATE_NORTH_CAROLINA		
 		
 		effect_starting_politics_liberal = yes
 		activate_law = law_type:law_presidential_republic
@@ -20,33 +20,9 @@
 		activate_law = law_type:law_national_militia
 		activate_law = law_type:law_local_police
 		activate_law = law_type:law_no_womens_rights # Women couldn't hold property until ~1839
-		
-		set_institution_investment_level = {
-			institution = institution_colonial_affairs
-			level = 2
-		}
-		
-		set_institution_investment_level = {
-			institution = institution_schools
-			level = 2
-		}
 
-		set_institution_investment_level = {
-			institution = institution_police
-			level = 2
-		}
-		
 		ig:ig_landowners ?= {
 			add_ruling_interest_group = yes
-		}
-
-		add_journal_entry = { type = je_texas_usa }
-		add_journal_entry = { type = je_seminole_wars }
-		
-		add_company = company_type:company_william_cramp
-		company:company_william_cramp = {
-			set_company_establishment_date = 1830.1.1
-			set_company_state_region = s:STATE_PENNSYLVANIA
 		}
 	}
 }

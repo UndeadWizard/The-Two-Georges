@@ -147,6 +147,21 @@
 		}
 	}
 	c:USA ?= {
-		
+		create_diplomatic_pact = {
+			country = c:NCR
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:SCR
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:GRG
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:FLR
+			type = puppet
+		}
 	}
 }

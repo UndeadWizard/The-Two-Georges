@@ -549,7 +549,7 @@
 		region_state:SEQ = {
 			create_pop = {
 				culture = dixie
-				size = 100000
+				size = 5000
 			}
 			create_pop = {
 				culture = afro_american
@@ -558,12 +558,7 @@
 			create_pop = {
 				pop_type = slaves
 				culture = afro_american
-				size = 229998
-			}
-			create_pop = {
-				culture = dixie
-				religion = catholic
-				size = 16004
+				size = 29998
 			}
 			create_pop = {
 				culture = cherokee
@@ -576,7 +571,7 @@
 		}
 	}
 	s:STATE_FLORIDA = {
-		region_state:USA = {
+		region_state:FLR = {
 			create_pop = {
 				culture = dixie
 				size = 47996
@@ -594,8 +589,6 @@
 				culture = muskogean
 				size = 3000
 			}
-		}
-		region_state:MEX = {
 			create_pop = {
 				culture = mexican
 				size = 10000
@@ -610,7 +603,7 @@
 		}
 	}
 	s:STATE_GEORGIA = {
-		region_state:USA = {
+		region_state:GRG = {
 			create_pop = {
 				culture = dixie
 				size = 529836
@@ -844,7 +837,7 @@
 		}
 	}
 	s:STATE_NORTH_CAROLINA = {
-		region_state:USA = {
+		region_state:NCR = {
 			create_pop = {
 				culture = dixie
 				size = 492500
@@ -893,7 +886,7 @@
 		}
 	}
 	s:STATE_SOUTH_CAROLINA = {
-		region_state:USA = {
+		region_state:SCR = {
 			create_pop = {
 				culture = dixie
 				size = 253836

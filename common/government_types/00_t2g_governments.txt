@@ -23,3 +23,28 @@
 		post_change_to_presidential_elective = yes
 	}
 }
+
+gov_governor_american_presidential = {
+	transfer_of_power = presidential_elective
+	new_leader_on_reform_government = no
+
+	male_ruler = "RULER_TITLE_GOVERNOR"
+	female_ruler = "RULER_TITLE_GOVERNOR"
+
+	possible = {
+		AND = {
+			exists = c:USA
+			is_subject_of = c:USA
+			any_primary_culture = {
+				has_discrimination_trait_group = heritage_group_european
+			}
+		}
+	}
+
+	on_government_type_change = {
+		change_to_presidential_elective = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_presidential_elective = yes
+	}
+}
