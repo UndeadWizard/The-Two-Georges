@@ -7,7 +7,6 @@
 	complete = {
 		owns_entire_state_region = STATE_CALIFORNIA
 		owns_entire_state_region = STATE_BAJA_CALIFORNIA
-		owns_entire_state_region = STATE_NEVADA
 		owns_entire_state_region = STATE_UTAH
 		owns_entire_state_region = STATE_NEW_MEXICO
 		owns_entire_state_region = STATE_TEXAS
