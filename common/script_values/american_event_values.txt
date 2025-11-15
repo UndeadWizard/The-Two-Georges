@@ -1,0 +1,2 @@
+﻿# for je_election_1836
+election_1836_upper_bound = 480

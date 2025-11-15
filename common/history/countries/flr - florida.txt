@@ -19,6 +19,7 @@
 		activate_law = law_type:law_per_capita_based_taxation
 		activate_law = law_type:law_national_militia
 		activate_law = law_type:law_local_police
+		activate_law = law_type:law_legacy_slavery
 		activate_law = law_type:law_no_womens_rights # Women couldn't hold property until ~1839
 
 		set_institution_investment_level = {
@@ -29,5 +30,7 @@
 		ig:ig_landowners ?= {
 			add_ruling_interest_group = yes
 		}
+
+		add_journal_entry = { type = je_seminole_wars }
 	}
 }

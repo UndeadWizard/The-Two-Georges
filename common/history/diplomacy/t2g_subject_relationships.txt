@@ -140,10 +140,11 @@
 			country = c:MKT
 			type = protectorate
 		}
-		#Iroquois
+	}
+	c:GBR ?= {
 		create_diplomatic_pact = {
-			country = c:IRO
-			type = protectorate
+			country = c:USA
+			type = exempt_from_service
 		}
 	}
 	c:USA ?= {

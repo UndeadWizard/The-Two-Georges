@@ -5,22 +5,6 @@
 
 # Starting characters
 
-USA_john_calhoun = {
-	first_name = John
-	last_name = Calhoun
-	historical = yes
-	culture = cu:dixie
-	birth_date = 1782.3.18
-	dna = dna_calhoun
-	ig_leader = yes
-	interest_group = ig_landowners
-	ideology = ideology_slaver
-	traits = {
-		bigoted
-		experienced_political_operator
-	}
-}
-
 USA_henry_clay = {
 	first_name = Henry
 	last_name = Clay
@@ -241,22 +225,6 @@ usa_andrew_jackson_template = {
 }
 
 ### Starting IG leaders
-
-usa_john_calhoun_character_template = {
-	first_name = John
-	last_name = Calhoun
-	historical = yes
-	culture = cu:dixie
-	birth_date = 1782.3.18
-	dna = dna_calhoun
-	ig_leader = yes
-	interest_group = ig_landowners
-	ideology = ideology_slaver
-	traits = {
-		bigoted
-		experienced_political_operator
-	}
-}
 
 usa_henry_clay_character_template = {
 	first_name = Henry

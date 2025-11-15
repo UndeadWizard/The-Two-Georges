@@ -1,0 +1,107 @@
+﻿
+election_1836_tory_button = {
+	name = "tory_button"
+	desc = "tory_button_desc"
+
+	visible = {
+		owner = {
+			has_variable = chose_initial_french_dynasty
+			NOT = { has_variable = usa_election_1836_freeze }
+		}
+	}
+
+	possible = {
+		trigger_if = {
+			limit = {
+				has_variable = has_selected_tory_once_var
+			}
+			custom_tooltip = {
+				text = cannot_choose_tory_twice_tt
+				always = no
+			}
+		}
+		any_interest_group = {
+			is_in_government = yes
+			leader = {
+				has_ideology = ideology:ideology_jacksonian_democrat
+			}
+		}
+		custom_tooltip = {
+			text = not_already_supporting_bonapartism
+			NOT = { has_variable = supporting_tory_var }
+		}
+	}
+
+	selected = {
+		has_variable = supporting_tory_var
+	}
+
+	effect = {
+		set_variable = supporting_tory_var
+		set_variable = has_selected_tory_once_var
+		remove_variable = supporting_whig_var
+		custom_tooltip = {
+			text = supporting_tory_tt
+		}
+		custom_tooltip = {
+			text = tory_progress_increase_10_tt
+			je:je_election_1836 = {
+				add_progress = { value = 10 name = election_1836_pulse_tory_progress_bar }
+			}
+		}
+	}
+}
+
+election_1836_whig_button = {
+	name = "whig_button"
+	desc = "whig_button_desc"
+
+	visible = {
+		owner = {
+			has_variable = chose_initial_french_dynasty
+			NOT = { has_variable = usa_election_1836_freeze }
+		}
+	}
+
+	possible = {
+		trigger_if = {
+			limit = {
+				has_variable = has_selected_whig_once_var
+			}
+			custom_tooltip = {
+				text = cannot_choose_whig_twice_tt
+				always = no
+			}
+		}
+		any_interest_group = {
+			is_in_government = yes
+			leader = {
+				has_ideology = ideology:ideology_moderate
+			}
+		}
+		custom_tooltip = {
+			text = not_already_supporting_orleanism
+			NOT = { has_variable = supporting_whig_var }
+		}
+	}
+
+	selected = {
+		has_variable = supporting_whig_var
+	}
+
+	effect = {
+		# Only one of these variables can be active at a time
+		set_variable = supporting_whig_var
+		set_variable = has_selected_whig_once_var
+		remove_variable = supporting_tory_var
+		custom_tooltip = {
+			text = supporting_orleanism_tt
+		}
+		custom_tooltip = {
+			text = whig_progress_increase_10_tt
+			je:je_election_1836 = {
+				add_progress = { value = 10 name = election_1836_pulse_whig_progress_bar }
+			}
+		}
+	}
+}

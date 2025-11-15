@@ -1,0 +1,101 @@
+﻿namespace = american_candidates_1836
+
+american_candidates_1836.1 = { # Startup event
+	type = country_event
+	placement = ROOT
+
+	title = american_candidates_1836.1.t
+	desc = american_candidates_1836.1.d
+	flavor = american_candidates_1836.1.f
+
+	gui_window = event_window_1char_tabloid
+
+	left_icon = scope:french_monarch
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/misc/2Characters"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	duration = 3
+
+	cooldown = { days = normal_modifier_time }
+
+	trigger = {
+		NOT = { has_variable = french_pretender_startup_var }
+	}
+	immediate = {
+		set_variable = french_pretender_startup_var
+		ruler = {
+			save_scope_as = french_monarch
+		}
+		random_scope_character = {
+			limit = {
+				has_ideology = ideology:ideology_jacksonian_democrat
+			}
+			save_scope_as = tory_character
+		}
+		random_scope_character = {
+			limit = {
+				has_ideology = ideology:ideology_moderate
+			}
+			save_scope_as = whig_character
+		}
+		root = {
+			save_scope_as = reflexive_reference_france
+		}
+	}
+	option = { # Support Tory
+		name = american_candidates_1836.5.a
+		set_variable = chose_initial_french_dynasty
+		custom_tooltip = {
+			text = supporting_tory_tt
+		}
+		if = {
+			limit = {
+				has_variable = supporting_whig_var
+			}
+			remove_variable = supporting_whig_var
+		}
+		custom_tooltip = {
+			text = tory_progress_increase_10_tt
+			je:je_election_1836 = {
+				add_progress = { value = 10 name = divided_monarchists_tory_progress_bar }
+			}
+		}
+		set_variable = supporting_tory_var
+	}
+	option = { # Support Whig
+		name = american_candidates_1836.5.b
+		default_option = yes
+		set_variable = chose_initial_french_dynasty
+		custom_tooltip = {
+			text = supporting_whig_tt
+		}
+		if = {
+			limit = {
+				has_variable = supporting_tory_var
+			}
+			remove_variable = supporting_tory_var
+		}
+		custom_tooltip = {
+			text = whig_progress_increase_10_tt
+			je:je_election_1836 = {
+				add_progress = { value = 10 name = divided_monarchists_whig_progress_bar }
+			}
+		}
+		set_variable = supporting_whig_var
+	}
+	option = {
+		name = american_candidates_1836.5.d1
+		set_variable = chose_initial_french_dynasty
+		add_modifier = {
+			name = fra_republican_sentiment
+			days = normal_modifier_time
+		}
+		add_radicals = {
+			value = medium_radicals
+			strata = lower
+		}
+	}
+}

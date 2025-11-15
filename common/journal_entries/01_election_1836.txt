@@ -1,0 +1,225 @@
+﻿je_election_1836 = {
+	icon = "gfx/interface/icons/event_icons/bicorne_hat.dds"
+
+	group = je_group_american_election
+
+	is_shown_in_lobby = {
+		c:USA = THIS
+	}
+
+	modifiers_while_active = {
+		fra_republican_unrest
+	}
+
+	immediate = {
+		usa_set_election_1836_variables = yes
+		usa_weekly_pulse_tory_progress = yes  #Calculates how much the Orleanists will get next month. Updates weekly, but is not added until the monthly.
+		usa_weekly_pulse_whig_progress = yes  #Calculates how much the Bonapartists will get next month. Updates weekly, but is not added until the monthly.
+		random_law = {
+			limit = { type = law_type:law_presidential_republic }
+			save_scope_as = monarchy_scope
+		}
+	}
+
+	scripted_progress_bar = election_1836_pulse_tory_progress_bar
+	scripted_progress_bar = election_1836_pulse_whig_progress_bar
+
+	complete = {
+		has_law_or_variant = law_type:law_presidential_republic
+		custom_tooltip = {
+			text = je_divided_monarchists_02_tt
+			has_variable = one_true_french_dynasty #Can only ever complete upon finishing the Cement the Rightful Dynasty journal entry.
+		}
+	}
+
+	on_complete = {
+		custom_tooltip = {
+			text = je_divided_monarchists_03_tt
+			fra_clear_divided_monarchist_variables = yes #Removes all variables used for math in this JE, to save memory and performance.
+		}
+	}
+
+	scripted_button = election_1836_tory_button
+	scripted_button = election_1836_whig_button
+
+	status_desc = {
+		first_valid = {
+			triggered_desc = { # Cementing the Rightful Dynasty is active
+				desc = status_dynasty_cementing_fra
+				trigger = {
+					has_journal_entry = je_cement_the_rightful_dynasty
+				}
+			}
+			triggered_desc = { # In the lead and on the throne
+				desc = status_in_lead_and_on_throne_fra
+				trigger = {
+					OR = {
+						AND = {
+							ruler_is_orleanist = yes
+							scope:journal_entry = {
+								"scripted_bar_progress(election_1836_pulse_tory_progress_bar)" > "scripted_bar_progress(election_1836_pulse_whig_progress_bar)"
+							}
+						}
+						AND = {
+							ruler_is_bonapartist = yes
+							scope:journal_entry = {
+								"scripted_bar_progress(election_1836_pulse_whig_progress_bar)" > "scripted_bar_progress(election_1836_pulse_tory_progress_bar)"
+							}
+						}
+					}
+				}
+			}
+			triggered_desc = {
+				desc = status_throne_challenged_fra
+				trigger = {
+					OR = {
+						AND = {
+							ruler_is_orleanist = yes
+							scope:journal_entry = {
+								"scripted_bar_progress(election_1836_pulse_tory_progress_bar)" > "scripted_bar_progress(election_1836_pulse_whig_progress_bar)"
+							}
+						}
+						AND = {
+							ruler_is_bonapartist = yes
+							scope:journal_entry = {
+								"scripted_bar_progress(election_1836_pulse_whig_progress_bar)" > "scripted_bar_progress(election_1836_pulse_tory_progress_bar)"
+							}
+						}
+					}
+				}
+			}
+			triggered_desc = { # Bar not moving, either no supported or not in government
+				desc = status_no_dynasty_fra
+				trigger = {
+					always = yes
+				}
+			}
+		}
+	}
+
+	on_weekly_pulse = {
+		events = {
+			american_candidates_1836.1
+		}
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_variable = usa_election_1836_freeze #This variable stops iteration, and is granted by reaching 480 with one dynasty. It's reset when this JE is completed, or when je_cement_the_rightful_dynasty fails.
+					}
+				}
+				usa_weekly_pulse_tory_progress = yes  #Calculates how much the Orleanists will get next month. Updates weekly, but is not added until the monthly.
+				usa_weekly_pulse_whig_progress = yes  #Calculates how much the Bonapartists will get next month. Updates weekly, but is not added until the monthly.
+			}
+		}
+	}
+
+	on_monthly_pulse = {
+		effect = {
+			if = {
+				limit = {
+					has_law_or_variant = law_type:law_presidential_republic
+					scope:journal_entry = {
+						OR = {
+							"scripted_bar_progress(election_1836_pulse_tory_progress_bar)" >= divided_monarchists_upper_bound
+							"scripted_bar_progress(election_1836_pulse_whig_progress_bar)" >= divided_monarchists_upper_bound
+						}
+					}
+					NOT = {
+						has_variable = usa_election_1836_freeze
+					}
+				}
+				if = { #Fires the event to enthrone the pretender - 1 if contextualised as coup, 10 if contextualised as reinforcement.
+					limit = {
+						scope:journal_entry = {
+							"scripted_bar_progress(election_1836_pulse_tory_progress_bar)" > "scripted_bar_progress(election_1836_pulse_whig_progress_bar)"
+						}
+					}
+					if = {
+						limit = {
+							ruler_is_bonapartist = yes
+						}
+						trigger_event = { id = french_pretenders.10 popup = yes} #Reinforcement event - fires if the leading dynasty is the one in power.
+					}
+					else = {
+						trigger_event = { id = french_pretenders.1 popup = yes} #Coup event - fires if the leading dynasty is not the one in power.
+					}
+				}
+				else_if = {
+					limit = {
+						scope:journal_entry = {
+							"scripted_bar_progress(election_1836_pulse_whig_progress_bar)" > "scripted_bar_progress(election_1836_pulse_tory_progress_bar)"
+						}
+					}
+					if = {
+						limit = {
+							ruler_is_orleanist = yes
+						}
+						trigger_event = { id = french_pretenders.10 popup = yes}
+					}
+					else = {
+						trigger_event = { id = french_pretenders.1 popup = yes}
+					}
+				}
+				usa_freeze_election_1836_progress = yes #Freezes the bars so that they no longer accumulate progress on the monthly tick, and stay as they are. In the case that Cement the Rightful Dynasty fails, the bars will be set back.
+			}
+		}
+		random_events = {
+			400 = 0
+			10 = french_pretenders_pulse.2
+			10 = french_pretenders_pulse.3
+			50 = french_pretenders_pulse.10
+			10 = french_pretenders_pulse.11
+			10 = french_pretenders_pulse.12
+			10 = french_pretenders_pulse.13
+			10 = french_pretenders_pulse.14
+			10 = french_pretenders_pulse.15
+			10 = french_pretenders_pulse.16
+			10 = french_pretenders_pulse.17
+			10 = french_pretenders_pulse.18
+		}
+	}
+
+	fail = {
+		OR = {
+			any_civil_war = {
+				is_civil_war_type = revolution
+				civil_war_progress >= 0.75
+			}
+			capital = {
+				is_in_revolt = yes
+			}
+		}
+	}
+
+	on_fail = {
+		trigger_event = { id = french_pretenders.6 popup = yes }
+		if = {
+			limit = {
+				has_variable = usa_election_1836_freeze
+			}
+			remove_variable = usa_election_1836_freeze #Clears the freeze variable so that progress can be made if this JE is somehow activated again.
+		}
+		usa_clear_election_1836_variables = yes #Removes all variables used for math in this JE, to save memory and performance.
+	}
+
+	invalid = {
+		NOT = {
+			has_law_or_variant = law_type:law_presidential_republic
+		}
+	}
+
+	on_invalid = {
+		if = {
+			limit = {
+				has_variable = usa_election_1836_freeze
+			}
+			remove_variable = usa_election_1836_freeze #Clears the freeze variable so that progress can be made if this JE is somehow activated again.
+		}
+		usa_clear_election_1836_variables = yes #It should not be possible for this JE to somehow be deleted without these variables being cleared.
+	}
+
+	weight = 100
+
+	should_be_pinned_by_default = yes
+}

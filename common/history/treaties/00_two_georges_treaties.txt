@@ -1,0 +1,29 @@
+﻿TREATIES = {
+	# British Guarantee of Iroquois Independence
+	create_treaty = {
+		first_country = c:GBR
+		second_country = c:IRO
+
+		is_draft = no
+		entered_into_force_on = 1833.8.8
+		binding_period = { years = 20 }
+
+		articles_to_create = {
+			{ # British Guarantee of Iroquois Independence
+				article = guarantee_independence
+				source_country = c:GBR
+				target_country = c:IRO
+			}
+			{ # British Economic interests in Iroquois
+				article = foreign_investment_rights
+				source_country = c:IRO
+				target_country = c:GBR
+			}
+			{ # British Iroquois Trade Agreement
+				article = trade_privilege
+				source_country = c:IRO
+				target_country = c:GBR
+			}
+		}
+	}
+}

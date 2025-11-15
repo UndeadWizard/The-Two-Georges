@@ -1,0 +1,23 @@
+﻿### SCR character template file ###
+# SCR - South Carolina
+
+# South Carolina - SCR
+
+# Starting characters
+
+USA_john_calhoun = {
+	first_name = John
+	last_name = Calhoun
+	historical = yes
+	culture = cu:dixie
+	ruler = yes
+	ig_leader = yes
+	interest_group = ig_landowners
+	ideology = ideology_slaver
+	birth_date = 1782.3.18
+	dna = dna_calhoun
+	traits = {
+		bigoted
+		experienced_political_operator
+	}
+}

@@ -1,8 +1,10 @@
 ﻿COUNTRIES = {
 	c:USA ?= {
+		set_next_election_date = 1836.12.7
+
 		set_tax_level = low
 		
-		effect_starting_technology_tier_2_tech = yes
+		effect_starting_technology_tier_1_tech = yes
 		
 		set_market_capital = STATE_NEW_YORK		
 		
@@ -36,12 +38,13 @@
 			level = 2
 		}
 		
-		ig:ig_landowners ?= {
+		ig:ig_rural_folk ?= {
 			add_ruling_interest_group = yes
 		}
-
+	
+		add_journal_entry = { type = je_election_1836 }
 		add_journal_entry = { type = je_texas_usa }
-		add_journal_entry = { type = je_seminole_wars }
+		
 		
 		add_company = company_type:company_william_cramp
 		company:company_william_cramp = {
