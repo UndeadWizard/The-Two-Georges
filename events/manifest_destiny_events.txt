@@ -43,7 +43,7 @@ manifest_destiny.1 = {
 		s:STATE_NEW_MEXICO = {
 			add_homeland = cu:dixie
 		}
-		s:STATE_MISSOURI = {
+		s:STATE_ARKANSAS = {
 			add_homeland = cu:dixie
 		}
 	}

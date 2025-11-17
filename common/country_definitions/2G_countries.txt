@@ -193,3 +193,14 @@ IRC = {
 	cultures = { cree siouan }
 	capital = STATE_WASHINGTON
 }
+
+YOK = {
+	color = { 213 97 124 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	capital = STATE_CALIFORNIA
+	cultures = { hokan }
+}

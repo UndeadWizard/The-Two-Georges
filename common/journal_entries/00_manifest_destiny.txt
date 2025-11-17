@@ -11,7 +11,7 @@
 		owns_entire_state_region = STATE_NEW_MEXICO
 		owns_entire_state_region = STATE_TEXAS
 		owns_entire_state_region = STATE_LOUISIANA
-		owns_entire_state_region = STATE_MISSOURI
+		owns_entire_state_region = STATE_ARKANSAS
 	}
 
 	on_complete = {
@@ -31,6 +31,7 @@ je_manifest_destiny_frontier_wars = {
 	complete = {
 		owns_entire_state_region = STATE_WYOMING
 		owns_entire_state_region = STATE_COLORADO
+		owns_entire_state_region = STATE_KANSAS
 		owns_entire_state_region = STATE_MISSISSIPPI
 	}
 
