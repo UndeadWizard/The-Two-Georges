@@ -1,6 +1,6 @@
 ﻿POPS = {
 	s:STATE_SAN_SALVADOR = {
-		region_state:GUA = {
+		region_state:UCA = {
 			create_pop = {
 				culture = central_american
 				size = 428204
@@ -8,7 +8,7 @@
 		}
 	}
 	s:STATE_GUATEMALA = {
-		region_state:GUA = {
+		region_state:UCA = {
 			create_pop = {
 				culture = central_american
 				size = 164404
@@ -24,7 +24,7 @@
 		}
 	}
 	s:STATE_HONDURAS = {
-		region_state:GUA = {
+		region_state:UCA = {
 			create_pop = {
 				culture = central_american
 				size = 385204
@@ -36,7 +36,7 @@
 		}
 	}
 	s:STATE_NICARAGUA = {
-		region_state:GUA = {
+		region_state:UCA = {
 			create_pop = {
 				culture = central_american
 				size = 284000
@@ -76,7 +76,7 @@
 		}
 	}
 	s:STATE_COSTA_RICA = {
-		region_state:GUA = {
+		region_state:UCA = {
 			create_pop = {
 				culture = central_american
 				size = 83992
@@ -250,25 +250,86 @@
 			}
 		}
 	}
-	s:STATE_CUBA = {
+	s:STATE_WESTERN_CUBA = { # TODO Here, Caribeño = White. Revise spanish/caribeno ratio to account for mainlanders. Possibly include sepoarate Catalans/Galicians etc.
 		region_state:CUB = {
 			# 896400
 			create_pop = {
 				culture = caribeno
-				size = 461304 # est. "white" population in 1836 of 483308, minus the explicit Spanish pops below
+				size = 159612
 			}
 			create_pop = {
 				culture = afro_caribeno
-				size = 152011
+				size = 39122
 			}
 			create_pop = {
 				pop_type = slaves
 				culture = afro_caribeno
-				size = 288786
+				size = 179536
+			}
+			##Adding these for now to help with diversity and migration
+			create_pop = {
+				culture = spanish
+				size = 15000
+			}
+			create_pop = {
+				culture = galician
+				size = 6000
+			}
+			create_pop = {
+				culture = catalan
+				size = 2000
+			}
+			create_pop = { 
+				culture = basque
+				size = 3000
+			}
+			create_pop = { #see Cuba, A history, by Hugh Thomas book pg 88, some Chinese were here already, which is probably where the idea of bringing them en masse to work sugar came from 
+				culture = han
+				size = 1200
+			}
+		}
+	}
+	s:STATE_EASTERN_CUBA = { # TODO Here, Caribeño = White. Revise spanish/caribeno ratio to account for mainlanders. Possibly include sepoarate Catalans/Galicians etc.
+		region_state:CUB = {
+			# 896400
+			create_pop = {
+				culture = caribeno
+				size = 78491
+			}
+			create_pop = {
+				culture = afro_caribeno
+				size = 39122
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = afro_caribeno
+				size = 91777
 			}
 			create_pop = {
 				culture = spanish
-				size = 22004
+				size = 8000
+			}
+		}
+	}
+	s:STATE_CENTRAL_CUBA = { # TODO Here, Caribeño = White. Revise spanish/caribeno ratio to account for mainlanders. Possibly include sepoarate Catalans/Galicians etc.
+		region_state:CUB = {
+			# 896400
+			create_pop = {
+				culture = caribeno
+				size = 100616
+			}
+			create_pop = {
+				culture = afro_caribeno
+				size = 32104
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = afro_caribeno
+				size = 137198
+			}
+			create_pop = {
+				culture = spanish
+				size = 12000
 			}
 		}
 	}

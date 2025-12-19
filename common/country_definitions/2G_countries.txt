@@ -38,9 +38,9 @@ MEX = {
 	is_named_from_capital = yes
 }
 
-GUA = {
-	color = { 115 194 251 }
-
+UCA = {
+	color = { 90 175 255 }
+	
 	country_type = colonial
 	tier = principality
 
@@ -203,4 +203,15 @@ YOK = {
 	
 	capital = STATE_CALIFORNIA
 	cultures = { hokan }
+}
+
+BRZ = {
+	color = hsv360{ 143  75  61 }
+
+	country_type = colonial
+
+	tier = principality
+
+	cultures = { brazilian }
+	capital = STATE_RIO_DE_JANEIRO
 }

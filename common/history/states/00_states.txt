@@ -91,7 +91,7 @@ STATES = {
 
 		add_homeland = cu:french
 	}
-	s:STATE_ANDALUSIA = {
+	s:STATE_LOWER_ANDALUSIA = {
 		create_state = {
 			country = c:SPA
 			owned_provinces = { x4E5464 xB1108A x911497 x801020 x53634F x4A1438 x3C4E5B x58E3EB x809020 x2B6ABC xD06000 x59202C }
@@ -1060,7 +1060,7 @@ STATES = {
 	}
 	s:STATE_GUATEMALA = {
 		create_state = {
-			country = c:GUA
+			country = c:UCA
 			owned_provinces = { xDEC8D3 x464F6A x0F5049 xBD8628 xA9090A x78C465 xD9BEFE xD030C0 x42124E xB2E11E x50B040 x2D4EB6 x5449D0 x6D71DA x702CD9 x65C19A x30E01C x50B0C0 xC67219 xD176F3 xFA4B41 x011E0F xD0B040 x02073E x7D333F }
 		}
 		add_homeland = cu:mayan
@@ -1068,14 +1068,14 @@ STATES = {
 	}
 	s:STATE_HONDURAS = {
 		create_state = {
-			country = c:GUA
+			country = c:UCA
 			owned_provinces = { x3C64D6 x9A0C09 x964591 x90EF40 xFA595E xE521E1 x52914C x907040 xC77E76 x5C25CB x55B06A xC27057 xE2A108 xD08FCB x63D186 xEF5C1F x0E5459 x98E7D7 x3D20D1 x10EF40 x600AC6 x907080 x528F3B }
 		}
 		add_homeland = cu:central_american
 	}
 	s:STATE_NICARAGUA = {
 		create_state = {
-			country = c:GUA
+			country = c:UCA
 			owned_provinces = { x95FC5A x9070C0 x9CDB2B xD50755 x10EFC0 x832DFB x074DD8 x68E7F3 xC9A998 x1070C0 xFD8FA1 x2245C0 x9EB0DC x4A4413 x107080 x02733F x745F00 x865E67 xBA0A50 }
 		}
 		create_state = {
@@ -1087,7 +1087,7 @@ STATES = {
 	}
 	s:STATE_COSTA_RICA = {
 		create_state = {
-			country = c:GUA
+			country = c:UCA
 			owned_provinces = { x1A076A x32AA32 x10EF80 x4D3411 x478109 x535AE8 xD88369 x8342D1 x395FB6 xB0243F xEF90DC }
 		}
 		add_homeland = cu:central_american
@@ -1101,11 +1101,24 @@ STATES = {
 		add_homeland = cu:central_american
 		add_homeland = cu:afro_caribeno
 	}
-	s:STATE_CUBA = {
+	s:STATE_WESTERN_CUBA = {
 		create_state = {
 			country = c:CUB
-			owned_provinces = { xF3F2C9 x61FC10 xB325C7 xFCDEED xDCAB5D x4DD008 xA70607 x58C211 x20EFEA xFE4123 xC3EB7D x0DA38C xC464AE x9957D8 xEBE1C7 x152D1C xD810EC x69C041 x30B001 xE70FA4 x519343 xB48FF1 }
-			state_type = unincorporated
+			owned_provinces = { x4DD008 x61FC10 xB325C7 xDCAB5D xF3F2C9 xFCDEED }
+		}
+		add_homeland = cu:caribeno
+	}
+	s:STATE_EASTERN_CUBA = {
+		create_state = {
+			country = c:CUB
+			owned_provinces = { x0DA38C x30B001 x519343 x69C041 xB48FF1 xE70FA4 }
+		}
+		add_homeland = cu:caribeno
+	}
+	s:STATE_CENTRAL_CUBA = {
+		create_state = {
+			country = c:CUB
+			owned_provinces = { x152D1C x20EFEA x58C211 x9957D8 xA70607 xC3EB7D xC464AE xD810EC xEBE1C7 xFE4123 }
 		}
 		add_homeland = cu:caribeno
 	}
@@ -1296,10 +1309,10 @@ STATES = {
 
 		add_homeland = cu:spanish
 	}
-	s:STATE_CASTILE = {
+	s:STATE_OLD_CASTILE = {
 		create_state = {
 			country = c:SPA
-			owned_provinces = { xD060C0 xD30171 x38C557 x70F50D x906201 xB1C098 x70A000 x5DB702 x24A9D6 x4D18FC x50E0C0 x10C4E5 x0543B8 xF02000 xDC8B19 xD7A4DE xF44AAA xCA2220 xB3BC6E xB02000 x0D5242 x2C00C8 x3A3528 x590C75 x702000 x22193A xC3ED38 }
+			owned_provinces = { x0543B8 x10C4E5 x22193A x24A9D6 x3A3528 x4D18FC x50E0C0 x590C75 x5DB702 x702000 x70A000 xA1037C xAC1425 xBF2564 xC3ED38 xCA2220 xCB3245 xD7A4DE xDC8B19 xF02000 xF0A000 xF44AAA }
 		}
 
 		add_homeland = cu:spanish
@@ -1312,10 +1325,10 @@ STATES = {
 
 		add_homeland = cu:spanish
 	}
-	s:STATE_NAVARRA = {
+	s:STATE_BASQUE_COUNTRY = {
 		create_state = {
-			country = c:SPA
-			owned_provinces = { x48868C x702080 x10E0C0 xABE0B3 xAC1425 x9EC9B8 xCB3245 }
+			country = c:SPC
+			owned_provinces = { x10E0C0 x48868C x702080 xABE0B3 x9EC9B8 }
 		}
 
 		add_homeland = cu:spanish
@@ -1330,7 +1343,7 @@ STATES = {
 		add_homeland = cu:spanish
 		add_homeland = cu:catalan
 	}
-	s:STATE_BALEARES = {
+	s:STATE_BALEARIC_ISLANDS = {
 		create_state = {
 			country = c:SPA
 			owned_provinces = { x7D3FD7 x60F080 }
@@ -2281,7 +2294,7 @@ STATES = {
 	}
 	s:STATE_PARA = {
 		create_state = {
-			country = c:PRA
+			country = c:BRZ
 			owned_provinces = {
 				x202AD6 x7684AE xB90B68 xA80863 x2717F9 x8473D1 x03A6E8 x34E831 x8CB00B xC5C8DB x466026 x20F3FE xD266C5 xD2C5AD xF5CC32 xAED9E7 xC50FEA xE60D23 x3FDF4A xE6A9FB x60476B xE560D3 x0A5CA3 xD364FA xB95681 x5AD2E6 x4AA845 xBEC87E x26B9C1 xDC9757 xB93B0C xA08090 x1BEEC7 xB1CCEE xB2D30E x0A4B09 x12590E x140E36 x73D4D4 x79F381 x4BE6EE xB306A1 xD52D37 x9B8499 xEBB90E xD6E2EA xE4212F x05CF8B x4E60B2 x04CE13 xE6D232 x9A68C5 x16CD59 x147984 xEC5C04 x554F30 x8A8A3E xE00190 x0EEAC1 x646762 x4DCA73 x88F1DE x456A7F xE91C8C x62B50D x45DA42 x819CB3 x7C32C1 x600190 x81FC6B xE19BE4 x05B90F x30A52C x8616BC xA094C5 x69460E x9CB8B8
 
@@ -2296,7 +2309,6 @@ STATES = {
 		add_homeland = cu:amazonic
 		add_homeland = cu:amazonian
 		add_homeland = cu:afro_brazilian
-		add_claim = c:BRZ
 	}
 	s:STATE_MARANHAO = {
 		create_state = {
@@ -2322,7 +2334,7 @@ STATES = {
 		}
 
 		create_state = {
-			country = c:PRA
+			country = c:BRZ
 			owned_provinces = {
 				x0A49A7 xA8E4E8 x4370B4 x9752DF x87087A xA9FD52 x569250
 
@@ -2397,7 +2409,7 @@ STATES = {
 	}
 	s:STATE_RIO_GRANDE_DO_SUL = {
 		create_state = {
-			country = c:PNI
+			country = c:BRZ
 			owned_provinces = { x5F9728 xE69F64 x0445FE xD9D235 xF0F96F x118F07 xE933B3 xED55D2 xCC2135 x8A15FA x8E3579 xBEAF68 x19E79D x52B247 x067BE3 xD3A197 xCD9ECD x4EF206 x1956D3 xE5C3BD xA41E15 x8953B5 xA787A2 x9D8150 x38328C x6E0564 x783434 x38A72A xF1B2D9 x8F1635 xFF2920 x48F668 x7678F5 xB88B11 x45B9DF x5F39AB xCD5D1E x26F3A4 x161E6F x628161 x529B8E x16C462 x9FE393 xD8696A xA950E8 x782568 x9BDDA2 x22956B x4BBCCC x7F701B x00E2C3 x7600E6 xE17D15 x7DEC91 xE761EB x9A598B x583BA0 x633FB2 xC7E5A1 x036508 }
 		}
 
@@ -3533,7 +3545,7 @@ STATES = {
 
 		add_homeland = cu:spanish
 	}
-	s:STATE_GRANADA = {
+	s:STATE_UPPER_ANDALUSIA = {
 		create_state = {
 			country = c:SPA
 			owned_provinces = { x099199 xA0B040 x27E575 x2030C0 xEE7F54 x20B040 x0010A0 x0362A1 x203DB5 xF50658 xEB9217 x07E82B }
@@ -3547,12 +3559,13 @@ STATES = {
 
 		add_homeland = cu:spanish
 	}
-	s:STATE_BADAJOZ = {
+	s:STATE_EXTREMADURA = {
 		create_state = {
 			country = c:SPA
 			owned_provinces = { xB4471A x679A01 x009020 x97FBA4 x342BE6 x506000 xC694C3 xF19B02 x7500D4 x30A000 x4A8E78 xE47DCF }
 		}
 		add_homeland = cu:spanish
+		add_homeland = cu:asturleonese
 	}
 	s:STATE_VALENCIA = {
 		create_state = {
@@ -3562,12 +3575,37 @@ STATES = {
 		add_homeland = cu:catalan
 		add_homeland = cu:spanish
 	}
-	s:STATE_TOLEDO = {
+	s:STATE_NEW_CASTILE = {
 		create_state = {
 			country = c:SPA
-			owned_provinces = { x302080 x2B550F xB0A080 xB5194A xF841E6 xB0A000 xF693FD x92DDDA x89CA9E xCAA3E1 xDCD24C x41C3FC x73D6A9 x093A56 xB02080 xF44640 x88CEE5 x8010A0 xA1BEC2 }
+			owned_provinces = { x302080 x2B550F xB0A080 xB5194A xF841E6 xB0A000 xF693FD x92DDDA x89CA9E xCAA3E1 xDCD24C x41C3FC x73D6A9 x093A56 xF44640 x88CEE5 x8010A0 xA1BEC2 }
 		}
 		add_homeland = cu:spanish
+	}
+	s:STATE_MURCIA = {
+		create_state = {
+			country = c:SPA
+			owned_provinces = { x134657 x626878 x6549AD x71158B xA03040 xB03776 xE0BED4 xB02080 }
+		}
+
+		add_homeland = cu:spanish
+	}
+	s:STATE_LEON = {
+		create_state = {
+			country = c:SPA
+			owned_provinces = { x0D5242 x2C00C8 x38C557 x70F50D x906201 xB02000 xB1C098 xB3BC6E xD060C0 xD30171 }
+		}
+
+		add_homeland = cu:spanish
+		add_homeland = cu:asturleonese
+	}
+	s:STATE_ENTRE_DOURO_E_MINHO = {
+		create_state = {
+			country = c:POR
+			owned_provinces = { x0EF845 x37ADD8 x641376 xA64B2E xD0A000 xD0E0C0 }
+		}
+
+		add_homeland = cu:portuguese
 	}
 	s:STATE_WALLONIA = {
 		create_state = {
@@ -8103,7 +8141,7 @@ STATES = {
 	}
 	s:STATE_CHIAPAS = {
 		create_state = {
-			country = c:GUA
+			country = c:UCA
 			owned_provinces = {
 				x10B0C0 x1521F4 x31E49A x8E26C5 xA46BA0 xA6550F xB70B3B xE0AADA xE8CFA0 xF19260
 				x1030C0 x4DBDE9 xD03040 xA087F6
@@ -8116,7 +8154,7 @@ STATES = {
 	}
 	s:STATE_SAN_SALVADOR = {
 		create_state = {
-			country = c:GUA
+			country = c:UCA
 			owned_provinces = { xB0D0C7 x3DB036 x107040 xCC1FCA }
 		}
 

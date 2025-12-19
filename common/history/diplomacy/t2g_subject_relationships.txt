@@ -1,4 +1,10 @@
 ﻿DIPLOMACY = {
+	c:POR ?= {
+		create_diplomatic_pact = {
+			country = c:BRZ
+			type = colony
+		}
+	}
 	c:SPA ?= {
 		create_diplomatic_pact = {
 			country = c:CUB
@@ -13,7 +19,7 @@
 			type = colony
 		}
 		create_diplomatic_pact = {
-			country = c:GUA
+			country = c:UCA
 			type = colony
 		}
 		create_diplomatic_pact = {
