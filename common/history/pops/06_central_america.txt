@@ -17,10 +17,6 @@
 				culture = mayan
 				size = 312000
 			}
-			create_pop = {
-				culture = afro_caribbean
-				size = 7104
-			}
 		}
 	}
 	s:STATE_HONDURAS = {
@@ -149,19 +145,65 @@
 			}
 			create_pop = { # Mulatto.
 				culture = caribeno
-				size = 100626
+				size = 84126
+			}
+			create_pop = { # Mulatto.
+				culture = caribeno
+				pop_type = clergymen
+				size = 2000
+			}
+			create_pop = { # Mulatto.
+				culture = caribeno
+				pop_type = bureaucrats
+				size = 2000
+			}
+			create_pop = { # Mulatto.
+				culture = caribeno
+				pop_type = soldiers
+				size = 10000
+			}
+			create_pop = { # Mulatto.
+				culture = caribeno
+				pop_type = clerks
+				size = 2500
 			}
 			create_pop = { # A small number of protestants existed in the early 19th century.
 				culture = caribeno
+				religion = protestant
 				size = 1013
 			}
 			create_pop = { # Black.
 				culture = afro_caribeno
-				size = 19896
+				size = 14896
+			}
+			create_pop = { # Black.
+				culture = afro_caribeno
+				pop_type = soldiers
+				size = 5000
 			}
 			create_pop = { # White.
 				culture = spanish
-				size = 3834
+				size = 1034
+			}
+			create_pop = { # White.
+				culture = spanish
+				pop_type = bureaucrats
+				size = 1000
+			}
+			create_pop = { # White.
+				culture = spanish
+				pop_type = aristocrats
+				size = 700
+			}
+			create_pop = { # White.
+				culture = spanish
+				pop_type = officers
+				size = 600
+			}
+			create_pop = { # White.
+				culture = spanish
+				pop_type = clergymen
+				size = 500
 			}
 			create_pop = { # Remnants of the 1824 migration scheme. Samaná Americans.
 				culture = afro_american
@@ -170,14 +212,14 @@
 		}
 	}
 	s:STATE_PUERTO_RICO = {
-		region_state:SPA = {
+		region_state:PCO = {
 			create_pop = {
 				culture = caribeno
-				size = 182500
+				size = 136653
 			}
 			create_pop = {
 				culture = afro_caribeno
-				size = 168400
+				size = 120109
 			}
 			create_pop = {
 				culture = spanish
@@ -186,7 +228,7 @@
 			create_pop = {
 				pop_type = slaves
 				culture = afro_caribeno
-				size = 42000
+				size = 32002
 			}
 		}
 	}
@@ -235,6 +277,42 @@
 			create_pop = {
 				culture = dutch
 				size = 396
+			}
+		}
+		region_state:NET = {
+			# Population of ~23700 recorded in 1849
+			create_pop = {
+				culture = afro_brazilian # Papiamento-speakers
+				# pop_type = slaves
+				size = 10212
+			}
+			create_pop = {
+				culture = afro_brazilian # Papiamento-speakers
+				size = 8312
+			}
+			create_pop = {
+				culture = dutch
+				size = 1112
+			}
+			create_pop = {
+				culture = sephardic
+				size = 1202
+			}
+		}
+		region_state:VNZ = {
+			# Very rough backwards calculation of Nueva Esparta's population in 1921
+			create_pop = {
+				culture = north_andean
+				size = 17123
+			}
+			create_pop = {
+				culture = afro_caribeno
+				size = 1310
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = afro_caribeno
+				size = 1012
 			}
 		}
 	}

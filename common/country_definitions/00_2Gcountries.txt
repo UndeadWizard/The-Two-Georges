@@ -29,10 +29,6 @@ MEX = {
 	country_type = colonial
 	tier = principality
 
-	#173  242  175
-
-	tier = kingdom
-
 	cultures = { mexican }
 	capital = STATE_MEXICO
 	is_named_from_capital = yes

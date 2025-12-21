@@ -144,6 +144,11 @@
 		Vail Vining
 		Walker Walshe Wether
 	}
+	
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
 }
 
 californio= {

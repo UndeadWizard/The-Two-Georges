@@ -25,11 +25,15 @@
 			create_pop = {
 				culture = cajun
 				religion = catholic
-				size = 35992
+				size = 65992
 			}
 			create_pop = {
 				culture = dixie
-				size = 118392
+				size = 18392
+			}
+			create_pop = {
+				culture = mexican
+				size = 28592
 			}
 			create_pop = {
 				culture = dixie
@@ -38,7 +42,7 @@
 			}
 			create_pop = {
 				culture = afro_american
-				size = 21106 # 16710 free in 1830, 25502 free in 1840
+				size = 21106
 			}
 			create_pop = {
 				pop_type = slaves
@@ -1276,8 +1280,6 @@
 				culture = mexican
 				size = 2004
 			}
-		}
-		region_state:MEX = {
 			create_pop = {
 				culture = oodham
 				size = 12000
