@@ -58,7 +58,7 @@
 		}
 		create_diplomatic_pact = {
 			country = c:SIL
-			type = puppet
+			type = colony
 		}
 		create_diplomatic_pact = {
 			country = c:ORG
