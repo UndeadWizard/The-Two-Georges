@@ -1301,7 +1301,7 @@ usa_samuel_colt = {
 }
 
 usa_robert_e_lee_wilson = {
-    first_name = Robert_E.Lee
+    first_name = Robert_E_Lee
     last_name = Wilson
     historical = yes
     dna = dna_robert_e_lee_wilson

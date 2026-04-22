@@ -1,4 +1,4 @@
-﻿USA = {
+﻿REPLACE:USA = {
 	dynamic_country_name = {
 		name = dyn_c_north_american_union
 		adjective = dyn_c_north_american_union_adj
@@ -26,7 +26,6 @@
 
 		trigger = {
 			coa_def_monarchy_flag_trigger = yes
-			is_subject_of != GBR
 		}
 	}
 }

@@ -142,7 +142,7 @@
 		Thompson Tisdale Tonge Traill Trenholme Tworney Tuson Thomson Thorburn
 		Urquhart
 		Vail Vining
-		Walker Walshe Wether
+		Walker Walshe
 	}
 	
 	graphics = european

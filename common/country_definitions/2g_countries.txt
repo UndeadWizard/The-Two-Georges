@@ -1,5 +1,5 @@
 ﻿USA = {
-	color = { 66  94  193 }
+	color = { 66 94 193 }
 
 	country_type = colonial
 	tier = principality
@@ -23,15 +23,60 @@ NEN = {
 	capital = STATE_MASSACHUSETTS
 }
 
-MEX = {
-	color = { 56 143 53 }
+CUB = {
+	color = { 87  192  204 }
 
 	country_type = colonial
+
 	tier = principality
 
-	cultures = { mexican }
-	capital = STATE_MEXICO
+	cultures = { caribeno }
+	capital = STATE_WESTERN_CUBA
 	is_named_from_capital = yes
+}
+
+SC1 = { # New Spain
+	color = { 247 231 124 }
+
+	country_type = colonial
+
+	tier = kingdom
+
+	cultures = { spanish }
+	capital = STATE_MEXICO
+}
+
+SC2 = { # New Grenada
+	color = { 199 184 84 }
+
+	country_type = colonial
+
+	tier = kingdom
+
+	cultures = { spanish }
+	capital = STATE_CUNDINAMARCA
+}
+
+SC3 = { # Peru
+	color = { 235 207 23 }
+
+	country_type = colonial
+
+	tier = kingdom
+
+	cultures = { spanish }
+	capital = STATE_LIMA
+}
+
+SC4 = { # River Plate
+	color = { 195 179 75 }
+
+	country_type = colonial
+
+	tier = kingdom
+
+	cultures = { spanish }
+	capital = STATE_BUENOS_AIRES
 }
 
 UCA = {
@@ -45,16 +90,6 @@ UCA = {
 	is_named_from_capital = yes
 }
 
-CLM = {
-	color = { 255  234  168 }
-
-	country_type = colonial
-	tier = principality
-
-	cultures = { north_andean }
-	capital = STATE_CUNDINAMARCA
-}
-
 VNZ = {
 	color = { 255  176  140 }
 
@@ -63,16 +98,6 @@ VNZ = {
 
 	cultures = { north_andean }
 	capital = STATE_MIRANDA
-}
-
-PEU = {
-	color = { 124  140  162 }
-
-	country_type = colonial
-	tier = principality
-
-	cultures = { south_andean }
-	capital = STATE_LIMA
 }
 
 CHL = {
@@ -85,16 +110,15 @@ CHL = {
 	capital = STATE_SANTIAGO
 }
 
-ARG = {
-	color = { 101  102  163 }
+BRZ = {
+	color = hsv360{ 143  75  61 }
 
 	country_type = colonial
-	tier = principality
-	
-	tier = kingdom
 
-	cultures = { platinean }
-	capital = STATE_BUENOS_AIRES
+	tier = principality
+
+	cultures = { brazilian }
+	capital = STATE_RIO_DE_JANEIRO
 }
 
 #Indian Nations
@@ -111,6 +135,63 @@ IRO = { # Haudenosaunee, archaically known as the Iroquois Confederacy
 	capital = STATE_VERMONT
 }
 
+SLS = { # Salish
+	color = { 50 152 173 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { salish }
+
+	capital = STATE_ALBERTA
+}
+
+BNN = { # Bannock
+	color = { 129 56 7 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { paiute }
+
+	capital = STATE_OREGON
+}
+
+NZP = {
+	color = { 220 190 50 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { nez_perce }
+	capital = STATE_OREGON	
+}
+
+ABS = {
+	color = { 199 102 22 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { siouan }
+	capital = STATE_ALBERTA
+}
+
+IRC = {
+	color = { 61 158 124 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { cree siouan }
+	capital = STATE_WASHINGTON
+}
+
 SEQ = {
 	color = { 86 120 117 }
 
@@ -120,6 +201,39 @@ SEQ = {
 
 	cultures = { cherokee siouan }
 	capital = STATE_ALABAMA
+}
+
+DKT = {
+	color = { 68 14 98 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { dakota }
+	capital = STATE_ALBERTA
+}
+
+LKT = {
+	color = { 198 114 168 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { dakota }
+	capital = STATE_NEBRASKA
+}
+
+NVJ = {
+	color = { 126 180 154 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { navajo }
+	capital = STATE_NEW_MEXICO
 }
 
 TIS = {
@@ -199,15 +313,4 @@ YOK = {
 	
 	capital = STATE_CALIFORNIA
 	cultures = { hokan }
-}
-
-BRZ = {
-	color = hsv360{ 143  75  61 }
-
-	country_type = colonial
-
-	tier = principality
-
-	cultures = { brazilian }
-	capital = STATE_RIO_DE_JANEIRO
 }

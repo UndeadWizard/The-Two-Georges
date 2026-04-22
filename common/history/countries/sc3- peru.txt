@@ -1,5 +1,5 @@
 ﻿COUNTRIES = {
-	c:CHL ?= {
+	c:SC3 ?= {
 		# presidential election did occur around this date but only uncomment if giving Chile a voting franchise
 		# set_next_election_date = 1836.3.15
 		

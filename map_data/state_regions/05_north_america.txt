@@ -53,9 +53,9 @@ STATE_NEW_YORK = {
     "x38CCDA" "x3FA10D" "xB0C040"
     }
     traits = { "state_trait_niagara_falls" "state_trait_american_chestnuts" "state_trait_new_york_harbor" }
-    city = "xE217B5"
+    city = "x1BAD55"
     port = "x377E55"
-    farm = "x01D042"
+    farm = "xDB0967"
     mine = "x9CC56A"
     wood = "xD534B1"
     arable_land = 100
@@ -433,10 +433,10 @@ STATE_MISSOURI = {
         "xF90AE8" "x1E7531" "xD4B435" "x97AC4F" "xCD67AD" "xCF483D" "x25962B"
     }
     traits = { "state_trait_mississippi_river" }
-    city = "x971521"
-    farm = "xF279B1"
-    mine = "x5E76CB"
-    wood = "x724BC4"
+    city = "x8ADB9A"
+    farm = "x4F3BC6"
+    mine = "x2BB21D"
+    wood = "xF90AE8"
     arable_land = 300
     arable_resources = { "building_maize_farm" "building_livestock_ranch" "building_cotton_plantation" "building_tobacco_plantation" "building_vineyard" }
     capped_resources = {
@@ -590,10 +590,10 @@ STATE_MISSISSIPPI = {
 
     }
     traits = { "state_trait_mississippi_river" "state_trait_american_chestnuts" }
-    city = "xE8429C"
-    farm = "xD348EA"
-    mine = "x6EE453"
-    wood = "x4C181C"
+    city = "x5A4A79"
+    farm = "xE3F82F"
+    mine = "x7A9921"
+    wood = "x49577A"
     arable_land = 280
     arable_resources = { "building_maize_farm" "building_livestock_ranch" "building_tobacco_plantation" }
     capped_resources = {
@@ -937,8 +937,8 @@ STATE_UTAH = {
         "xD9ABAF" "xE49638" "xEC4FF4" "xF10601" "xF3B4BA" "xF441CF" "xF480A1" "xFC38F6"
         "x2736CD" "x84491D" "xF1B928" "xCF2942" "x992C09" "xBB8631" "x0D95C2" "x80FCE4" "xB8C75E" "x8B17C5" 
         "x1741A2" "xE076DB" "x7F60DB" "x227FEB" "xD3B4EB" "x163861" "x2D6DBC" "xD66C7A" "xBB2109" "xEC5DC5" "xF3223E" "xA8DB62" "x9FF17F" "xAEE5AB"
-        "x00D336" "x4736B3" "xCC1818" "x005C93" "x374A87" "xAF4B58" "xA4D6D1" "x47F30A" "x1546DA" "x4DA90F" "x2E93C4" "xA615B6" "xA615B6" "xC79CD0"
-        "xA721D9" "x47F30A" "xAEE311" "x1B4789" "x68B95E" "x4C4586" "x7DE699" "x10C000" "xCCDB4C" "xB2CC01"  "x25439E"
+        "x00D336" "x4736B3" "xCC1818" "x005C93" "x374A87" "xAF4B58" "xA4D6D1" "x47F30A" "x1546DA" "x4DA90F" "x2E93C4" "xA615B6" "xC79CD0"
+        "xA721D9" "xAEE311" "x1B4789" "x68B95E" "x4C4586" "x7DE699" "x10C000" "xCCDB4C" "xB2CC01"  "x25439E"
     }
     traits = { "state_trait_wasatch_range" }
     city = "xF3B4BA"
@@ -1091,6 +1091,8 @@ STATE_ALBERTA = {
         "x554220" "x092B19" "x50B493" "xB891F3" "x006080" "x0A9E2B" "xEEE91D" "x68E0D2" "x7F2867"
         "x14A4F8" "x3DCC7B" "x0AABD3" "xE29E7C" "xE340DC" "xECA315" "x946CC7" "x575CCC" "x7E7783"
         "x15CA79" "xFB2578" "xB9C113" "x39D379" "x5551A1" "x5CCA79" "xAF7CB4" "x05E469" "x1C5277" "xF3DCE7" "x6FE354" "x0A4987" "xC6BBD4" "xC89BA4"
+
+        "x8B47B7"
     }
     traits = { "state_trait_rocky_mountains" }
     city = "x8F67DC"

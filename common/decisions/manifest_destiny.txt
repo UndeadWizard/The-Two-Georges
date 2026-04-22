@@ -58,10 +58,10 @@
 		}
 		if = {
 			limit = {
-				exists = c:MEX
+				exists = c:SC1
 			}
 			create_incident = {
-				country = c:MEX
+				country = c:SC1
 				value = 20
 			}
 		}

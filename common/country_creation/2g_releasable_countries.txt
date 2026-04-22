@@ -1,4 +1,4 @@
-﻿ORG = {
+﻿REPLACE:ORG = {
 	states = {
 		STATE_OREGON
 		STATE_BRITISH_COLUMBIA
@@ -6,14 +6,14 @@
 	ai_will_do = { always = no }
 }
 
-SEQ = {
+REPLACE:SEQ = {
 	states = {
 		STATE_ALABAMA
 	}
 	ai_will_do = { always = no }
 }
 
-NEN = {
+REPLACE:NEN = {
 	states = {
 		STATE_MASSACHUSETTS
 		STATE_NEW_HAMPSHIRE

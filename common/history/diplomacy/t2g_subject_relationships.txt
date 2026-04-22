@@ -15,7 +15,7 @@
 			type = colony
 		}
 		create_diplomatic_pact = {
-			country = c:MEX
+			country = c:SC1
 			type = colony
 		}
 		create_diplomatic_pact = {
@@ -23,7 +23,7 @@
 			type = colony
 		}
 		create_diplomatic_pact = {
-			country = c:CLM
+			country = c:SC2
 			type = colony
 		}
 		create_diplomatic_pact = {
@@ -31,7 +31,7 @@
 			type = colony
 		}
 		create_diplomatic_pact = {
-			country = c:PEU
+			country = c:SC3
 			type = colony
 		}
 		create_diplomatic_pact = {
@@ -39,7 +39,7 @@
 			type = colony
 		}
 		create_diplomatic_pact = {
-			country = c:ARG
+			country = c:SC4
 			type = colony
 		}
 	}

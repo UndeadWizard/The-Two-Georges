@@ -1,4 +1,4 @@
-﻿FSA = {
+﻿REPLACE:FSA = {
 	use_culture_states = yes
 
 	required_states_fraction = 0.75
