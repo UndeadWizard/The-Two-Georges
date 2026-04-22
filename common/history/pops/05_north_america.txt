@@ -14,14 +14,13 @@
 				size = 86263
 			}
 			create_pop = {
-				pop_type = slaves
 				culture = afro_american
 				size = 7818
 			}
 		}
 	}
 	s:STATE_LOUISIANA = {
-		region_state:TEX = {
+		region_state:SC1 = {
 			create_pop = {
 				culture = cajun
 				religion = catholic
@@ -1186,7 +1185,7 @@
 		}
 	}
 	s:STATE_TEXAS = {
-		region_state:TEX = {
+		region_state:SC1 = {
 			create_pop = {
 				culture = dixie
 				size = 42224
