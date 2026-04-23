@@ -32,3 +32,13 @@
  ## Santa Catarina
  # Santa Catarina - Brazilian Republic
  HUB_NAME_STATE_SANTA_CATARINA_port_bra_republic: "Florianópolis"
+
+ ## Senegal (Region)
+ ### Liberia / Grain Coast
+ #English (Liberian)
+ STATE_LIBERIA_english_liberia: "Libéria"
+ HUB_NAME_STATE_LIBERIA_city_english_liberia: "Christopolis"
+ HUB_NAME_STATE_LIBERIA_port_english_liberia: "Grand Bassa"
+ HUB_NAME_STATE_LIBERIA_mine_english_liberia: "Bomi"
+ HUB_NAME_STATE_LIBERIA_farm_english_liberia: "Kruport"
+ HUB_NAME_STATE_LIBERIA_wood_english_liberia: "Buxton"

@@ -368,3 +368,88 @@ californio= {
 	}
 	graphics = european
 }
+
+anglo_african = {
+	color= hsv{ 0.10 0.70 0.50 }
+	religion = protestant
+	heritage = heritage_african_diaspora
+	language = language_anglophone
+
+	obsessions = {
+		tea
+	}
+
+	traditions = { }
+	male_common_first_names = {
+		Albert Abraham Alexander Anthony Adam Absalom
+		Booker
+		Caesar Cassius Charles Calvin Cyrus Christian
+		Daniel
+		Elijah Earl Eugene Elias Edwin Esau
+		Frederick
+		Garland George Gilbert Gordon
+		Henry Homer Horace Harmon
+		Isaac
+		James Jeremiah John Jermain Joshua Julian
+		Lewis Langston LE_onard
+		Milton Moses Michael Marcus Martin
+		Norris Nicholas
+		Ossian Octavius
+		Perry Philip Pompey
+		Raymond Rodolphe Robert
+		Stephen Samuel Shadrach Solomon Scott Seth Silas
+		Thomas
+		Ulysses
+		William Wyatt
+		Zedekiah
+	}
+	female_common_first_names = {
+		Anna Alice Adeline Adella Anna Araminta
+		Bettiola Bertha
+		Clara Coralie Charlotte Caroline Callie Celia Christine
+		Daisy
+		Elizabeth Ella
+		Florida Florence
+		Guilly
+		Harriet Hester Helen Henrietta
+		Ida Irene
+		Janie Josephine Juno Jane
+		Katherine
+		Lena Lucy
+		Melnea Mary Margaretta Maritcha Myra Musette Martha Mabel
+		Naomi
+		Oceanna Octavia
+		Redoshi Ruth Rose
+		Sarah Sadie Susan
+		Victoria Verina Virginia
+		Winney
+	}
+	#noble_last_names = {
+	#}
+	common_last_names = {
+		Anderson Abele
+		Bowman Blackstone Banks Baumfree Bagby Bell Brown Black Burns Bowlegs Beaty Benson Brander Barclay
+		Cass Cook Catto Cromwell Craft Crummell Cuney Chandler Cebolt Chester Coleman Cheeseman
+		Dale Driver Dillard Dalton Derrick Desdunes Downing Delaney Demas Dorsey Du_Bois Dossen
+		Eato Europe Edmonson Ensley Elkins
+		Franklin Fields Fox Forten Factor Fairbanks Fields Fleetwood Fossett
+		Galloway Garnet Gloucester Goodridge Grahamn Green Glover Gooch Grimshaw Gayles Gardner Gooding Griffin Gardiner Gibson
+		Higgins Harlan Hill House Houston Harrison Horse Hood Horton Hawkins Hilton Holland Harmon
+		Jones Jeffrey Johnson Jacobs Jasper Joplin
+		Little Loguen Lawton Latimer
+		Mosby Moorman Mahammitt McCarroll Moxley Murray Minkins McCoy Marrs Miller Mink Meachum
+		Nell Newby
+		Overton Overall
+		Pierce Purvis Putnam Parsons Pendleton Pennington Plessy Preston Purnell Postlewaite Pinchback Pinn Price Payne Priest
+		Rice Robinson Roxborough Ross Roberts Roye Russell
+		Sweet Spearing Saxon Scottron Simpson Singleton Stanley Stephenson Sims Snowden Sanders Spriggs Smith Skivring Summerville
+		Talbert Teasman Tubman Tiffany Thompson
+		Vanderpool
+		Wells Williams Whitehurst Ward White Weems Wilkinson Wescott Wiggins Weeks Waring Washington Warner Wesley
+		Yancy
+	}
+	ethnicities = {
+		1 = african_diaspora
+	}
+	graphics = african
+}

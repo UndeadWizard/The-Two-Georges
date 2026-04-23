@@ -177,7 +177,7 @@
 	}
 	s:STATE_LIBERIA = {
 		create_state = {
-			country = c:LIB
+			country = c:SIL
 			owned_provinces = { x0075FC xDF8050 x4D5020 xA94E67 }
 		}
 		create_state = {
@@ -193,8 +193,8 @@
 		add_homeland = cu:kru
 		add_homeland = cu:bassa
 		add_homeland = cu:kissi
-		add_homeland = cu:afro_american # TEMPORARY CIRCA 2022
-		add_claim = c:LIB
+		add_homeland = cu:anglo_african
+		add_claim = c:SIL
 	}
 	s:STATE_NORTH_ANGOLA = {
 		create_state = {
@@ -1558,6 +1558,7 @@
 		add_homeland = cu:akan
 		add_homeland = cu:kissi
 		add_homeland = cu:fulbe
+		add_homeland = cu:anglo_african
 	}
 	s:STATE_ZULULAND = {
 		create_state = {

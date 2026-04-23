@@ -1691,7 +1691,7 @@
 	}
 	s:STATE_ANHALT = {
 		create_state = {
-			country = c:PRU
+			country = c:SAX
 			owned_provinces = { xA080E0 x12694A x618061 xCF5D8E x34386E xCBA4A5 xE0C0A0 xA51232 x3C9B93 }
 		}
 		create_state = {
@@ -1722,7 +1722,7 @@
 	}
 	s:STATE_RHINELAND = {
 		create_state = {
-			country = c:PRU
+			country = c:NAS
 			owned_provinces = { xD080A0 x904020 xC1B963 x5D7A68 }
 		}
 		create_state = {
@@ -1880,11 +1880,7 @@
 		}
 		create_state = {
 			country = c:BRA
-			owned_provinces = { xA61E6E x43D537 }
-		}
-		create_state = {
-			country = c:PRU
-			owned_provinces = { x4C16EA xA001E0 }
+			owned_provinces = { xA61E6E x43D537 x4C16EA xA001E0 }
 		}
 
 		add_homeland = cu:north_german
