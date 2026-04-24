@@ -5,6 +5,18 @@
 			type = colony
 		}
 	}
+	c:DEN ?= {
+		create_diplomatic_pact = {
+			country = c:NOR
+			type = personal_union
+		}
+	}
+	c:FRA ?= {
+		create_diplomatic_pact = {
+			country = c:HAI
+			type = colonial
+		}
+	}
 	c:SPA ?= {
 		create_diplomatic_pact = {
 			country = c:CUB
@@ -40,6 +52,10 @@
 		}
 		create_diplomatic_pact = {
 			country = c:SC4
+			type = colony
+		}
+		create_diplomatic_pact = {
+			country = c:DOM
 			type = colony
 		}
 	}
@@ -169,6 +185,19 @@
 		create_diplomatic_pact = {
 			country = c:FLR
 			type = puppet
+		}
+	}
+	c:TUR ?= {
+		create_diplomatic_pact = {
+			country = c:ALD
+			type = protectorate
+		}
+	}
+
+	c:ALD ?= {
+		create_diplomatic_pact = {
+			country = c:TUG
+			type = tributary
 		}
 	}
 }

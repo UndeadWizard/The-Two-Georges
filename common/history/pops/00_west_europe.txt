@@ -1418,11 +1418,11 @@
 		}
 	}
 	s:STATE_WESTPHALIA = {
-		region_state:PRU = {
+		region_state:DOR = {
 			create_pop = {
 				culture = north_german
 				religion = catholic
-				size = 771111
+				size = 471111
 			}
 			create_pop = {
 				culture = ashkenazi
@@ -1431,6 +1431,28 @@
 			create_pop = {
 				culture = north_german
 				size = 506715
+			}
+		}
+		region_state:MUN = {
+			create_pop = {
+				culture = north_german
+				religion = catholic
+				size = 250210
+			}
+			create_pop = {
+				culture = north_german
+				size = 27336
+			}
+		}
+		region_state:PAD = {
+			create_pop = {
+				culture = north_german
+				religion = catholic
+				size = 80210
+			}
+			create_pop = {
+				culture = north_german
+				size = 47336
 			}
 		}
 		region_state:LIP = {
@@ -1521,19 +1543,41 @@
 			create_pop = {
 				culture = north_german
 				religion = catholic
-				size = 830379
+				size = 80379
+			}
+			create_pop = {
+				culture = wallonian
+				size = 4000
+			}
+		}
+		region_state:KOL = {
+			create_pop = {
+				culture = north_german
+				religion = catholic
+				size = 430379
 			}
 			create_pop = {
 				culture = north_german
 				size = 179847
 			}
 			create_pop = {
-				culture = wallonian
-				size = 4000
+				culture = ashkenazi
+				size = 1502
+			}
+		}
+		region_state:AAC = {
+			create_pop = {
+				culture = north_german
+				religion = catholic
+				size = 150379
+			}
+			create_pop = {
+				culture = north_german
+				size = 29847
 			}
 			create_pop = {
 				culture = ashkenazi
-				size = 1502
+				size = 1102
 			}
 		}
 	}
@@ -1543,7 +1587,29 @@
 			create_pop = {
 				culture = north_german
 				religion = catholic
-				size = 702629
+				size = 102629
+			}
+			create_pop = {
+				culture = north_german
+				size = 11157
+			}
+		}
+		region_state:NAS = {
+			create_pop = {
+				culture = north_german
+				religion = catholic
+				size = 102629
+			}
+			create_pop = {
+				culture = north_german
+				size = 52157
+			}
+		}
+		region_state:DUS = {
+			create_pop = {
+				culture = north_german
+				religion = catholic
+				size = 502629
 			}
 			create_pop = {
 				culture = north_german

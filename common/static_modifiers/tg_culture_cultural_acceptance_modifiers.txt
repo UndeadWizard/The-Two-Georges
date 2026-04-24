@@ -1,0 +1,29 @@
+﻿new_englander_cultural_acceptance_modifier_positive = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	country_new_englander_cultural_acceptance_add = 1
+}
+
+new_englander_cultural_acceptance_modifier_negative = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
+	country_new_englander_cultural_acceptance_add = 1
+}
+
+californio_cultural_acceptance_modifier_positive = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	country_californio_cultural_acceptance_add = 1
+}
+
+californio_cultural_acceptance_modifier_negative = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
+	country_californio_cultural_acceptance_add = 1
+}
+
+anglo_african_cultural_acceptance_modifier_positive = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	country_anglo_african_cultural_acceptance_add = 1
+}
+
+anglo_african_cultural_acceptance_modifier_negative = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
+	country_anglo_african_cultural_acceptance_add = 1
+}

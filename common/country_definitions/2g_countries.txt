@@ -1,4 +1,6 @@
-﻿USA = {
+﻿# Colonial Americans
+
+USA = {
 	color = { 66 94 193 }
 
 	country_type = colonial
@@ -313,4 +315,98 @@ YOK = {
 	
 	capital = STATE_CALIFORNIA
 	cultures = { hokan }
+}
+
+# Carribean
+
+HAI = {
+	color = { 139  179  207 }
+
+	country_type = colonial
+
+	tier = principality
+
+	cultures = { afro_antillean }
+	capital = STATE_HAITI
+}
+
+
+DOM = {
+	color = { 93  194  122 }
+
+	country_type = colonial
+
+	tier = principality
+
+	cultures = { caribeno afro_caribeno }
+	capital = STATE_SANTO_DOMINGO
+	is_named_from_capital = yes
+}
+
+# Germans
+
+KOL = {
+	color = { 218 18 25 }
+
+	country_type = recognized
+
+	tier = city_state
+
+	cultures = { north_german }
+	capital = STATE_NORTH_RHINE
+}
+
+DUS = {
+	color = { 42 87 198 }
+
+	country_type = recognized
+
+	tier = principality
+
+	cultures = { north_german }
+	capital = STATE_RUHR
+}
+
+AAC = {
+	color = { 255 206 0 }
+
+	country_type = recognized
+
+	tier = city_state
+
+	cultures = { north_german }
+	capital = STATE_NORTH_RHINE
+}
+
+DOR = {
+	color = { 255 206 0 }
+
+	country_type = recognized
+
+	tier = city_state
+
+	cultures = { north_german }
+	capital = STATE_WESTPHALIA
+}
+
+MUN = {
+	color = { 227 0 102 }
+
+	country_type = recognized
+
+	tier = principality
+
+	cultures = { north_german }
+	capital = STATE_WESTPHALIA
+}
+
+PAD = {
+	color = { 179 0 0 }
+
+	country_type = recognized
+
+	tier = principality
+
+	cultures = { north_german }
+	capital = STATE_WESTPHALIA
 }

@@ -2047,18 +2047,6 @@ DES = {
 	capital = STATE_UTAH
 }
 
-DOM = {
-	color = { 93  194  122 }
-
-	country_type = recognized
-
-	tier = principality
-
-	cultures = { caribeno afro_caribeno }
-	capital = STATE_SANTO_DOMINGO
-	is_named_from_capital = yes
-}
-
 ELS = {
 	color = { 0 47 94 }
 
@@ -2092,17 +2080,6 @@ ALT = {
 
 	cultures = { central_american }
 	capital = STATE_GUATEMALA
-}
-
-HAI = {
-	color = { 139  179  207 }
-
-	country_type = recognized
-
-	tier = principality
-
-	cultures = { afro_antillean }
-	capital = STATE_HAITI
 }
 
 ATL = {
@@ -2268,6 +2245,17 @@ BOL = {
 
 	cultures = { south_andean }
 	capital = STATE_LA_PAZ
+}
+
+ARG = {
+	color = { 101  102  163 }
+
+	country_type = recognized
+
+	tier = kingdom
+
+	cultures = { platinean }
+	capital = STATE_BUENOS_AIRES
 }
 
 CLM = {
@@ -2553,50 +2541,6 @@ COM = {
 	capital = STATE_TEXAS
 }
 
-SEQ = {
-	color = { 86 120 117 }
-
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { cherokee siouan }
-	capital = STATE_OKLAHOMA
-}
-
-DKT = {
-	color = { 68 14 98 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { dakota }
-	capital = STATE_MINNESOTA
-}
-
-LKT = {
-	color = { 198 114 168 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { dakota }
-	capital = STATE_SOUTH_DAKOTA
-}
-
-NVJ = {
-	color = { 126 180 154 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { navajo }
-	capital = STATE_ARIZONA
-}
-
 ARP = {
 	color = { 223 204 125 }
 
@@ -2606,39 +2550,6 @@ ARP = {
 
 	cultures = { siouan }
 	capital = STATE_COLORADO
-}
-
-NZP = {
-	color = { 220 190 50 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { nez_perce }
-	capital = STATE_IDAHO
-}
-
-ABS = {
-	color = { 199 102 22 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { siouan }
-	capital = STATE_MONTANA
-}
-
-IRC = {
-	color = { 61 158 124 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { cree siouan }
-	capital = STATE_SASKATCHEWAN
 }
 
 JAM = {
@@ -3082,18 +2993,6 @@ NNV = { # Nunavut
 	capital = STATE_NUNAVUT
 }
 
-NVL = { # Navajoland
-	color = { 126 180 154 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { navajo }
-
-	capital = STATE_ARIZONA
-}
-
 ATB = { # Athabaska
 	color = { 88 105 137 }
 
@@ -3118,18 +3017,6 @@ CSC = { # Cascadia
 	capital = STATE_BRITISH_COLUMBIA
 }
 
-IRO = { # Haudenosaunee, archaically known as the Iroquois Confederacy
-	color = { 87 182 80 }
-
-	country_type = recognized
-
-	tier = principality
-
-	cultures = { iroquoian }
-
-	capital = STATE_NEW_YORK
-}
-
 CTF = { # the Council of Three Fires, Niswa-mishkodewinan
 	color = { 220 147 37 }
 
@@ -3140,30 +3027,6 @@ CTF = { # the Council of Three Fires, Niswa-mishkodewinan
 	cultures = { algonquian }
 
 	capital = STATE_MICHIGAN
-}
-
-SLS = { # Salish
-	color = { 50 152 173 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { salish }
-
-	capital = STATE_MONTANA
-}
-
-BNN = { # Bannock
-	color = { 129 56 7 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { paiute }
-
-	capital = STATE_IDAHO
 }
 
 MSC = { # Muscogee
@@ -4278,17 +4141,6 @@ PAK = {
 	cultures = { kashmiri panjabi sindi baluchi pashtun }
 	religion = sunni
 	capital = STATE_SINDH
-}
-
-TIS = {
-	color = { 190 133 82 }
-
-	country_type = unrecognized
-
-	tier = empire
-
-	cultures = { cherokee iroquoian siouan }
-	capital = STATE_OKLAHOMA
 }
 
 KAB = {

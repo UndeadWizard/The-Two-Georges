@@ -1,0 +1,29 @@
+﻿new_englander_standard_of_living_modifier_positive = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	state_new_englander_standard_of_living_add = 1
+}
+
+new_englander_standard_of_living_modifier_negative = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
+	state_new_englander_standard_of_living_add = 1
+}
+
+californio_standard_of_living_modifier_positive = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	state_californio_standard_of_living_add = 1
+}
+
+californio_standard_of_living_modifier_negative = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
+	state_californio_standard_of_living_add = 1
+}
+
+anglo_african_standard_of_living_modifier_positive = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	state_anglo_african_standard_of_living_add = 1
+}
+
+anglo_african_standard_of_living_modifier_negative = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
+	state_anglo_african_standard_of_living_add = 1
+}

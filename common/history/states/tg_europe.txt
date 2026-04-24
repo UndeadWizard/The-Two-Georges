@@ -638,6 +638,7 @@
 		add_homeland = cu:russian
 		add_homeland = cu:karelian
 		add_homeland = cu:finnish
+		add_claim = c:FIN
 	}
 	s:STATE_KOLA = {
 		create_state = {
@@ -649,6 +650,7 @@
 		add_homeland = cu:russian
 		add_homeland = cu:sami
 		add_homeland = cu:finnish
+		add_claim = c:FIN
 	}
 	s:STATE_ARKHANGELSK = {
 		create_state = {
@@ -1266,6 +1268,7 @@
 
 		add_homeland = cu:finnish
 		add_homeland = cu:swedish
+		add_claim = c:FIN
 	}
 	s:STATE_ALAND = {
 		create_state = {
@@ -1284,6 +1287,7 @@
 			}
 		}
 		add_homeland = cu:finnish
+		add_claim = c:FIN
 	}
 	s:STATE_OSTROBOTHNIA = {
 		create_state = {
@@ -1293,6 +1297,7 @@
 
 		add_homeland = cu:finnish
 		add_homeland = cu:swedish
+		add_claim = c:FIN
 	}
 	s:STATE_KUOPIO = {
 		create_state = {
@@ -1301,6 +1306,7 @@
 		}
 
 		add_homeland = cu:finnish
+		add_claim = c:FIN
 	}
 	s:STATE_OULU = {
 		create_state = {
@@ -1311,6 +1317,7 @@
 		add_homeland = cu:finnish
 		add_homeland = cu:sami
 		add_homeland = cu:swedish
+		add_claim = c:FIN
 	}
 	#Norway
 	s:STATE_WESTERN_NORWAY = {
@@ -1680,8 +1687,16 @@
 	}
 	s:STATE_WESTPHALIA = {
 		create_state = {
-			country = c:PRU
-			owned_provinces = { x1DD141 xA08061 x218061 x418021 x4101A0 x910095 }
+			country = c:PAD
+			owned_provinces = { x218061 x4101A0 }
+		}
+		create_state = {
+			country = c:MUN
+			owned_provinces = { x1DD141 }
+		}
+		create_state = {
+			country = c:DOR
+			owned_provinces = { xA08061 x910095 x418021 }
 		}
 		create_state = {
 			country = c:LIP
@@ -1740,17 +1755,34 @@
 	s:STATE_NORTH_RHINE = {
 		create_state = {
 			country = c:PRU
-			owned_provinces = { x9F4072 x8001E0 x834B66 x518021 x29CCD6 x486F6A }
+			owned_provinces = { x8001E0 x29CCD6 x486F6A }
 		}
 
+		create_state = {
+			country = c:KOL
+			owned_provinces = { x9F4072 x518021 }
+		}
+
+		create_state = {
+			country = c:AAC
+			owned_provinces = { x834B66 }
+		}
 		add_homeland = cu:north_german
 	}
 	s:STATE_RUHR = {
 		create_state = {
 			country = c:PRU
-			owned_provinces = { x2101E0 x5101A0 xD08021 x0180E0 }
+			owned_provinces = { x0180E0 }
 		}
 
+		create_state = {
+			country = c:DUS
+			owned_provinces = { x2101E0 xD08021 }
+		}
+		create_state = {
+			country = c:NAS
+			owned_provinces = { x5101A0 }
+		}
 		add_homeland = cu:north_german
 	}
 	s:STATE_LOWER_SILESIA = {
@@ -1785,9 +1817,13 @@
 	s:STATE_BRANDENBURG = {
 		create_state = {
 			country = c:PRU
-			owned_provinces = { x069CFB x28CEC2 x514C51 x60BF20 x61C0A0 x76EF4E x82F9A8 x83B1A8 x9B9076 x9E7304 xA040A0 xA65DA6 xB90BFF xDF4020 xF77289 xF8D457 }
+			owned_provinces = { x069CFB x28CEC2 x514C51 x60BF20 x61C0A0 x76EF4E x82F9A8 x83B1A8 x9B9076 x9E7304 xA040A0 xA65DA6 xB90BFF xF77289 xF8D457 }
 		}
 
+		create_state = {
+			country = c:SAX
+			owned_provinces = { xDF4020 }
+		}
 		add_homeland = cu:north_german
 	}
 	s:STATE_SCHLESWIG_HOLSTEIN = {

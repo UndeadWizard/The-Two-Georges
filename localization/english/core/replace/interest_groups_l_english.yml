@@ -1,0 +1,9 @@
+﻿l_english:
+
+  # Jannisary IGs
+ ig_jannisary:0 "Jannisary"
+ ig_jannisary_desc:0 "The Janissaries are the elite standing infantry of the Ottoman Empire recruited through the devshirme system of forced conversion and trained as loyal slaves (kul) directly to the Sultan. Renowned for military prowess, they are a dominant, often rebellious, political force capable of deposing sultans and blocking reforms."
+  
+  # Mamluk IGs
+ ig_mamluk:0 "Mamluk"
+ ig_mamluk_desc:0 "Much like the Jannisaries, the Mamluk are a privileged, ethnically diverse military caste of slave soldiers. With the decline of Ottoman power they now control local tax revenues and government - forcing Ottoman authories to work through them."
