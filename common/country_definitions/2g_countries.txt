@@ -171,6 +171,28 @@ BNN = { # Bannock
 	capital = STATE_OREGON
 }
 
+COM = { # Comanche
+	color = { 96 57 19 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { comanche }
+	capital = STATE_COMANCHE
+}
+
+QUA = { # Osage Quapaw
+	color = { 230 180 40 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { siouan }
+	capital = STATE_ARKANSAS
+}
+
 NZP = {
 	color = { 220 190 50 }
 

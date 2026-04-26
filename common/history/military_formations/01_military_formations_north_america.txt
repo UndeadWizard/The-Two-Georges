@@ -212,7 +212,7 @@
 		create_military_formation = {
 			type = army
 			hq_region = sr:region_dixie
-			name = Texian_Army # Texian Army / Army of the People / Revolutionary Army
+			name = Armée_de_Louisiane
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
@@ -248,7 +248,7 @@
 		create_military_formation = {
 			type = fleet
 			hq_region = sr:region_dixie
-			name = Texian_Navy
+			name = Flotte_de_Louisiane
 
 			combat_unit = { # Some schooners
 				type = unit_type:combat_unit_type_frigate

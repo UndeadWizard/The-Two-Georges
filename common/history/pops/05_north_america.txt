@@ -330,28 +330,10 @@
 		}
 	}
 	s:STATE_ARKANSAS = {
-		region_state:SC1 = {
+		region_state:QUA = {
 			create_pop = {
-				culture = cajun
-				religion = catholic
-				size = 12635
-			}
-			create_pop = {
-				culture = dixie
-				size = 33857
-			}
-			create_pop = {
-				culture = afro_american
-				size = 303 # 141 free in 1830, 465 free in 1840
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = afro_american
-				size = 15689
-			}
-			create_pop = {
-				culture = cherokee
-				size = 30136
+				culture = siouan
+				size = 40136
 			}
 		}
 	}
@@ -1224,6 +1206,16 @@
 				size = 8000
 			}
 		}
+		region_state:SC1 = {
+			create_pop = {
+				culture = oodham
+				size = 12000
+			}
+			create_pop = {
+				culture = mexican
+				size = 3000
+			}
+		}
 		region_state:COM = {
 			create_pop = {
 				culture = comanche
@@ -1271,6 +1263,18 @@
 			create_pop = {
 				culture = apache
 				size = 2000
+			}
+		}
+	}
+	s:STATE_COMANCHE = {
+		region_state:COM = {
+			create_pop = {
+				culture = comanche
+				size = 28000
+			}
+			create_pop = {
+				culture = apache
+				size = 1000
 			}
 		}
 	}

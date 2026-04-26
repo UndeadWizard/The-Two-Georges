@@ -24,12 +24,12 @@ STATE_LOUISIANA = {
         "x861CB7" "x00F080" "x520559"
     }
     traits = { "state_trait_mississippi_river" }
-    city = "xC1273E"
+    city = "x9A7554"
     port = "x9A7554"
     farm = "x18D465"
     mine = "xEE0FAA"
     wood = "x2BEBAE"
-    arable_land = 120
+    arable_land = 160
     arable_resources = { "building_rice_farm" "building_livestock_ranch" "building_cotton_plantation" "building_tobacco_plantation" "building_sugar_plantation" }
     capped_resources = {
         building_coal_mine = 24
@@ -1241,7 +1241,7 @@ STATE_TEXAS = {
     id = 322
     subsistence_building = "building_subsistence_farm"
     provinces = { 
-        "x0030C0" "x00A88F" "x00B040" "x0289AA" "x03FDD9" "x059C90" "x08F331"
+        "x0030C0"  "x00B040" "x0289AA" "x03FDD9" "x059C90" "x08F331"
         "x0D192D" "x0E125F" "x10CA7B" "x10D832" "x18F9D5"
         "x1DCED1" "x1E9A0F" "x224C75" "x24C127" "x27C614"
         "x27D689" "x2C37DD" "x2D8E7D" "x2DA551" "x3751A7"
@@ -1249,11 +1249,11 @@ STATE_TEXAS = {
         "x4E19F4" "x5C7EA4" "x5D3843" "x601A4F" "x607C83" "x6125F7"
         "x6363AC" "x6958D6" "x6BB536" "x6E8169""x760779" "x80B040"
         "x860F5A" "x871357" "x89E3C9" "x8BFDCC"
-        "x8EBCC7" "x907490" "x90CE2B" "x91A02C" "x94A617" "x951736"
+        "x8EBCC7"  "x90CE2B" "x91A02C" "x94A617" "x951736"
         "xA3A810" "xA55E5C" "xAAFB06" "xAFBF37" "xB16A3C"
         "xB7EAE9" "xB8F19A" "xB9118E" "xBB8A78" "xBD7887" "xC369DB" "xC7ED1C"
         "xC9D330" "xD08070" "xD206BC" "xDB3E39" "xE222E2" "xE3F481" "xD15251"
-        "xED08F5" "xFAB703" "xFDD38C" "xFE0821" 
+        "xED08F5" "xFDD38C" "xFE0821" 
     }
     traits = { "state_trait_rio_grande_river" }
     city = "x27D689"
@@ -1282,7 +1282,6 @@ STATE_GALVESTON = {
     provinces = {
         "xD4BE3A" "x8CDEAE" "x1BB9FA" "x99A404" "x33031A" "x5B5F82" "xFB5451" "x013AEB" "xB47B14" "xFD0D62" "x0DA281" "x803040" "x1AC45E" "x56A8B5" "xD4536D" "xD19D8F" "x798ACD" "x7E7CB0" "xA909D2" "xF0BA2E" "x71ACC7" "xA33609" "xD22E00" "x973B1C" "xEDA6C0" "x6FD534" "xFE4703" "x849B8F"
         "x18EC9C" "x1B9E2A" "xEB7B97" "x61EACC" "x80B0C0" "x2CBC3B" "x1DDB1A" "x1120AB" "x39DB21" "x1C3B80" "x90B38D"
-        "xEE1B8C"
     }
     city = "x803040"
     port = "x8CDEAE"
@@ -1312,7 +1311,9 @@ STATE_COMANCHE ={
 
         "x7DCECB" "x00B0C0" "xB0D689" "x1E553B" "x22F5CE" "x46137E" "xE6C09D" "x25D807" "x2C9BF6"
         "x212F2F" "x3F2F5D" "x94E465" "x58AF61" "xC82BB4" "x6FF4CE" "x5C6475" "xB114A9" "x99A780"
-        "x049490"
+        "x049490" "xEE1B8C"
+
+        "xFAB703" "x907490" "x00A88F"
     }
     city = "x44F322"
     farm = "x824F92"

@@ -19,7 +19,7 @@
 
 	# US Military Assistance to Texas (unofficial, but substantial)
 	create_treaty = {
-		name = treaty_name_us_military_mission_to_texas
+		name = treaty_name_us_military_mission_to_louisiana
 		first_country = c:USA
 		second_country = c:LOU
 

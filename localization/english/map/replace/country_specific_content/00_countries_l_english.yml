@@ -3,9 +3,12 @@
  dyn_c_north_american_union_adj:0 "American"
  dyn_c_new_spain:0 "Nueva España"
  dyn_c_new_spain_ADJ:0 "Nuevespañolan"
+
  YOK:0 "Yokut"
  YOK_ADJ:0 "Yokut"
-
+ QUA:0 "Quapaw"
+ QUA_ADJ:0 "Quapaw"
+ 
  KOL:0 "Cologne"
  KOL_ADJ:0 "Colognian"
  AAC:0 "Aachen"

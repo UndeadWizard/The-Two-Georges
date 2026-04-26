@@ -2519,17 +2519,6 @@ ORG = {
 	capital = STATE_OREGON
 }
 
-COM = {
-	color = { 96 57 19 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { comanche }
-	capital = STATE_TEXAS
-}
-
 ARP = {
 	color = { 223 204 125 }
 

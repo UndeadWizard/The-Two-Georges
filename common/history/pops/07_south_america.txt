@@ -927,7 +927,7 @@ POPS = {
 		}
 	}
 	s:STATE_RIO_GRANDE_DO_SUL = {
-		region_state:PNI = {
+		region_state:BRZ = {
 			create_pop = {
 				culture = sulista
 				size = 116681
@@ -1210,7 +1210,7 @@ POPS = {
 	}
 	s:STATE_PARA = { # historical total sum is 143573
 
-		region_state:PRA = {
+		region_state:BRZ = {
 			create_pop = {
 				culture = amazonic
 				size = 111297
