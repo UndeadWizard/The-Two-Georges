@@ -208,7 +208,55 @@
 			production_method = pm_general_training
 		}
 	}
+	c:LOU ?= {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_dixie
+			name = Texian_Army # Texian Army / Army of the People / Revolutionary Army
 
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_GALVESTON
+				count = 4
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_dragoons
+				state_region = s:STATE_GALVESTON
+				count = 1
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_LOUISIANA
+				count = 3
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_dragoons
+				state_region = s:STATE_LOUISIANA
+				count = 2
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_TEXAS
+				count = 1
+			}
+		}
+
+		create_military_formation = {
+			type = fleet
+			hq_region = sr:region_dixie
+			name = Texian_Navy
+
+			combat_unit = { # Some schooners
+				type = unit_type:combat_unit_type_frigate
+				state_region = s:STATE_GALVESTON
+				count = 1
+			}
+		}
+	}
 	c:SC1 ?= {
 		create_military_formation = {
 			type = army

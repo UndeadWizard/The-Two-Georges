@@ -18,10 +18,10 @@
 STATE_LOUISIANA = {
     id = 266
     subsistence_building = "building_subsistence_farm"
-    provinces = { "x0CF7A4" "x131940" "x13B0C7" "x18D465" "x1BF244" "x216122" "x2BEBAE" "x371B1B" "x39D7A2" "x403095" "x4FA3C4" "x68C793" "x71BEC1" "x7EF4B8" "x86BC13" "x9A7554" "x9E96B6" "xA4EE3C" "xAC4818" "xBF79F5" "xC07080" "xC0F080" "xC1273E" "xC51912" "xC62139" "xD658E7" "xEE0FAA" "xEFB99C" 
-        "x861CB7" "x00F080" 
-        "xD4BE3A" "x8CDEAE" "x1BB9FA" "x99A404" "x33031A" "x5B5F82" "xFB5451" "x013AEB" "xB47B14" "xFD0D62" "x0DA281" "x803040" "x1AC45E" "x56A8B5" "xD4536D" "xD19D8F" "x798ACD" "x7E7CB0" "xA909D2" "xF0BA2E" "x71ACC7" "xA33609" "xD22E00" "x973B1C" "xEDA6C0" "x6FD534" "xFE4703" "x849B8F"
-        "xF205E8" "x637A11" "x407080" "xBCAF1A" "xC0F000" "x520559"
+    provinces = { 
+        "x0CF7A4" "x131940" "x13B0C7" "x18D465" "x1BF244" "x216122" "x2BEBAE" "x371B1B" "x39D7A2" "x403095" "x4FA3C4" "x68C793" "x71BEC1" "x7EF4B8" "x86BC13" "x9A7554" "x9E96B6" "xA4EE3C" "xAC4818" "xBF79F5" "xC07080" "xC0F080" "xC1273E" "xC51912" "xC62139" "xD658E7" "xEE0FAA" "xEFB99C"
+        "xF205E8" "x637A11" "x407080" "xBCAF1A" "xC0F000"
+        "x861CB7" "x00F080" "x520559"
     }
     traits = { "state_trait_mississippi_river" }
     city = "xC1273E"
@@ -1241,41 +1241,95 @@ STATE_TEXAS = {
     id = 322
     subsistence_building = "building_subsistence_farm"
     provinces = { 
-        "x0030C0" "x00A88F" "x00B040" "x00B0C0" "x0289AA" "x03FDD9" "x049490" "x04CD6D" "x059C90" "x08F331"
-        "x0D192D" "x0E125F" "x10CA7B" "x10D832" "x1120AB" "x18EC9C" "x18F9D5" "x1B9E2A" "x1C3B80"
-        "x1DCED1" "x1DDB1A" "x1E553B" "x1E9A0F" "x212F2F" "x224C75" "x22F5CE" "x24C127" "x25D807" "x27C614"
-        "x27D689" "x2C37DD" "x2C9BF6" "x2CBC3B" "x2D8E7D" "x2DA551" "x2E8063" "x317E88" "x3751A7"
-        "x39DB21" "x3B9D9E" "x3CA5A6" "x3DAE0A" "x3F2F5D" "x402088" "x44F322" "x46137E"
-        "x4E19F4" "x58AF61" "x5C6475" "x5C6FF5" "x5C7EA4" "x5C9120" "x5D3843" "x601A4F" "x607C83" "x6125F7"
-        "x61EACC" "x6363AC" "x6958D6" "x6BB536" "x6E8169" "x6FF4CE" "x760779" "x7DCECB" "x80287B" "x80B040"
-        "x80B0C0" "x824F92" "x860F5A" "x869D5F" "x871357" "x89E3C9" "x8B5EC8" "x8BFDCC"
-        "x8EBCC7" "x907490" "x90B38D" "x90CE2B" "x91A02C" "x94A617" "x94E465" "x951736" "x99A694"
-        "x99A780" "x9D5716" "xA3A810" "xA55E5C" "xA66212" "xAAFB06" "xAFBF37" "xB0D689" "xB114A9" "xB16A3C"
+        "x0030C0" "x00A88F" "x00B040" "x0289AA" "x03FDD9" "x059C90" "x08F331"
+        "x0D192D" "x0E125F" "x10CA7B" "x10D832" "x18F9D5"
+        "x1DCED1" "x1E9A0F" "x224C75" "x24C127" "x27C614"
+        "x27D689" "x2C37DD" "x2D8E7D" "x2DA551" "x3751A7"
+        "x3B9D9E" "x3CA5A6" "x3DAE0A" "x402088"
+        "x4E19F4" "x5C7EA4" "x5D3843" "x601A4F" "x607C83" "x6125F7"
+        "x6363AC" "x6958D6" "x6BB536" "x6E8169""x760779" "x80B040"
+        "x860F5A" "x871357" "x89E3C9" "x8BFDCC"
+        "x8EBCC7" "x907490" "x90CE2B" "x91A02C" "x94A617" "x951736"
+        "xA3A810" "xA55E5C" "xAAFB06" "xAFBF37" "xB16A3C"
         "xB7EAE9" "xB8F19A" "xB9118E" "xBB8A78" "xBD7887" "xC369DB" "xC7ED1C"
-        "xC82BB4" "xC9D330" "xD08070" "xD206BC" "xDB3E39" "xE222E2" "xE3F481" "xD15251"
-        "xE567C9" "xE6C09D" "xE99673" "xEB7B97" "xED08F5" "xEE1B8C" "xFAB703" "xFDD38C" "xFE0821" 
+        "xC9D330" "xD08070" "xD206BC" "xDB3E39" "xE222E2" "xE3F481" "xD15251"
+        "xED08F5" "xFAB703" "xFDD38C" "xFE0821" 
     }
     traits = { "state_trait_rio_grande_river" }
-    city = "x1B9E2A"
+    city = "x27D689"
     port = "x80B040"
     farm = "x18F9D5"
     mine = "x80B040"
     wood = "x39DB21"
-    arable_land = 500
+    arable_land = 400
     arable_resources = { "building_maize_farm" "building_livestock_ranch" "building_cotton_plantation" "building_sugar_plantation" "building_vineyard" }
     capped_resources = {
-        building_coal_mine = 68
+        building_coal_mine = 48
         building_sulfur_mine = 36
         building_logging_camp = 14
         building_fishing_wharf = 6
     }
     resource = {
         type = "building_oil_rig"
-        undiscovered_amount = 180
+        undiscovered_amount = 140
     }
     naval_exit_id = 3060
 }
 
+STATE_GALVESTON = {
+    id = 323
+    subsistence_building = "building_subsistence_farm"
+    provinces = {
+        "xD4BE3A" "x8CDEAE" "x1BB9FA" "x99A404" "x33031A" "x5B5F82" "xFB5451" "x013AEB" "xB47B14" "xFD0D62" "x0DA281" "x803040" "x1AC45E" "x56A8B5" "xD4536D" "xD19D8F" "x798ACD" "x7E7CB0" "xA909D2" "xF0BA2E" "x71ACC7" "xA33609" "xD22E00" "x973B1C" "xEDA6C0" "x6FD534" "xFE4703" "x849B8F"
+        "x18EC9C" "x1B9E2A" "xEB7B97" "x61EACC" "x80B0C0" "x2CBC3B" "x1DDB1A" "x1120AB" "x39DB21" "x1C3B80" "x90B38D"
+        "xEE1B8C"
+    }
+    city = "x803040"
+    port = "x8CDEAE"
+    farm = "xFB5451"
+    mine = "x798ACD"
+    wood = "x1BB9FA"
+    arable_land = 300
+    arable_resources = { "building_maize_farm" "building_livestock_ranch" "building_cotton_plantation" "building_sugar_plantation" "building_vineyard" }
+    capped_resources = {
+        building_coal_mine = 28
+        building_sulfur_mine = 16
+        building_logging_camp = 8
+        building_fishing_wharf = 6
+    }
+       resource = {
+        type = "building_oil_rig"
+        undiscovered_amount = 40
+    }
+}
+STATE_COMANCHE ={
+    id = 324
+    subsistence_building = "building_subsistence_farm"
+    provinces = {
+        "x44F322" "x824F92" "xA66212" "x5C6FF5" "x80287B" "x317E88" "x9D5716" "x5C9120"
+
+        "x04CD6D" "x869D5F" "xE567C9" "xE99673" "x8B5EC8" "x99A694" "x2E8063"
+
+        "x7DCECB" "x00B0C0" "xB0D689" "x1E553B" "x22F5CE" "x46137E" "xE6C09D" "x25D807" "x2C9BF6"
+        "x212F2F" "x3F2F5D" "x94E465" "x58AF61" "xC82BB4" "x6FF4CE" "x5C6475" "xB114A9" "x99A780"
+        "x049490"
+    }
+    city = "x44F322"
+    farm = "x824F92"
+    mine = "xA66212"
+    wood = "x5C6FF5"
+    arable_land = 300
+    arable_resources = { "building_maize_farm" "building_livestock_ranch" "building_cotton_plantation" "building_sugar_plantation" "building_vineyard" }
+    capped_resources = {
+        building_coal_mine = 18
+        building_sulfur_mine = 16
+        building_logging_camp = 8
+    }
+    resource = {
+        type = "building_oil_rig"
+        undiscovered_amount = 40
+    }
+}
 STATE_NEW_MEXICO = {
     id = 325
     subsistence_building = "building_subsistence_pasture"

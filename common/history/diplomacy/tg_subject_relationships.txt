@@ -1,4 +1,118 @@
 ﻿DIPLOMACY = {
+	c:AUS ?= { #Holy Roman Empire
+		create_diplomatic_pact = {
+			country = c:PRU
+			type = imperial_estate
+		}
+		create_diplomatic_pact = {
+			country = c:LUB
+			type = imperial_estate
+		}
+		create_diplomatic_pact = {
+			country = c:HAM
+			type = imperial_estate
+		}
+		create_diplomatic_pact = {
+			country = c:BRE
+			type = imperial_estate
+		}
+		create_diplomatic_pact = {
+			country = c:BRA
+			type = imperial_estate
+		}
+		create_diplomatic_pact = {
+			country = c:SCM
+			type = imperial_estate
+		}
+		create_diplomatic_pact = {
+			country = c:MST
+			type = imperial_estate
+		}
+		create_diplomatic_pact = {
+			country = c:OLD
+			type = imperial_estate
+		}
+		create_diplomatic_pact = {
+			country = c:HES
+			type = imperial_estate
+		}
+		create_diplomatic_pact = {
+			country = c:WUR
+			type = imperial_estate
+		}
+		create_diplomatic_pact = {
+			country = c:BAD
+			type = imperial_estate
+		}
+		create_diplomatic_pact = {
+			country = c:SAX
+			type = imperial_estate
+		}
+		create_diplomatic_pact = {
+			country = c:HEK
+			type = imperial_estate
+		}
+		create_diplomatic_pact = {
+			country = c:MEC
+			type = imperial_estate
+		}
+		create_diplomatic_pact = {
+			country = c:NAS
+			type = imperial_estate
+		}
+		create_diplomatic_pact = {
+			country = c:WEI
+			type = imperial_estate
+		}
+		create_diplomatic_pact = {
+			country = c:SCW
+			type = imperial_estate
+		}
+		create_diplomatic_pact = {
+			country = c:COB
+			type = imperial_estate
+		}
+		create_diplomatic_pact = {
+			country = c:MEI
+			type = imperial_estate
+		}
+		create_diplomatic_pact = {
+			country = c:ANH
+			type = imperial_estate
+		}
+		create_diplomatic_pact = {
+			country = c:LIP
+			type = imperial_estate
+		}
+		create_diplomatic_pact = {
+			country = c:KOL
+			type = imperial_estate
+		}
+		create_diplomatic_pact = {
+			country = c:AAC
+			type = imperial_estate
+		}
+		create_diplomatic_pact = {
+			country = c:DOR
+			type = imperial_estate
+		}
+		create_diplomatic_pact = {
+			country = c:DUS
+			type = imperial_estate
+		}
+		create_diplomatic_pact = {
+			country = c:MUN
+			type = imperial_estate
+		}
+		create_diplomatic_pact = {
+			country = c:PAD
+			type = imperial_estate
+		}
+		create_diplomatic_pact = {
+			country = c:BAV
+			type = imperial_estate
+		}
+	}
 	c:POR ?= {
 		create_diplomatic_pact = {
 			country = c:BRZ
@@ -14,7 +128,7 @@
 	c:FRA ?= {
 		create_diplomatic_pact = {
 			country = c:HAI
-			type = colonial
+			type = colony
 		}
 	}
 	c:SPA ?= {

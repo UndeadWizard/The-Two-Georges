@@ -1,0 +1,29 @@
+﻿DIPLOMATIC_PLAYS = {
+	c:LOU ?= {
+		create_diplomatic_play = {
+			name = great_cajun_rebellion
+			
+			target_state = s:STATE_TEXAS.region_state:SC1
+
+			war = yes
+
+			type = dp_return_state
+
+			add_war_goal = {
+				holder = c:SC1
+				type = return_state
+				target_state = s:STATE_TEXAS.region_state:LOU
+			}
+			add_war_goal = {
+				holder = c:SC1
+				type = return_state
+				target_state = s:STATE_GALVESTON.region_state:LOU
+			}
+			add_war_goal = {
+				holder = c:SC1
+				type = return_state
+				target_state = s:STATE_LOUISIANA.region_state:LOU
+			}
+		}
+	}
+}

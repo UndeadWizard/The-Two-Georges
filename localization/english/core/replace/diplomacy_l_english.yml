@@ -1,0 +1,8 @@
+﻿l_english:
+ imperial_estate:0 "Imperial Estate"
+ imperial_estate_desc:0 "Imperial Estates are semi-autonomous territories within the Holy Roman Empire, each governed by its own ruler but owing allegiance to the Emperor. These states enjoy significant self-governance while participating in the Empire's complex political and legal framework."
+ imperial_estate_pact_desc:0 "Imperial Estates are semi-autonomous territories within the Holy Roman Empire, each governed by its own ruler but owing allegiance to the Emperor. These states enjoy significant self-governance while participating in the Empire's complex political and legal framework."
+ concept_imperial_estate_desc:0 "Imperial Estates are semi-autonomous territories within the Holy Roman Empire, each governed by its own ruler but owing allegiance to the Emperor. These states enjoy significant self-governance while participating in the Empire's complex political and legal framework."
+ subject_type_imperial_estate:0 "Imperial Estate"
+ subject_type_imperial_estate_no_icon:0 "Imperial Estate"
+ imperial_estate_action_break_name:0 "Revoke Imperial Status"

@@ -123,6 +123,16 @@ BRZ = {
 	capital = STATE_RIO_DE_JANEIRO
 }
 
+LOU = {
+	color = { 53 52 144 }
+
+	country_type = recognized
+
+	tier = principality
+
+	cultures = { cajun afro_antillean }
+	capital = STATE_LOUISIANA
+}
 #Indian Nations
 
 IRO = { # Haudenosaunee, archaically known as the Iroquois Confederacy
@@ -326,7 +336,7 @@ HAI = {
 
 	tier = principality
 
-	cultures = { afro_antillean }
+	cultures = { french }
 	capital = STATE_HAITI
 }
 

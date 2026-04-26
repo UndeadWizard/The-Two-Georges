@@ -1,0 +1,10 @@
+@sol_icon_fontsize = 45
+
+texticon = {
+  icon = imperial_estate
+  iconsize = {
+    offset = { 0 7 }
+    texture = "gfx/interface/icons/diplomatic_action_icons/crown_land_15.dds"
+    fontsize = 22
+  }
+}

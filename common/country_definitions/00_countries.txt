@@ -138,17 +138,6 @@ ASA = {
 	capital = STATE_GEORGIA
 }
 
-LOU = {
-	color = { 53 52 144 }
-
-	country_type = recognized
-
-	tier = principality
-
-	cultures = { cajun afro_antillean }
-	capital = STATE_LOUISIANA
-}
-
 AGJ = {
 	color = { 111 56 200 }
 

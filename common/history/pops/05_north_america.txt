@@ -20,15 +20,19 @@
 		}
 	}
 	s:STATE_LOUISIANA = {
-		region_state:SC1 = {
+		region_state:LOU = {
 			create_pop = {
 				culture = cajun
 				religion = catholic
 				size = 65992
 			}
 			create_pop = {
-				culture = dixie
+				culture = french
 				size = 18392
+			}
+			create_pop = {
+				culture = dixie
+				size = 4392
 			}
 			create_pop = {
 				culture = mexican
@@ -40,12 +44,12 @@
 				size = 200
 			}
 			create_pop = {
-				culture = afro_american
+				culture = afro_antillean
 				size = 21106
 			}
 			create_pop = {
 				pop_type = slaves
-				culture = afro_american
+				culture = afro_antillean
 				size = 102994
 			}
 			create_pop = {
@@ -1185,10 +1189,18 @@
 		}
 	}
 	s:STATE_TEXAS = {
-		region_state:SC1 = {
+		region_state:LOU = {
 			create_pop = {
 				culture = dixie
-				size = 42224
+				size = 2224
+			}
+			create_pop = {
+				culture = french
+				size = 12224
+			}
+			create_pop = {
+				culture = cajun
+				size = 14124
 			}
 			create_pop = {
 				culture = siouan
@@ -1200,12 +1212,8 @@
 			}
 			create_pop = {
 				pop_type = slaves
-				culture = afro_american
+				culture = afro_antillean
 				size = 6040
-			}
-			create_pop = {
-				culture = mexican
-				size = 2004
 			}
 			create_pop = {
 				culture = oodham
@@ -1213,7 +1221,7 @@
 			}
 			create_pop = {
 				culture = mexican
-				size = 3000
+				size = 8000
 			}
 		}
 		region_state:COM = {
@@ -1224,6 +1232,45 @@
 			create_pop = {
 				culture = apache
 				size = 4000
+			}
+		}
+	}
+	s:STATE_GALVESTON = {
+		region_state:LOU = {
+			create_pop = {
+				culture = french
+				size = 35224
+			}
+			create_pop = {
+				culture = cajun
+				size = 54124
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = afro_antillean
+				size = 10040
+			}
+			create_pop = {
+				culture = mexican
+				size = 6000
+			}
+			create_pop = {
+				culture = oodham
+				size = 2400
+			}
+			create_pop = {
+				culture = comanche
+				size = 6000
+			}
+		}
+		region_state:COM = {
+			create_pop = {
+				culture = comanche
+				size = 8000
+			}
+			create_pop = {
+				culture = apache
+				size = 2000
 			}
 		}
 	}
