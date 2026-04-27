@@ -1,0 +1,18 @@
+﻿gov_dey = {  #Overwriting paradox since Deys were not hereditary
+	transfer_of_power = dictatorial
+	male_ruler = "RULER_TITLE_DEY"
+	female_ruler = "" # Empty on purpose
+
+	possible = {
+		has_law = law_type:law_monarchy
+		AND = { exists = c:ALD c:ALD ?= ROOT }
+		has_gov_regency = no
+	}
+
+	on_government_type_change = {
+		change_to_dictatorial = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_dictatorial = yes
+	}
+}

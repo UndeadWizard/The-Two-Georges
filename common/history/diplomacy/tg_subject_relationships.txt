@@ -121,6 +121,14 @@
 	}
 	c:DEN ?= {
 		create_diplomatic_pact = {
+			country = c:HOL
+			type = personal_union
+		}
+		create_diplomatic_pact = {
+			country = c:SCH
+			type = personal_union
+		}
+		create_diplomatic_pact = {
 			country = c:NOR
 			type = personal_union
 		}
@@ -134,6 +142,10 @@
 	c:SPA ?= {
 		create_diplomatic_pact = {
 			country = c:CUB
+			type = colony
+		}
+		create_diplomatic_pact = {
+			country = c:PCO
 			type = colony
 		}
 		create_diplomatic_pact = {
@@ -284,6 +296,10 @@
 		}
 	}
 	c:USA ?= {
+		create_diplomatic_pact = {
+			country = c:SEQ
+			type = puppet
+		}
 		create_diplomatic_pact = {
 			country = c:NCR
 			type = puppet

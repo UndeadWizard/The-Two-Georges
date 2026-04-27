@@ -4,6 +4,9 @@
  dyn_c_new_spain:0 "Nueva España"
  dyn_c_new_spain_ADJ:0 "Nuevespañolan"
 
+ LOU:0 "Louisiane"
+ LOU_ADJ:0 "Louisianis"
+
  YOK:0 "Yokut"
  YOK_ADJ:0 "Yokut"
  QUA:0 "Quapaw"

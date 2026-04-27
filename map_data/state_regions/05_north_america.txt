@@ -28,7 +28,7 @@ STATE_LOUISIANA = {
     port = "x9A7554"
     farm = "x18D465"
     mine = "xEE0FAA"
-    wood = "x2BEBAE"
+    wood = "xC1273E"
     arable_land = 160
     arable_resources = { "building_rice_farm" "building_livestock_ranch" "building_cotton_plantation" "building_tobacco_plantation" "building_sugar_plantation" }
     capped_resources = {
@@ -40,7 +40,7 @@ STATE_LOUISIANA = {
     resource = {
         type = "building_oil_rig"
         undiscovered_amount = 20
-    }
+    }   
     naval_exit_id = 3060
 }
 
@@ -1264,14 +1264,14 @@ STATE_TEXAS = {
     arable_land = 400
     arable_resources = { "building_maize_farm" "building_livestock_ranch" "building_cotton_plantation" "building_sugar_plantation" "building_vineyard" }
     capped_resources = {
-        building_coal_mine = 48
-        building_sulfur_mine = 36
-        building_logging_camp = 14
+        building_coal_mine = 8
+        building_sulfur_mine = 12
+        building_logging_camp = 8
         building_fishing_wharf = 6
     }
     resource = {
         type = "building_oil_rig"
-        undiscovered_amount = 140
+        undiscovered_amount = 60
     }
     naval_exit_id = 3060
 }
@@ -1284,22 +1284,23 @@ STATE_GALVESTON = {
         "x18EC9C" "x1B9E2A" "xEB7B97" "x61EACC" "x80B0C0" "x2CBC3B" "x1DDB1A" "x1120AB" "x39DB21" "x1C3B80" "x90B38D"
     }
     city = "x803040"
-    port = "x8CDEAE"
+    port = "x803040"
     farm = "xFB5451"
-    mine = "x798ACD"
+    mine = "x803040"
     wood = "x1BB9FA"
     arable_land = 300
     arable_resources = { "building_maize_farm" "building_livestock_ranch" "building_cotton_plantation" "building_sugar_plantation" "building_vineyard" }
     capped_resources = {
-        building_coal_mine = 28
+        building_coal_mine = 12
         building_sulfur_mine = 16
         building_logging_camp = 8
         building_fishing_wharf = 6
     }
        resource = {
         type = "building_oil_rig"
-        undiscovered_amount = 40
+        undiscovered_amount = 60
     }
+    naval_exit_id = 3060
 }
 STATE_COMANCHE ={
     id = 324
@@ -1322,13 +1323,13 @@ STATE_COMANCHE ={
     arable_land = 300
     arable_resources = { "building_maize_farm" "building_livestock_ranch" "building_cotton_plantation" "building_sugar_plantation" "building_vineyard" }
     capped_resources = {
-        building_coal_mine = 18
-        building_sulfur_mine = 16
+        building_coal_mine = 8
+        building_sulfur_mine = 8
         building_logging_camp = 8
     }
     resource = {
         type = "building_oil_rig"
-        undiscovered_amount = 40
+        undiscovered_amount = 60
     }
 }
 STATE_NEW_MEXICO = {

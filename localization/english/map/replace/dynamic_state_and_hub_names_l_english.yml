@@ -20,6 +20,13 @@
  ## District of Columbia
  HUB_NAME_STATE_DISTRICT_OF_COLUMBIA_city_uk: "Cockburn" # after Sir George Cockburn and his feat of 1814
  
+ ## Louisiana
+ HUB_NAME_STATE_LOUISIANA_city: "Nouvelle-Orléans"
+ HUB_NAME_STATE_LOUISIANA_port: "Nouvelle-Orléans"
+
+ ##Galveston
+ HUB_NAME_STATE_GALVESTON_city: "Galvéston"
+
  ### Canada ###
  ## British Columbia
  # British Columbia - British
