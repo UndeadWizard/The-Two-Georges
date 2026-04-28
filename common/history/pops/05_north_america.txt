@@ -24,11 +24,11 @@
 			create_pop = {
 				culture = cajun
 				religion = catholic
-				size = 125992
+				size = 145992
 			}
 			create_pop = {
 				culture = french
-				size = 28992
+				size = 38992
 			}
 			create_pop = {
 				culture = dixie
@@ -39,9 +39,13 @@
 				size = 22592
 			}
 			create_pop = {
-				culture = dixie
+				culture = french
 				religion = jewish
-				size = 200
+				size = 1200
+			}
+			create_pop = {
+				culture = caddoan
+				size = 10000
 			}
 			create_pop = {
 				culture = afro_antillean

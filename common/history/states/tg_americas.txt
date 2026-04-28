@@ -636,6 +636,9 @@ STATES = {
 				x18EC9C x1B9E2A xEB7B97 x61EACC x80B0C0 x2CBC3B x1DDB1A x1120AB x39DB21 x1C3B80 x90B38D
 			}
 		}
+
+		add_homeland = cu:comanche
+		add_homeland = cu:cajun
 		add_claim = c:SC1
 	}
 
@@ -655,6 +658,8 @@ STATES = {
 				xFAB703 x907490 x00A88F
 			}
 		}
+
+		add_homeland = cu:comanche
 	}
 
 	s:STATE_YUKON_TERRITORY = {
@@ -1902,7 +1907,7 @@ STATES = {
 	}
 	s:STATE_PUERTO_RICO = {
 		create_state = {
-			country = c:SPA
+			country = c:PCO
 			owned_provinces = { xB07080 x2160B9 }
 			state_type = unincorporated
 		}
