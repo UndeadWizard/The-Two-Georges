@@ -32,10 +32,12 @@
 			name = modifier_texas_war_of_independence
 			months = 12
 		}
-		
+		add_journal_entry = {
+			type = je_texas_lou
+		}
+
 		ig:ig_landowners ?= {
 			add_ruling_interest_group = yes
 		}
-
 	}
 }

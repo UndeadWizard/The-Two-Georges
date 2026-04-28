@@ -1,0 +1,147 @@
+﻿#######################################
+### Specific state name assignments ###
+#######################################
+
+REPLACE:assign_state_name_region_dixie = { # region_dixie
+    if = {
+        limit = {
+            state_region = {
+                s:STATE_DISTRICT_OF_COLUMBIA ?= this
+            }
+        }
+        STATE_DISTRICT_OF_COLUMBIA_state_name_assign = yes
+    }
+    else_if = {
+        limit = {
+            state_region = {
+                s:STATE_GALVESTON ?= this
+            }
+        }
+        STATE_GALVESTON_state_name_assign = yes
+    }
+    else_if = {
+        limit = {
+            state_region = {
+                s:STATE_TEXAS ?= this
+            }
+        }
+        STATE_TEXAS_state_name_assign = yes
+    }
+    else_if = {
+        limit = {
+            state_region = {
+                s:STATE_LOUISIANA ?= this
+            }
+        }
+        STATE_LOUISIANA_state_name_assign = yes
+    }
+}
+
+STATE_TEXAS_state_name_assign = {
+    if = {
+        limit = {
+            owner = {
+                any_primary_culture = {
+                    has_discrimination_trait = language_francophone
+                }
+            }
+        }
+        set_state_name = STATE_TEXAS_fra
+    }
+    else_if = {
+        limit = {
+            owner = {
+                any_primary_culture = {
+                    has_discrimination_trait = language_hispanophone
+                }
+            }
+        }
+        set_state_name = STATE_TEXAS_spa
+    }
+    else = { # switch back to defaults
+        reset_state_name = yes
+        reset_hub_names = yes
+    }
+}
+
+STATE_GALVESTON_state_name_assign = {
+    if = {
+        limit = {
+            owner = {
+                any_primary_culture = {
+                    has_discrimination_trait = language_francophone
+                }
+            }
+        }
+        set_state_name = STATE_GALVESTON_fra
+    }
+    else_if = {
+        limit = {
+            owner = {
+                any_primary_culture = {
+                    has_discrimination_trait = language_hispanophone
+                }
+            }
+        }
+        set_state_name = STATE_GALVESTON_spa
+    }
+    else = { # switch back to defaults
+        reset_state_name = yes
+        reset_hub_names = yes
+    }
+}
+
+STATE_LOUISIANA_state_name_assign = {
+    if = {
+        limit = {
+            owner = {
+                any_primary_culture = {
+                    has_discrimination_trait = language_francophone
+                }
+            }
+        }
+        set_hub_name = {
+            type = city
+            name = HUB_NAME_STATE_LOUISIANA_city_fra
+        }
+        set_hub_name = {
+            type = port
+            name = HUB_NAME_STATE_LOUISIANA_port_fra
+        }
+        set_hub_name = {
+            type = farm
+            name = HUB_NAME_STATE_LOUISIANA_farm_fra
+        }
+        set_hub_name = {
+            type = wood
+            name = HUB_NAME_STATE_LOUISIANA_wood_fra
+        }
+        set_hub_name = {
+            type = mine
+            name = HUB_NAME_STATE_LOUISIANA_mine_fra
+        }
+        set_state_name = STATE_LOUISIANA_fra
+    }
+    else_if = {
+        limit = {
+            owner = {
+                any_primary_culture = {
+                    has_discrimination_trait = language_hispanophone
+                }
+            }
+        }
+        set_hub_name = {
+            type = city
+            name = HUB_NAME_STATE_LOUISIANA_city_spa
+        }
+        set_hub_name = {
+            type = port
+            name = HUB_NAME_STATE_LOUISIANA_port_spa
+        }
+        set_state_name = STATE_LOUISIANA_spa
+    }
+    else = { # switch back to defaults
+        reset_state_name = yes
+        reset_hub_names = yes
+    }
+}
