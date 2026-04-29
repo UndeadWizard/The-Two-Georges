@@ -224,7 +224,7 @@
 			}
 		}
 		region_state:SAX = {
-			create = {
+			create_pop = {
 				culture = north_german
 				size = 52414
 			}

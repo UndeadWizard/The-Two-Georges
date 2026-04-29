@@ -6,12 +6,9 @@
 	# note that if you change this, also update the decision
 	complete = {
 		owns_entire_state_region = STATE_CALIFORNIA
-		owns_entire_state_region = STATE_BAJA_CALIFORNIA
 		owns_entire_state_region = STATE_UTAH
 		owns_entire_state_region = STATE_NEW_MEXICO
 		owns_entire_state_region = STATE_TEXAS
-		owns_entire_state_region = STATE_LOUISIANA
-		owns_entire_state_region = STATE_ARKANSAS
 	}
 
 	on_complete = {
@@ -19,7 +16,8 @@
 	}
 
 	weight = 100
-	should_be_pinned_by_default = yes
+		
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 je_manifest_destiny_frontier_wars = {
@@ -32,7 +30,6 @@ je_manifest_destiny_frontier_wars = {
 		owns_entire_state_region = STATE_WYOMING
 		owns_entire_state_region = STATE_COLORADO
 		owns_entire_state_region = STATE_KANSAS
-		owns_entire_state_region = STATE_MISSISSIPPI
 	}
 
 	on_complete = {
@@ -49,5 +46,6 @@ je_manifest_destiny_frontier_wars = {
 	weight = 100
 
 	transferable = no
-	should_be_pinned_by_default = yes
+		
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }

@@ -1,4 +1,4 @@
-﻿gov_dey = {  #Overwriting paradox since Deys were not hereditary
+﻿REPLACE:gov_dey = {  #Overwriting paradox since Deys were not hereditary
 	transfer_of_power = dictatorial
 	male_ruler = "RULER_TITLE_DEY"
 	female_ruler = "" # Empty on purpose

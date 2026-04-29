@@ -2,7 +2,7 @@
   "name" : "The Two Georges",
 	"id" : "",
   "version": "0.1",
-  "supported_game_version": "1.12.*",
+  "supported_game_version": "1.13.*",
   "short_description" : "",
   "tags": ["Alternative History" ],
   "relationships" : [],
