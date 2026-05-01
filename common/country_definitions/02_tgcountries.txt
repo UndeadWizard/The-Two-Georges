@@ -144,7 +144,7 @@ IRO = { # Haudenosaunee, archaically known as the Iroquois Confederacy
 
 	cultures = { iroquoian }
 
-	capital = STATE_VERMONT
+	capital = STATE_SIX_NATIONS
 }
 
 SLS = { # Salish

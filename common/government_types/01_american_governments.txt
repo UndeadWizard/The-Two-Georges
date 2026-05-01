@@ -74,3 +74,26 @@ gov_governor_american_presidential = {
 		post_change_to_presidential_elective = yes
 	}
 }
+
+gov_princely_state_american = {
+	transfer_of_power = dictatorial
+	new_leader_on_reform_government = no
+
+	male_ruler = "RULER_TITLE_GRAND_HOYANEH"
+	female_ruler = "RULER_TITLE_GRAND_HOYANEH"
+
+	possible = {
+		country_has_primary_culture = cu:iroquoian
+		OR = {
+			AND = { exists = c:GBR is_subject_of = c:GBR }
+			AND = { exists = c:USA is_subject_of = c:USA }
+		}
+	}	
+
+	on_government_type_change = {
+		change_to_dictatorial = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_dictatorial = yes
+	}
+}

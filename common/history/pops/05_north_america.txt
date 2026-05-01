@@ -758,7 +758,7 @@
 			}
 		}
 	}
-	s:STATE_VERMONT = {
+	s:STATE_SIX_NATIONS = {
 		region_state:IRO = {
 			create_pop = {
 				culture = iroquoian

@@ -46,6 +46,26 @@ STATE_TEXAS_state_name_assign = {
                 }
             }
         }
+        set_hub_name = {
+            type = city
+            name = HUB_NAME_STATE_TEXAS_city_fra
+        }
+        set_hub_name = {
+            type = port
+            name = HUB_NAME_STATE_TEXAS_port_fra
+        }
+        set_hub_name = {
+            type = farm
+            name = HUB_NAME_STATE_TEXAS_farm_fra
+        }
+        set_hub_name = {
+            type = mine
+            name = HUB_NAME_STATE_TEXAS_mine_fra
+        }
+        set_hub_name = {
+            type = wood
+            name = HUB_NAME_STATE_TEXAS_wood_fra
+        }
         set_state_name = STATE_TEXAS_fra
     }
     else_if = {
@@ -55,6 +75,26 @@ STATE_TEXAS_state_name_assign = {
                     has_discrimination_trait = language_hispanophone
                 }
             }
+        }
+        set_hub_name = {
+            type = city
+            name = HUB_NAME_STATE_TEXAS_city_spa
+        }
+        set_hub_name = {
+            type = port
+            name = HUB_NAME_STATE_TEXAS_port_spa
+        }
+        set_hub_name = {
+            type = farm
+            name = HUB_NAME_STATE_TEXAS_farm_spa
+        }
+        set_hub_name = {
+            type = mine
+            name = HUB_NAME_STATE_TEXAS_mine_spa
+        }
+        set_hub_name = {
+            type = wood
+            name = HUB_NAME_STATE_TEXAS_wood_spa
         }
         set_state_name = STATE_TEXAS_spa
     }
@@ -73,6 +113,26 @@ STATE_GALVESTON_state_name_assign = {
                 }
             }
         }
+        set_hub_name = {
+            type = city
+            name = HUB_NAME_STATE_GALVESTON_city_fra
+        }
+        set_hub_name = {
+            type = port
+            name = HUB_NAME_STATE_GALVESTON_port_fra
+        }
+        set_hub_name = {
+            type = farm
+            name = HUB_NAME_STATE_GALVESTON_farm_fra
+        }
+        set_hub_name = {
+            type = wood
+            name = HUB_NAME_STATE_GALVESTON_wood_fra
+        }
+        set_hub_name = {
+            type = mine
+            name = HUB_NAME_STATE_GALVESTON_mine_fra
+        }
         set_state_name = STATE_GALVESTON_fra
     }
     else_if = {
@@ -82,6 +142,26 @@ STATE_GALVESTON_state_name_assign = {
                     has_discrimination_trait = language_hispanophone
                 }
             }
+        }
+        set_hub_name = {
+            type = city
+            name = HUB_NAME_STATE_GALVESTON_city_spa
+        }
+        set_hub_name = {
+            type = port
+            name = HUB_NAME_STATE_GALVESTON_port_spa
+        }
+        set_hub_name = {
+            type = farm
+            name = HUB_NAME_STATE_GALVESTON_farm_spa
+        }
+        set_hub_name = {
+            type = wood
+            name = HUB_NAME_STATE_GALVESTON_wood_spa
+        }
+        set_hub_name = {
+            type = mine
+            name = HUB_NAME_STATE_GALVESTON_mine_spa
         }
         set_state_name = STATE_GALVESTON_spa
     }
@@ -137,6 +217,18 @@ STATE_LOUISIANA_state_name_assign = {
         set_hub_name = {
             type = port
             name = HUB_NAME_STATE_LOUISIANA_port_spa
+        }
+        set_hub_name = {
+            type = farm
+            name = HUB_NAME_STATE_LOUISIANA_farm_spa
+        }
+        set_hub_name = {
+            type = wood
+            name = HUB_NAME_STATE_LOUISIANA_wood_spa
+        }
+        set_hub_name = {
+            type = mine
+            name = HUB_NAME_STATE_LOUISIANA_mine_spa
         }
         set_state_name = STATE_LOUISIANA_spa
     }

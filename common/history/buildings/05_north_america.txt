@@ -2098,7 +2098,7 @@
 			}
 		}
 	}
-	s:STATE_VERMONT={
+	s:STATE_SIX_NATIONS={
 		region_state:USA={
 			create_building={
 				building="building_food_industry"
@@ -2107,7 +2107,7 @@
 						type="building_food_industry"
 						country="c:USA"
 						levels=2
-						region="STATE_VERMONT"
+						region="STATE_SIX_NATIONS"
 					}
 				}
 				reserves=1
@@ -2120,7 +2120,7 @@
 						type="building_financial_district"
 						country="c:USA"
 						levels=1
-						region="STATE_VERMONT"
+						region="STATE_SIX_NATIONS"
 					}
 				}
 				reserves=1
@@ -2133,7 +2133,7 @@
 						type="building_livestock_ranch"
 						country="c:USA"
 						levels=1
-						region="STATE_VERMONT"
+						region="STATE_SIX_NATIONS"
 					}
 				}
 				reserves=1

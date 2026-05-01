@@ -191,6 +191,10 @@
 	}
 	c:GBR ?= {
 		create_diplomatic_pact = {
+			country = c:IRO
+			type = puppet
+		}
+		create_diplomatic_pact = {
 			country = c:ABU
 			type = protectorate
 		}

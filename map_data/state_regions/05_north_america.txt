@@ -695,7 +695,7 @@ STATE_NEW_HAMPSHIRE = {
     naval_exit_id = 3017
 }
 
-STATE_VERMONT = {
+STATE_SIX_NATIONS = {
     id = 304
     subsistence_building = "building_subsistence_farm"
     provinces = { "x195B49" "x8C059D" "xE217B5" "x70C080" "x2CA754" "x4B0747" "xB343E6" "x308000" "x38C881" "x01D042" "xE7BE2D" "xA6BED5" "xEDC7DA" "x3CB274" "x235E9F" "xA7B5FE" "x42D496" "xB00080" "x05187E" "x9484F3" "xEC2EAA" "x73A16C" "xFCF1BE" "x99CB10" "x8C787A" "x606D4F" "x533151" "xC4DED4" "x345319" "xB7EDCF" "xC786AB" }

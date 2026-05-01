@@ -728,7 +728,7 @@ usa_admiral_dewey = {
 	commander_rank = default
 	interest_group = ig_armed_forces
 	birth_date = 1837.12.26
-	home_region = STATE_VERMONT
+	home_region = STATE_SIX_NATIONS
 	dna = dna_george_dewey
 	traits = {
 		experienced_naval_commander

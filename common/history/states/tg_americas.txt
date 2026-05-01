@@ -557,7 +557,7 @@ STATES = {
 
 		add_homeland = cu:new_englander
 	}
-	s:STATE_VERMONT = {
+	s:STATE_SIX_NATIONS = {
 		create_state ={
 			country = c:IRO
 			owned_provinces = {
