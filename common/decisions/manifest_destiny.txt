@@ -2,13 +2,13 @@
 
 	is_shown = {
 		exists = c:USA
-		root = c:USA
+		c:USA ?= ROOT
 		NOT = { has_variable = manifested_destiny }
 	}
 
 	possible = {
 		has_technology_researched = nationalism
-		has_interest_marker_in_region = region_pacific_coast
+		has_interest_marker_in_region = sr:region_pacific_coast
 	}
 
 	when_taken = {
@@ -17,6 +17,7 @@
 				owns_entire_state_region = STATE_CALIFORNIA
 				owns_entire_state_region = STATE_BAJA_CALIFORNIA
 				owns_entire_state_region = STATE_UTAH
+				owns_entire_state_region = STATE_ARIZONA
 				owns_entire_state_region = STATE_NEW_MEXICO
 				owns_entire_state_region = STATE_TEXAS
 				owns_entire_state_region = STATE_LOUISIANA
@@ -33,8 +34,8 @@
 			limit = {
 				owns_entire_state_region = STATE_WYOMING
 				owns_entire_state_region = STATE_COLORADO
+				owns_entire_state_region = STATE_NEBRASKA
 				owns_entire_state_region = STATE_KANSAS
-				owns_entire_state_region = STATE_MISSISSIPPI
 			}
 			trigger_event = { id = manifest_destiny.2 }
 		}
@@ -82,7 +83,7 @@
 			if = {
 				limit = {
 					any_scope_state = {
-						 NOT = {
+						NOT = {
 							owner = ROOT
 						}
 					}
@@ -91,6 +92,18 @@
 			}
 		}
 		s:STATE_UTAH = {
+			if = {
+				limit = {
+					any_scope_state = {
+						NOT = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT
+			}
+		}
+		s:STATE_ARIZONA = {
 			if = {
 				limit = {
 					any_scope_state = {

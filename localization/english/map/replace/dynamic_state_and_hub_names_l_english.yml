@@ -30,17 +30,6 @@
  HUB_NAME_STATE_TEXAS_mine: "Minerva"
  HUB_NAME_STATE_TEXAS_wood: "Horseshoe Bay"
 
- HUB_NAME_STATE_DISTRICT_OF_COLUMBIA_farm: "Georgetown"
-
- ## Texas
- STATE_TEXAS_fra: "Téijane"
- STATE_TEXAS_spa: "Tejas"
- HUB_NAME_STATE_TEXAS_farm_fra: "Le Passage"
- HUB_NAME_STATE_TEXAS_city: "San Antonio"
- HUB_NAME_STATE_TEXAS_port: "Corpus Christi"
- HUB_NAME_STATE_TEXAS_mine: "Minerva"
- HUB_NAME_STATE_TEXAS_wood: "Horseshoe Bay"
-
  ## Louisiana
  STATE_LOUISIANA_fra: "Louisiane"
  STATE_LOUISIANA_spa: "Luisiana"

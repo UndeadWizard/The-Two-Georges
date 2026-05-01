@@ -77,20 +77,26 @@ manifest_destiny.2 = {
 		if = {
 			limit = {
 				exists = c:SEQ
-				c:SEQ = {
+				c:SEQ ?= {
 					is_subject_of = ROOT
 					is_player = no
 				}
 			}
 			annex = c:SEQ
 		}
-		s:STATE_MISSISSIPPI = {
-			add_homeland = cu:yankee
+		s:STATE_OKLAHOMA = {
+			add_homeland = cu:dixie
 		}
 		s:STATE_WYOMING = {
 			add_homeland = cu:yankee
 		}
 		s:STATE_COLORADO = {
+			add_homeland = cu:yankee
+		}
+		s:STATE_NEBRASKA = {
+			add_homeland = cu:yankee
+		}
+		s:STATE_KANSAS = {
 			add_homeland = cu:yankee
 		}
 	}
@@ -125,8 +131,7 @@ manifest_destiny.3 = {
 			OR = {
 				region = sr:region_pacific_coast
 				region = sr:region_great_plains
-				region = sr:region_the_midwest
-				region = sr:region_dixie
+				region = sr:region_atlantic_coast
 			}
 			state_region = {
 				any_scope_state = {
@@ -152,8 +157,7 @@ manifest_destiny.3 = {
 				OR = {
 					region = sr:region_pacific_coast
 					region = sr:region_great_plains
-					region = sr:region_the_midwest
-					region = sr:region_dixie
+					region = sr:region_atlantic_coast
 				}
 				state_region = {
 					any_scope_state = {

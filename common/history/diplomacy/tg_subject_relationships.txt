@@ -112,6 +112,10 @@
 			country = c:BAV
 			type = imperial_estate
 		}
+		create_diplomatic_pact = {
+			country = c:FRM
+			type = imperial_estate
+		}
 	}
 	c:POR ?= {
 		create_diplomatic_pact = {

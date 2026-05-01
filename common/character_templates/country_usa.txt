@@ -3,7 +3,31 @@
 
 # United States - USA
 
-# Starting characters
+# Starting IG Leaders
+
+usa_andrew_jackson_template = {
+    first_name = Andrew
+    last_name = Jackson
+    historical = yes
+    culture = cu:dixie
+    ruler = yes
+    ig_leader = yes
+    interest_group = ig_rural_folk
+    ideology = ideology_jacksonian_democrat
+    birth_date = 1767.3.15
+    dna = dna_andrew_jackson
+	home_region = STATE_TENNESSEE
+    traits = {
+        bigoted
+        demagogue
+        expert_political_operator
+    }
+    on_created = {
+        set_variable = {
+            name = is_andrew_jackson
+        }
+    }
+}
 
 USA_henry_clay = {
 	first_name = Henry
@@ -15,6 +39,7 @@ USA_henry_clay = {
 	ig_leader = yes
 	interest_group = ig_intelligentsia
 	ideology = ideology_pacifist
+	home_region = STATE_KENTUCKY
 	traits = {
 		meticulous
 		experienced_political_operator
@@ -31,6 +56,7 @@ USA_daniel_webster = {
 	ig_leader = yes
 	interest_group = ig_petty_bourgeoisie
 	ideology = ideology_republican_leader
+	home_region = STATE_MASSACHUSETTS
 	traits = {
 		arrogant
 		inspirational_orator
@@ -48,6 +74,7 @@ USA_charles_finney = {
 	ig_leader = yes
 	interest_group = ig_devout
 	ideology = ideology_abolitionist
+	home_region = STATE_NEW_YORK
 	traits = {
 		pious
 		cautious
@@ -65,6 +92,7 @@ USA_robert_rantoul = {
 	ig_leader = yes
 	interest_group = ig_trade_unions
 	ideology = ideology_moderate
+	home_region = STATE_MASSACHUSETTS
 	traits = {
 		meticulous
 		basic_political_operator
@@ -83,7 +111,8 @@ USA_winfield_scott = {
 	ig_leader = yes
 	interest_group = ig_armed_forces
 	ideology = ideology_jingoist_leader
-	hq = region_new_england
+	home_region = STATE_VIRGINIA
+	hq = region_atlantic_coast
 	traits = {
 		traditionalist_commander
 		basic_diplomat
@@ -101,12 +130,17 @@ USA_cornelius_vanderbilt = {
 	ig_leader = yes
 	interest_group = ig_industrialists
 	ideology = ideology_moderate
+	home_region = STATE_NEW_YORK
+	role = character_role_magnate
+	holding_type = building_financial_district
 	traits = {
 		basic_political_operator
 		expensive_tastes
 		meticulous
 	}
 }
+
+# Starting Commanders
 
 USA_zachary_taylor = {
 	is_general = yes
@@ -118,7 +152,8 @@ USA_zachary_taylor = {
 	dna = dna_zachary_taylor
 	interest_group = ig_landowners
 	ideology = ideology_moderate
-	hq = region_the_midwest
+	home_region = STATE_LOUISIANA
+	hq = region_atlantic_coast
 	traits = {
 		experienced_offensive_planner
 		direct
@@ -136,7 +171,8 @@ USA_isaac_hull = { # Sea
 	dna = dna_isaac_hull
 	interest_group = ig_industrialists
 	ideology = ideology_moderate
-	hq = region_new_england
+	home_region = STATE_CONNECTICUT
+	hq = region_atlantic_coast
 	traits = {
 		expert_naval_commander
 		dockyard_master
@@ -154,12 +190,25 @@ USA_elie_augustus_frederick_lavallette = { # USA, Admiral
 	ideology = ideology_moderate
 	birth_date = 1776.2.9
 	dna = dna_elie_af_lavallette
-	hq = region_dixie
+	home_region = STATE_NEW_JERSEY
+	hq = region_atlantic_coast
 	traits = {
 		brave
 		basic_naval_commander
 	}
 }
+
+USA_edmund_p_gaines = {
+	is_general = yes
+	first_name = Edmund_P
+	last_name = Gaines
+	historical = yes
+	culture = cu:dixie
+	birth_date = 1777.3.20
+	home_region = STATE_VIRGINIA
+}
+
+# Generated Characters
 
 usa_lincoln_character_template = {
     first_name = Abraham
@@ -172,6 +221,7 @@ usa_lincoln_character_template = {
     interest_group = ig_petty_bourgeoisie
     birth_date = 1809.2.12
     dna = dna_abraham_lincoln
+	home_region = STATE_ILLINOIS
     traits = {
         experienced_political_operator
         inspirational_orator
@@ -180,10 +230,13 @@ usa_lincoln_character_template = {
     interest_group_leader_usage = {
         country_trigger = {
             exists = c:USA
-            this = c:USA
+            c:USA ?= THIS
+            NOT = {
+                has_global_variable = ruler_selector_abraham_lincoln
+            }
         }
         interest_group_trigger = {
-            is_marginal = no
+            ig_counts_as_marginal = no
             OR = {
                 is_interest_group_type = ig_petty_bourgeoisie
                 is_interest_group_type = ig_intelligentsia
@@ -198,135 +251,8 @@ usa_lincoln_character_template = {
         }
         earliest_usage_date = 1844.2.12
         latest_usage_date = 1890.1.1
-        chance = 75
+        #guaranteed to spawn if possible
     }
-}
-usa_andrew_jackson_template = {
-    first_name = Andrew
-    last_name = Jackson
-    historical = yes
-    culture = cu:dixie
-    ruler = yes
-    ig_leader = yes
-    interest_group = ig_rural_folk
-    ideology = ideology_jacksonian_democrat
-    birth_date = 1767.3.15
-    dna = dna_andrew_jackson
-    traits = {
-        bigoted
-        demagogue
-        expert_political_operator
-    }
-    on_created = {
-        set_variable = {
-            name = is_andrew_jackson
-        }
-    }
-}
-
-### Starting IG leaders
-
-usa_henry_clay_character_template = {
-	first_name = Henry
-	last_name = Clay
-	historical = yes
-	culture = cu:dixie
-	birth_date = 1777.4.12
-	dna = dna_clay
-	ig_leader = yes
-	interest_group = ig_intelligentsia
-	ideology = ideology_pacifist
-	traits = {
-		meticulous
-		experienced_political_operator
-	}
-}
-
-usa_daniel_webster_character_template = {
-	first_name = Daniel
-	last_name = Webster
-	historical = yes
-	culture = cu:yankee
-	birth_date = 1782.1.18
-	dna = dna_webster
-	ig_leader = yes
-	interest_group = ig_petty_bourgeoisie
-	ideology = ideology_republican_leader
-	traits = {
-		arrogant
-		inspirational_orator
-		experienced_political_operator
-	}
-}
-
-usa_charles_finney_character_template = {
-	first_name = Charles
-	last_name = Finney
-	historical = yes
-	culture = cu:yankee
-	birth_date = 1792.8.29
-	dna = dna_finney
-	ig_leader = yes
-	interest_group = ig_devout
-	ideology = ideology_abolitionist
-	traits = {
-		pious
-		cautious
-		basic_political_operator
-	}
-}
-
-usa_robert_rantoul_character_template = {
-	first_name = Robert
-	last_name = Rantoul
-	historical = yes
-	culture = cu:yankee
-	birth_date = 1805.8.13
-	dna = dna_rantoul
-	ig_leader = yes
-	interest_group = ig_trade_unions
-	ideology = ideology_moderate
-	traits = {
-		meticulous
-		basic_political_operator
-		erudite
-	}
-}
-
-usa_winfield_scott_character_template = {
-	first_name = Winfield
-	last_name = Scott
-	historical = yes
-	culture = cu:dixie
-	birth_date = 1786.6.13
-	dna = dna_winfield_scott
-	is_general = yes
-	ig_leader = yes
-	interest_group = ig_armed_forces
-	ideology = ideology_jingoist_leader
-	hq = region_new_england
-	traits = {
-		traditionalist_commander
-		basic_diplomat
-		cautious
-	}
-}
-
-usa_cornelius_vanderbilt_character_template = {
-	first_name = Cornelius
-	last_name = Vanderbilt
-	historical = yes
-	culture = cu:yankee
-	birth_date = 1794.5.27
-	dna = dna_vanderbilt
-	ig_leader = yes
-	interest_group = ig_industrialists
-	ideology = ideology_moderate
-	traits = {
-		basic_political_operator
-		expensive_tastes
-		meticulous
-	}
 }
 
 usa_roosevelt_character_template = {
@@ -336,10 +262,11 @@ usa_roosevelt_character_template = {
     culture = cu:yankee
     female = no
     religion = rel:protestant
-    ig_leader = yes
+    role = character_role_politician
     ideology = ideology_reformer
     interest_group = ig_industrialists
     birth_date = 1858.8.28
+	home_region = STATE_NEW_YORK
     dna = dna_roosevelt
     traits = {
         celebrity_commander
@@ -349,10 +276,10 @@ usa_roosevelt_character_template = {
     interest_group_leader_usage = {
         country_trigger = {
             exists = c:USA
-            this = c:USA
+            c:USA ?= THIS
         }
         interest_group_trigger = {
-            is_marginal = no
+            ig_counts_as_marginal = no
             OR = {
                 is_interest_group_type = ig_intelligentsia
                 is_interest_group_type = ig_industrialists
@@ -368,7 +295,7 @@ usa_roosevelt_character_template = {
         }
         earliest_usage_date = 1882.1.1
         latest_usage_date = 1919.1.1
-        chance = 75
+        #guaranteed to spawn if possible
     }
 }
 usa_jp_morgan_character_template = {
@@ -378,10 +305,11 @@ usa_jp_morgan_character_template = {
     culture = cu:yankee
     female = no
     religion = rel:protestant
-    ig_leader = yes
+    role = character_role_politician
     ideology = ideology_moderate
     interest_group = ig_industrialists
     birth_date = 1835.11.25
+	home_region = STATE_NEW_YORK
     traits = {
         imposing
         pious
@@ -390,15 +318,15 @@ usa_jp_morgan_character_template = {
     interest_group_leader_usage = {
         country_trigger = {
             exists = c:USA
-            this = c:USA
+            c:USA ?= THIS
         }
         interest_group_trigger = {
-            is_marginal = no
+            ig_counts_as_marginal = no
             is_interest_group_type = ig_industrialists
         }
         earliest_usage_date = 1865.1.1
         latest_usage_date = 1913.1.1
-        chance = 25
+        chance = 50
     }
 }
 usa_thomas_edison_character_template = {
@@ -409,10 +337,11 @@ usa_thomas_edison_character_template = {
     dna = dna_thomas_edison
     female = no
     religion = rel:atheist
-    ig_leader = yes
+    role = character_role_politician
     ideology = ideology_pacifist
     interest_group = ig_intelligentsia
     birth_date = 1847.2.11
+	home_region = STATE_NEW_JERSEY
     traits = {
         ambitious
         engineer
@@ -421,7 +350,7 @@ usa_thomas_edison_character_template = {
     executive_usage = {
     	country_trigger = {
             exists = c:USA
-            this = c:USA
+            c:USA ?= THIS
             has_dlc_feature = mp1_content
 		}
 		company_trigger = {
@@ -429,21 +358,21 @@ usa_thomas_edison_character_template = {
 		}
         earliest_usage_date = 1878.1.1
         latest_usage_date = 1930.1.1
-		chance = 100
+		#guaranteed to spawn if possible
     }
     interest_group_leader_usage = {
         country_trigger = {
             exists = c:USA
-            this = c:USA
+            c:USA ?= THIS
             has_company = company_type:company_general_electric
         }
         interest_group_trigger = {
-            is_marginal = no
+            ig_counts_as_marginal = no
             is_interest_group_type = ig_intelligentsia
         }
         earliest_usage_date = 1876.1.1
         latest_usage_date = 1920.1.1
-        chance = 25
+        chance = 50
     }
     on_created = {
         if = {
@@ -470,23 +399,24 @@ uom_mkc = {
     ideology = ideology_moderate
     interest_group = ig_rural_folk
     birth_date = 1890.7.14
+	home_region = STATE_MICHIGAN
     traits = {
-    	charistmatic
+    	charismatic
         cautious
         erudite
     }
     interest_group_leader_usage = {
         country_trigger = {
             exists = c:UOM
-            this = c:UOM
+            c:UOM ?= THIS
         }
         interest_group_trigger = {
-            is_marginal = no
+            ig_counts_as_marginal = no
             is_interest_group_type = ig_rural_folk
         }
         earliest_usage_date = 1919.8.19
         latest_usage_date = 1936.1.1
-        chance = 25
+        chance = 50
     }
     on_created = {
         if = {
@@ -527,6 +457,7 @@ usa_mark_twain_character_template = { #Mark Twain
     ideology = ideology_jingoist_leader
     interest_group = ig_intelligentsia
     birth_date = 1835.11.30
+	home_region = STATE_MISSOURI
     traits = {
         literary
         erudite
@@ -540,12 +471,12 @@ usa_mark_twain_character_template = { #Mark Twain
             }
         }
         interest_group_trigger = {
-            is_marginal = no
+            ig_counts_as_marginal = no
             is_interest_group_type = ig_intelligentsia
         }
         earliest_usage_date = 1865.11.18
         latest_usage_date = 1910.1.1
-        chance = 25
+        chance = 50
     }
     on_created = {
         if = {
@@ -561,8 +492,8 @@ usa_mark_twain_character_template = { #Mark Twain
         else_if = {
             limit = {
                 owner = {
-                    any_country = {
-                        is_subject_of = prev
+                    any_subject_or_below = {
+                        count >= 1
                     }
                 }
             }
@@ -596,6 +527,7 @@ usa_henry_ford = {
     interest_group = ig_industrialists
     birth_date = 1863.7.30
     dna = dna_henry_ford
+	home_region = STATE_MICHIGAN
     traits = {
         bigoted
         ambitious
@@ -612,7 +544,7 @@ usa_henry_ford = {
             has_company = company_type:company_ford_motor
         }
         interest_group_trigger = {
-            is_marginal = no
+            ig_counts_as_marginal = no
             is_interest_group_type = ig_industrialists
             NOR = {
 				has_variable = communist_ig_var
@@ -621,7 +553,7 @@ usa_henry_ford = {
         }
         earliest_usage_date = 1896.6.4 # Ford Quadricycle runs
         latest_usage_date = 1936.1.1
-        chance = 25
+        chance = 50
     }
     agitator_usage = {
         country_trigger = {
@@ -633,12 +565,12 @@ usa_henry_ford = {
             }
         }
         interest_group_trigger = {
-            is_marginal = no
+            ig_counts_as_marginal = no
             is_interest_group_type = ig_industrialists
         }
         earliest_usage_date = 1908.8.12 # first production Model T
         latest_usage_date = 1935.12.31
-        chance = 50
+        #guaranteed to spawn if possible
     }
 }
 
@@ -652,6 +584,7 @@ csa_jefferson_davis_template = {
     ideology = ideology_slaver
     interest_group = ig_armed_forces
     birth_date = 1808.6.3
+	home_region = STATE_MISSISSIPPI
     traits = {
         celebrity_commander
         explorer
@@ -668,7 +601,7 @@ csa_jefferson_davis_template = {
             }
         }
         interest_group_trigger = {
-            is_marginal = no
+            ig_counts_as_marginal = no
             OR = {
                 is_interest_group_type = ig_armed_forces
                 is_interest_group_type = ig_landowners
@@ -683,7 +616,7 @@ csa_jefferson_davis_template = {
         }
         earliest_usage_date = 1845.12.8 # elected representative of Mississippi
         latest_usage_date = 1867.5.13 # released from prison
-        chance = 50
+        #guaranteed to spawn if possible
     }
     on_created = {
         set_variable = {
@@ -702,11 +635,12 @@ usa_cristobal_aguilar = {
     culture = cu:mexican # Californio
     female = no
     religion = rel:catholic
-    ig_leader = yes
+    role = character_role_politician
     ideology = ideology_moderate
     interest_group = ig_petty_bourgeoisie # Was part of the one of wealthiest landowner families in California at one point, but also he was a mayor and mayors are peak PB, right?
     birth_date = 1814.7.5 # Wikipedia says 1816 with no specific birthdate and no citation, but findagrave lists 5 Jul 1814 and it looks like that was done by a guy who actually read the records of the Old Calvary Cemetery where Aguilar was buried, so I'm going with that
-    traits = {
+	home_region = STATE_CALIFORNIA
+	traits = {
         innovative
         meticulous
         master_bureaucrat
@@ -717,9 +651,8 @@ usa_cristobal_aguilar = {
                 is_incorporated = yes
                 state_region = s:STATE_CALIFORNIA
             }
-
-            country_average_cultural_acceptance = {
-                target = cu:mexican
+            country_average_culture_pop_acceptance = {
+                culture = cu:mexican
                 value >= acceptance_status_4 # Mexico should always pass this check. USA... sometimes.
             }
         }
@@ -728,7 +661,7 @@ usa_cristobal_aguilar = {
         }
         earliest_usage_date = 1850.7.3 # Beginning of first term as City Council member after American annexation of California
         latest_usage_date = 1873.12.31 # Beginning of last elected role, served until 1878. Died April 11th, 1886
-        chance = 10 # small chance
+        chance = 25 # small chance
     }
 }
 
@@ -743,6 +676,7 @@ usa_general_jesup = {
 	commander_rank = default
 	interest_group = ig_armed_forces
 	birth_date = 1788.12.16
+	home_region = STATE_VIRGINIA
 	dna = dna_thomas_jesup
 	traits = {
 		meticulous
@@ -750,12 +684,12 @@ usa_general_jesup = {
 	commander_usage = {
 		country_trigger = {
 			exists = c:USA
-			this = c:USA
+			c:USA ?= THIS
 		}
 		role = general
 		earliest_usage_date = 1836.1.1
 		latest_usage_date = 1860.1.1
-		chance = 75
+		#guaranteed to spawn if possible
 	}
 }
 usa_admiral_shubrick = {
@@ -767,6 +701,7 @@ usa_admiral_shubrick = {
 	commander_rank = default
 	interest_group = ig_armed_forces
 	birth_date = 1790.10.31
+	home_region = STATE_SOUTH_CAROLINA
 	dna = dna_william_shubrick
 	traits = {
 		experienced_naval_commander
@@ -774,12 +709,12 @@ usa_admiral_shubrick = {
 	commander_usage = {
 		country_trigger = {
 			exists = c:USA
-			this = c:USA
+			c:USA ?= THIS
 		}
 		role = admiral
 		earliest_usage_date = 1836.1.1
 		latest_usage_date = 1862.1.1
-		chance = 75
+		#guaranteed to spawn if possible
 	}
 }
 usa_admiral_dewey = {
@@ -793,6 +728,7 @@ usa_admiral_dewey = {
 	commander_rank = default
 	interest_group = ig_armed_forces
 	birth_date = 1837.12.26
+	home_region = STATE_VERMONT
 	dna = dna_george_dewey
 	traits = {
 		experienced_naval_commander
@@ -802,12 +738,12 @@ usa_admiral_dewey = {
 	commander_usage = {
 		country_trigger = {
 			exists = c:USA
-			this = c:USA
+			c:USA ?= THIS
 		}
 		role = admiral
 		earliest_usage_date = 1861.1.1
 		latest_usage_date = 1903.1.1
-		chance = 50
+		#guaranteed to spawn if possible
 	}
 }
 usa_admiral_farragut = {
@@ -821,6 +757,7 @@ usa_admiral_farragut = {
 	commander_rank = default
 	interest_group = ig_armed_forces
 	birth_date = 1801.7.5
+	home_region = STATE_TENNESSEE
 	dna = dna_david_farragut
 	traits = {
 		experienced_naval_commander
@@ -830,12 +767,12 @@ usa_admiral_farragut = {
 	commander_usage = {
 		country_trigger = {
 			exists = c:USA
-			this = c:USA
+			c:USA ?= THIS
 		}
 		role = admiral
 		earliest_usage_date = 1836.1.1
 		latest_usage_date = 1860.1.1
-		chance = 50
+		#guaranteed to spawn if possible
 	}
 }
 usa_admiral_perry = {
@@ -849,6 +786,7 @@ usa_admiral_perry = {
 	commander_rank = default
 	interest_group = ig_armed_forces
 	birth_date = 1794.4.10
+	home_region = STATE_RHODE_ISLAND
 	dna = dna_matthew_perry
 	traits = {
 		innovative
@@ -858,12 +796,12 @@ usa_admiral_perry = {
 	commander_usage = {
 		country_trigger = {
 			exists = c:USA
-			this = c:USA
+			c:USA ?= THIS
 		}
 		role = admiral
 		earliest_usage_date = 1836.1.1
 		latest_usage_date = 1855.1.1
-		chance = 50
+		#guaranteed to spawn if possible
 	}
 }
 
@@ -878,6 +816,7 @@ usa_admiral_buchanan = {
 	commander_rank = default
 	interest_group = ig_armed_forces
 	birth_date = 1800.9.17
+	home_region = STATE_MARYLAND
 	dna = dna_franklin_buchanan
 	traits = {
 		experienced_naval_commander
@@ -889,19 +828,19 @@ usa_admiral_buchanan = {
 			OR ={
 				AND = {
 					exists = c:USA
-					this = c:USA
+					c:USA ?= THIS
 					NOT = { exists = c:CSA }
 				}
 				AND = {
 					exists = c:CSA
-					this = c:CSA
+					c:CSA ?= THIS
 				}
 			}
 		}
 		role = admiral
 		earliest_usage_date = 1841.1.1
 		latest_usage_date = 1860.1.1
-		chance = 50
+		#guaranteed to spawn if possible
 	}
     on_created = {
         set_variable = {
@@ -920,6 +859,7 @@ usa_general_lee = {
 	commander_rank = default
 	interest_group = ig_landowners
 	birth_date = 1807.1.19
+	home_region = STATE_VIRGINIA
 	dna = dna_robert_e_lee
 	traits = {
 		experienced_defensive_strategist
@@ -931,19 +871,19 @@ usa_general_lee = {
 			OR ={
 				AND = {
 					exists = c:USA
-					this = c:USA
+					c:USA ?= THIS
 					NOT = { exists = c:CSA }
 				}
 				AND = {
 					exists = c:CSA
-					this = c:CSA
+					c:CSA ?= THIS
 				}
 			}
 		}
 		role = general
 		earliest_usage_date = 1846.1.1
 		latest_usage_date = 1870.1.1
-		chance = 50
+		#guaranteed to spawn if possible
 	}
     on_created = {
         set_variable = {
@@ -962,6 +902,7 @@ usa_general_jackson = {
 	commander_rank = default
 	interest_group = ig_armed_forces
 	birth_date = 1824.1.21
+	home_region = STATE_VIRGINIA
 	dna = dna_stonewall_jackson
 	traits = {
 		surveyor
@@ -973,19 +914,19 @@ usa_general_jackson = {
 			OR ={
 				AND = {
 					exists = c:USA
-					this = c:USA
+					c:USA ?= THIS
 					NOT = { exists = c:CSA }
 				}
 				AND = {
 					exists = c:CSA
-					this = c:CSA
+					c:CSA ?= THIS
 				}
 			}
 		}
 		role = general
 		earliest_usage_date = 1846.1.1
 		latest_usage_date = 1870.1.1
-		chance = 50
+		#guaranteed to spawn if possible
 	}
     on_created = {
         set_variable = {
@@ -1004,6 +945,7 @@ usa_general_longstreet = {
 	commander_rank = default
 	interest_group = ig_armed_forces
 	birth_date = 1821.1.8
+	home_region = STATE_GEORGIA
 	dna = dna_james_longstreet
 	traits = {
 		experienced_offensive_planner
@@ -1015,19 +957,19 @@ usa_general_longstreet = {
 			OR ={
 				AND = {
 					exists = c:USA
-					this = c:USA
+					c:USA ?= THIS
 					NOT = { exists = c:CSA }
 				}
 				AND = {
 					exists = c:CSA
-					this = c:CSA
+					c:CSA ?= THIS
 				}
 			}
 		}
 		role = general
 		earliest_usage_date = 1846.1.1
 		latest_usage_date = 1874.1.1
-		chance = 50
+		#guaranteed to spawn if possible
 	}
     on_created = {
         set_variable = {
@@ -1047,6 +989,7 @@ usa_general_sherman = {
 	commander_rank = default
 	interest_group = ig_petty_bourgeoisie
 	birth_date = 1820.2.8
+	home_region = STATE_OHIO
 	dna = dna_sherman
 	traits = {
 		expert_offensive_planner
@@ -1056,12 +999,12 @@ usa_general_sherman = {
 	commander_usage = {
 		country_trigger = {
 			exists = c:USA
-			this = c:USA
+			c:USA ?= THIS
 		}
 		role = general
 		earliest_usage_date = 1860.1.1
 		latest_usage_date = 1870.1.1
-		chance = 50
+		#guaranteed to spawn if possible
 	}
 }
 
@@ -1076,6 +1019,7 @@ usa_general_chaffee = {
 	commander_rank = default
 	interest_group = ig_armed_forces
 	birth_date = 1842.4.14
+	home_region = STATE_OHIO
 	dna = dna_chaffee
 	traits = {
 		innovative
@@ -1084,12 +1028,12 @@ usa_general_chaffee = {
 	commander_usage = {
 		country_trigger = {
 			exists = c:USA
-			this = c:USA
+			c:USA ?= THIS
 		}
 		role = general
 		earliest_usage_date = 1882.1.1
 		latest_usage_date = 1906.1.1
-		chance = 50
+		#guaranteed to spawn if possible
 	}
 }
 usa_general_grant = {
@@ -1103,6 +1047,7 @@ usa_general_grant = {
 	commander_rank = default
 	interest_group = ig_petty_bourgeoisie
 	birth_date = 1822.1.21
+	home_region = STATE_ILLINOIS
 	dna = dna_ulysses_s_grant
 	traits = {
 		experienced_offensive_planner
@@ -1112,12 +1057,12 @@ usa_general_grant = {
 	commander_usage = {
 		country_trigger = {
 			exists = c:USA
-			this = c:USA
+			c:USA ?= THIS
 		}
 		role = general
 		earliest_usage_date = 1846.1.1
 		latest_usage_date = 1874.1.1
-		chance = 50
+		#guaranteed to spawn if possible
 	}
 }
 
@@ -1132,6 +1077,7 @@ usa_general_pershing = {
 	commander_rank = default
 	interest_group = ig_armed_forces
 	birth_date = 1860.9.13
+	home_region = STATE_MISSOURI
 	dna = dna_pershing
 	traits = {
 		experienced_offensive_planner
@@ -1141,12 +1087,12 @@ usa_general_pershing = {
 	commander_usage = {
 		country_trigger = {
 			exists = c:USA
-			this = c:USA
+			c:USA ?= THIS
 		}
 		role = general
 		earliest_usage_date = 1895.1.1
 		latest_usage_date = 1920.1.1
-		chance = 50
+		#guaranteed to spawn if possible
 	}
 }
 usa_general_sheridan = {
@@ -1160,6 +1106,7 @@ usa_general_sheridan = {
 	commander_rank = default
 	interest_group = ig_armed_forces
 	birth_date = 1831.3.6
+	home_region = STATE_OHIO
 	dna = dna_sheridan
 	traits = {
 		experienced_offensive_planner
@@ -1169,12 +1116,12 @@ usa_general_sheridan = {
 	commander_usage = {
 		country_trigger = {
 			exists = c:USA
-			this = c:USA
+			c:USA ?= THIS
 		}
 		role = general
 		earliest_usage_date = 1865.1.1
 		latest_usage_date = 1890.1.1
-		chance = 50
+		#guaranteed to spawn if possible
 	}
 }
 
@@ -1189,6 +1136,7 @@ USA_william_cramp = { # William Cramp, William Cramp and Sons
     culture = cu:yankee
     interest_group = ig_industrialists
     ideology = ideology_moderate
+	home_region = STATE_PENNSYLVANIA
     traits = {
         ambitious
         tactful
@@ -1203,7 +1151,7 @@ USA_william_cramp = { # William Cramp, William Cramp and Sons
 		}
 	    earliest_usage_date = 1836.1.1
 	    latest_usage_date = 1878.1.1
-		chance = 100
+		#guaranteed to spawn if possible
 	}
 }
 
@@ -1217,6 +1165,7 @@ usa_rockefeller_character_template = {
     religion = rel:protestant
     ideology = ideology_moderate
     interest_group = ig_industrialists
+	home_region = STATE_OHIO
     birth_date = 1839.6.8
     traits = {
         ambitious
@@ -1226,7 +1175,7 @@ usa_rockefeller_character_template = {
     executive_usage = {
     	country_trigger = {
             exists = c:USA
-            this = c:USA
+            c:USA ?= THIS
             has_dlc_feature = mp1_content
 		}
 		company_trigger = {
@@ -1234,7 +1183,7 @@ usa_rockefeller_character_template = {
 		}
         earliest_usage_date = 1875.1.1
         latest_usage_date = 1915.1.1
-		chance = 100
+		#guaranteed to spawn if possible
     }
 }
 
@@ -1248,6 +1197,7 @@ usa_carnegie_character_template = {
     religion = rel:protestant
     ideology = ideology_market_liberal
     interest_group = ig_industrialists
+	home_region = STATE_PENNSYLVANIA
     birth_date = 1835.11.25
     traits = {
         ambitious
@@ -1257,7 +1207,7 @@ usa_carnegie_character_template = {
     executive_usage = {
     	country_trigger = {
             exists = c:USA
-            this = c:USA
+            c:USA ?= THIS
             has_dlc_feature = mp1_content
 		}
 		company_trigger = {
@@ -1265,7 +1215,7 @@ usa_carnegie_character_template = {
 		}
         earliest_usage_date = 1870.1.1
         latest_usage_date = 1908.1.1
-		chance = 100
+		#guaranteed to spawn if possible
     }
 }
 
@@ -1279,6 +1229,7 @@ usa_samuel_colt = {
     religion = rel:protestant
     ideology = ideology_market_liberal
     interest_group = ig_industrialists
+	home_region = STATE_CONNECTICUT
     birth_date = 1814.07.19
     traits = {
         basic_diplomat
@@ -1288,7 +1239,7 @@ usa_samuel_colt = {
     executive_usage = {
     	country_trigger = {
             exists = c:USA
-            this = c:USA
+            c:USA ?= THIS
             has_dlc_feature = mp1_content
 		}
 		company_trigger = {
@@ -1296,7 +1247,7 @@ usa_samuel_colt = {
 		}
         earliest_usage_date = 1836.1.1
         latest_usage_date = 1862.07.19
-		chance = 100
+		#guaranteed to spawn if possible
     }
 }
 
@@ -1311,6 +1262,7 @@ usa_robert_e_lee_wilson = {
     ideology = ideology_protectionist
     interest_group = ig_landowners
     birth_date = 1865.03.05
+	home_region = STATE_ARKANSAS
     traits = {
         basic_political_operator
         persistent
@@ -1319,7 +1271,7 @@ usa_robert_e_lee_wilson = {
     executive_usage = {
     	country_trigger = {
             exists = c:USA
-            this = c:USA
+            c:USA ?= THIS
             has_dlc_feature = mp1_content
 		}
 		company_trigger = {
@@ -1327,6 +1279,25 @@ usa_robert_e_lee_wilson = {
 		}
         earliest_usage_date = 1882.1.1
         latest_usage_date = 1933.09.27
-		chance = 100
+		#guaranteed to spawn if possible
     }
+}
+
+### Nihilists
+
+USA_benjamin_tucker = {
+	first_name = Benjamin
+	last_name = Tucker
+	culture = cu:yankee
+	birth_date = 1854.4.17
+	is_agitator = yes
+	historical = yes
+	interest_group = ig_intelligentsia
+	female = no
+	ideology = ideology_nihilist
+	home_region = STATE_MASSACHUSETTS
+	traits = {
+		charismatic
+		persistent
+	}
 }

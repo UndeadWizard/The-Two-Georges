@@ -1,5 +1,5 @@
 ﻿MILITARY_DEPLOYMENTS = {
-	c:MEX ?= {
+	c:SC1 ?= {
 		random_scope_general = {
 			limit = {
 				has_variable = is_santa_anna

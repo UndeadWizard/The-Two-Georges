@@ -1,0 +1,23 @@
+﻿country_new_englander_cultural_acceptance_add = {
+	decimals=1
+	color=good
+	game_data={
+		ai_value=0
+	}
+}
+
+californio_cultural_acceptance_modifier_positive = {
+	decimals=1
+	color=good
+	game_data={
+		ai_value=0
+	}
+}
+
+anglo_african_cultural_acceptance_modifier_positive = {
+	decimals=1
+	color=good
+	game_data={
+		ai_value=0
+	}
+}

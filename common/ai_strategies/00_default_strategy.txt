@@ -1068,6 +1068,7 @@ ai_strategy_default = {
 						has_state_in_state_region = STATE_CALIFORNIA
 						has_state_in_state_region = STATE_UTAH
 						has_state_in_state_region = STATE_COLORADO
+						has_state_in_state_region = STATE_ARIZONA
 						has_state_in_state_region = STATE_NEW_MEXICO
 						has_state_in_state_region = STATE_TEXAS
 						has_state_in_state_region = STATE_KANSAS
@@ -1390,6 +1391,19 @@ ai_strategy_default = {
 					add = 50
 				}
 
+				if = {
+					limit = {
+						scope:target_state = {
+							any_scope_strait = {
+								exists = this
+							}
+						}
+					}
+					add = {
+						value = 200
+					}
+				}
+
 				if = { # Very reluctant to cede incorporated states
 					limit = {
 						scope:target_state = {
@@ -1643,7 +1657,9 @@ ai_strategy_default = {
 								state_region = s:STATE_TEXAS
 								state_region = s:STATE_KANSAS
 								state_region = s:STATE_OKLAHOMA
+								state_region = s:STATE_ARIZONA
 								state_region = s:STATE_CALIFORNIA
+								state_region = s:STATE_NEVADA
 								state_region = s:STATE_NEW_MEXICO
 							}
 						}
@@ -1662,6 +1678,8 @@ ai_strategy_default = {
 					has_journal_entry = je_conquer_oregon
 					scope:target_state = {
 						OR = {
+							state_region = s:STATE_WASHINGTON
+							state_region = s:STATE_IDAHO
 							state_region = s:STATE_OREGON
 						}
 					}
@@ -2771,6 +2789,7 @@ ai_strategy_default = {
 						has_state_in_state_region = STATE_CALIFORNIA
 						has_state_in_state_region = STATE_UTAH
 						has_state_in_state_region = STATE_COLORADO
+						has_state_in_state_region = STATE_ARIZONA
 						has_state_in_state_region = STATE_NEW_MEXICO
 						has_state_in_state_region = STATE_TEXAS
 						has_state_in_state_region = STATE_KANSAS
@@ -3288,8 +3307,10 @@ ai_strategy_default = {
 					any_scope_state = {
 						OR = {
 							state_region = s:STATE_CALIFORNIA
+							state_region = s:STATE_NEVADA
 							state_region = s:STATE_UTAH
 							state_region = s:STATE_COLORADO
+							state_region = s:STATE_ARIZONA
 							state_region = s:STATE_NEW_MEXICO
 							state_region = s:STATE_TEXAS
 							state_region = s:STATE_KANSAS
@@ -4151,12 +4172,12 @@ ai_strategy_default = {
 			limit = { has_strategy = ai_strategy_maintain_mandate_of_heaven }
 			multiply = 0.1
 		}
-		
+
 		# Multiply final value by diplomatic pact expenses ratio - countries paying a lot to pacts have lower spending ambitions
 		multiply = {
 			value = 1
 			subtract = diplomatic_pact_expense_ratio
-		}		
+		}
 
 		min = 2
 	}
@@ -4315,7 +4336,7 @@ ai_strategy_default = {
 					}
 				}
 			}
-			
+
 			if = {
 				limit = {
 					has_journal_entry = je_aberdeen_act
@@ -4327,14 +4348,14 @@ ai_strategy_default = {
 				add = {
 					desc = "je_aberdeen_act"
 					value = 200
-					
+
 					if = {
 						limit = {
 							scope:target_region = sr:region_brazil
 						}
-						
+
 						add = 300
-					}					
+					}
 				}
 			}
 
@@ -4570,7 +4591,7 @@ ai_strategy_default = {
 		value = wanted_army_size_script_value # moved to script_values so this can be called outside of AI
 		subtract = wanted_marines_size_script_value
 	}
-	
+
 	# How many  levels of barracks with marine units should the AI have
 	# Using this value in other strategies will function additively
 	wanted_marines  = {
@@ -4580,13 +4601,13 @@ ai_strategy_default = {
 	# Target number of units per marine formation
 	target_marine_formation_size = {
 		value = 5
-	
+
 		add = {
 			value = total_marine_capacity
 			divide = 5
 			max = 5
 		}
-	
+
 		if = {
 			limit = { has_technology_researched = ironclad_tech }
 			add = 5
@@ -4595,7 +4616,7 @@ ai_strategy_default = {
 		if = {
 			limit = { has_technology_researched = landing_craft }
 			add = 5
-		}			
+		}
 	}
 
 	# How many levels of naval administration should the AI have
@@ -4603,62 +4624,86 @@ ai_strategy_default = {
 	wanted_navy_size = {
 		value = wanted_navy_size_script_value # moved to script_values so this can be called outside of AI
 	}
-	
+
+	# Maximum total modification levels the AI will use when designing ships
+	# Higher values mean the AI is willing to bear more expensive, complex ship designs
+	# Using this value in other strategies will function additively
+	max_ship_design_complexity = {
+		value = 10
+		add = { # +3 to -3
+			value = country_rank
+			subtract = 4
+		}
+
+		if = {
+			limit = { has_law_or_variant = law_type:law_merchant_navy }
+			subtract = 2
+		}
+		else_if = {
+			limit = { has_law_or_variant = law_type:law_jeune_ecole }
+			subtract = 1
+		}
+		else_if = {
+			limit = { has_law_or_variant = law_type:law_professional_navy }
+			add = 1
+		}
+	}
+
 	# How many levels of naval fortification should the AI have in a state
 	# Using this value in other strategies will function additively
 	wanted_naval_fortification_levels = {
 		value = 0
-		
+
 		if = {
 			limit = {
 				state_population >= 50000
 			}
-			
+
 			if = {
 				limit = {
 					has_building = building_port
 				}
 				add = 1
 			}
-			
+
 			if = {
 				limit = {
 					has_building = building_shipyard
 				}
 				add = 1
-			}				
+			}
 
 			if = {
-				limit = { 
+				limit = {
 					NOT = { any_neighbouring_state = {} } # Is this a one-state island?
 				}
-				
+
 				add = 1
-			}		
-		}	
-		
+			}
+		}
+
 		if = {
 			limit = {
 				is_capital = yes
 			}
 			add = 2
-		}	
-		
+		}
+
 		if = {
 			limit = {
 				is_world_market_hub = yes
 			}
 			add = 2
 		}
-		
+
 		if = {
 			limit = {
 				any_scope_strait = {} # Is there a strait linked to this state?
 			}
-			
+
 			add = 2
 		}
-		
+
 		max = 5
 	}
 
@@ -5227,12 +5272,12 @@ ai_strategy_default = {
 					has_journal_entry = je_aberdeen_act
 				}
 				add = 200
-				
+
 				if = {
 					limit = {
 						scope:region = sr:region_brazil
 					}
-					
+
 					add = 300
 				}
 			}
@@ -7546,8 +7591,8 @@ ai_strategy_default = {
 						has_variable = japan_restoration_complete
 					}
 					exists = c:KOR
-					scope:target_country = { 
-						c:KOR ?= THIS 
+					scope:target_country = {
+						c:KOR ?= THIS
 						is_country_type = unrecognized
 					}
 					can_reach_target_country = yes
@@ -7625,8 +7670,8 @@ ai_strategy_default = {
 						has_variable = japan_restoration_complete
 					}
 					exists = c:KOR
-					scope:target_country = { 
-						c:KOR ?= THIS 
+					scope:target_country = {
+						c:KOR ?= THIS
 						is_country_type = unrecognized
 					}
 					can_reach_target_country = yes
@@ -8363,8 +8408,8 @@ ai_strategy_default = {
 			value = 100
 		}
 	}
-	
-	# Determines which strait settings the AI will use, highest score 
+
+	# Determines which strait settings the AI will use, highest score
 	# Using this value in other strategies will function additively
 	# root = country
 	# scope:strait = the strait
@@ -8383,7 +8428,7 @@ ai_strategy_default = {
 
 			closed = {
 				value = 0
-				
+
 				if = { # Close canals to enemy trade
 					limit = {
 						scope:strait = {
@@ -8393,15 +8438,15 @@ ai_strategy_default = {
 							}
 						}
 					}
-					
+
 					add = 100
-				}			
+				}
 			}
 		}
 
 		permissions_scores = {
 			all = {
-				value = 0					
+				value = 0
 			}
 
 			no_enemies = {
@@ -8410,7 +8455,7 @@ ai_strategy_default = {
 
 			only_allies = {
 				value = 0
-				
+
 				# Commented out for now as AI is too happy to close straits, we should consider bringing this back later
 				#if = { # Wants to keep competitor navies out
 				#	limit = {
@@ -8419,19 +8464,19 @@ ai_strategy_default = {
 				#			has_strategy = ai_strategy_territorial_expansion
 				#		}
 				#	}
-				#	
+				#
 				#	add = 20
-				#}	
+				#}
 
 				if = { # Don't close off gibraltar
 					limit = {
 						scope:strait = {
 							type = strait_type:strait_gibraltar
-						}					
+						}
 					}
-					
+
 					multiply = 0
-				}				
+				}
 			}
 
 			only_controller = {
@@ -8442,7 +8487,7 @@ ai_strategy_default = {
 		toll_rate_scores = {
 			no_tolls = {
 				value = 0
-				
+
 				if = {
 					limit = {
 						scope:is_sole_controller = no
@@ -8451,14 +8496,14 @@ ai_strategy_default = {
 							has_strategy = ai_strategy_anti_imperialism
 						}
 					}
-					
+
 					add = 20
-				}				
+				}
 			}
 
 			low_tolls = {
 				value = 10
-				
+
 				if = {
 					limit = {
 						scope:is_sole_controller = yes
@@ -8467,14 +8512,14 @@ ai_strategy_default = {
 							has_strategy = ai_strategy_anti_imperialism
 						}
 					}
-					
+
 					add = 20
-				}			
+				}
 			}
 
 			medium_tolls = {
 				value = 0
-				
+
 				if = { # "Greed is good"
 					limit = {
 						OR = {
@@ -8482,15 +8527,15 @@ ai_strategy_default = {
 							has_strategy = ai_strategy_colonial_expansion
 						}
 					}
-					
+
 					add = 20
 				}
-				
+
 				if = { # Can charge higher tolls if we control both sides
 					limit = {
 						scope:is_sole_controller = yes
 					}
-					
+
 					add = 20
 				}
 
@@ -8498,11 +8543,11 @@ ai_strategy_default = {
 					limit = {
 						scope:strait = {
 							type = strait_type:strait_gibraltar
-						}					
+						}
 					}
-					
+
 					multiply = 0.5
-				}					
+				}
 				else_if = { # Make some money on your canals
 					limit = {
 						scope:strait = {
@@ -8512,16 +8557,16 @@ ai_strategy_default = {
 							}
 						}
 					}
-					
+
 					add = 100
-				}				
+				}
 			}
 
 			high_tolls = {
 				value = 0
 			}
 		}
-	}	
+	}
 
 	# Trigger for whether this strategy can be randomly allocated to a country
 	possible = {

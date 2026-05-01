@@ -267,7 +267,7 @@ NVJ = {
 	tier = principality
 
 	cultures = { navajo }
-	capital = STATE_NEW_MEXICO
+	capital = STATE_ARIZONA
 }
 
 TIS = {
@@ -278,7 +278,7 @@ TIS = {
 	tier = empire
 
 	cultures = { cherokee iroquoian siouan }
-	capital = STATE_TEXAS
+	capital = STATE_OKLAHOMA
 }
 
 NVL = { # Navajoland
@@ -290,30 +290,7 @@ NVL = { # Navajoland
 
 	cultures = { navajo }
 
-	capital = STATE_NEW_MEXICO
-}
-
-NVJ = {
-	color = { 126 180 154 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { navajo }
-	capital = STATE_NEW_MEXICO
-}
-
-BNN = { # Bannock
-	color = { 129 56 7 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { paiute }
-
-	capital = STATE_OREGON
+	capital = STATE_ARIZONA
 }
 
 NZP = {
@@ -325,17 +302,6 @@ NZP = {
 
 	cultures = { nez_perce }
 	capital = STATE_OREGON
-}
-
-IRC = {
-	color = { 61 158 124 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { cree siouan }
-	capital = STATE_WASHINGTON
 }
 
 YOK = {

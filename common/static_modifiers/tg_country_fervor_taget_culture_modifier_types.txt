@@ -1,0 +1,23 @@
+﻿new_englander_target_modifier_positive={
+	decimals=1
+	color=good
+	game_data={
+		ai_value=0
+	}
+}
+
+californio_target_modifier_positive={
+	decimals=1
+	color=good
+	game_data={
+		ai_value=0
+	}
+}
+
+anglo_african_target_modifier_positive={
+	decimals=1
+	color=good
+	game_data={
+		ai_value=0
+	}
+}

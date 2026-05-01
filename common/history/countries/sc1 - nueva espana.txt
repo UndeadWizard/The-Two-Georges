@@ -1,5 +1,5 @@
 ﻿COUNTRIES = {
-	c:MEX ?= {
+	c:SC1 ?= {
 		effect_starting_technology_tier_3_tech = yes
 		effect_starting_politics_conservative = yes
 		add_technology_researched = empiricism
