@@ -2099,26 +2099,26 @@
 		}
 	}
 	s:STATE_SIX_NATIONS={
-		region_state:USA={
+		region_state:IRO={
 			create_building={
-				building="building_food_industry"
+				building="building_wheat_farm"
 				add_ownership={
 					building={
-						type="building_food_industry"
-						country="c:USA"
-						levels=2
+						type="building_manor_house"
+						country="c:IRO"
+						levels=1
 						region="STATE_SIX_NATIONS"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_pot_stills" "pm_disabled_canning" "pm_bakery" "pm_manual_dough_processing"  }
+				activate_production_methods={ "pm_simple_farming"  "pm_tools_disabled" "pm_citrus_orchards" }
 			}
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:USA"
+						country="c:IRO"
 						levels=1
 						region="STATE_SIX_NATIONS"
 					}
@@ -2131,7 +2131,7 @@
 				add_ownership={
 					building={
 						type="building_livestock_ranch"
-						country="c:USA"
+						country="c:IRO"
 						levels=1
 						region="STATE_SIX_NATIONS"
 					}

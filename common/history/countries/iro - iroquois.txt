@@ -6,7 +6,7 @@
 		
 		effect_starting_politics_liberal = yes
 		activate_law = law_type:law_presidential_republic
-		activate_law = law_type:law_census_voting
+		activate_law = law_type:law_clan_mother
 		activate_law = law_type:law_women_own_property
 		activate_law = law_type:law_public_schools
 		activate_law = law_type:law_migration_controls
