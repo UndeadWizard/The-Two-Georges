@@ -6,6 +6,9 @@
 
 ## Six Nations
  HUB_NAME_STATE_SIX_NATIONS_city: "Doshoweh"
+ HUB_NAME_STATE_SIX_NATIONS_mine: "Kahuahgo"
+ HUB_NAME_STATE_SIX_NATIONS_wood: "Oswego"
+ HUB_NAME_STATE_SIX_NATIONS_farm: "Kahnewonah"
 
 ## Texas
  HUB_NAME_STATE_TEXAS_city: "San Antonio"
