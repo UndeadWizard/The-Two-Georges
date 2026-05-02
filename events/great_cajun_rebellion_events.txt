@@ -1,0 +1,52 @@
+﻿namespace = great_cajun_rebellion
+
+great_cajun_rebellion.1 = {
+	type = country_event
+	placement = ROOT
+	event_image = {
+		video = "unspecific_military_parade"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	title = great_cajun_rebellion.1.t
+	desc = great_cajun_rebellion.1.d
+	flavor = great_cajun_rebellion.1.f
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = great_cajun_rebellion.1.a
+		s:STATE_TEXAS = {
+			add_homeland = cu:cajun
+			remove_claim = c:SC1
+		}
+		s:STATE_GALVESTON = {
+			remove_claim = c:SC1
+		}
+		s:STATE_LOUISIANA = {
+			remove_claim = c:SC1
+		}
+	}
+	option = {
+		name = great_cajun_rebellion.1.b
+		s:STATE_TEXAS = {
+			add_homeland = cu:cajun
+			remove_claim = c:SC1
+		}
+		s:STATE_GALVESTON = {
+			remove_claim = c:SC1
+		}
+		s:STATE_LOUISIANA = {
+			remove_claim = c:SC1
+		}
+	}
+}

@@ -6,14 +6,10 @@
 	complete = {
 		is_subject = no
 		is_at_war = no
-		exists = c:USA
-		c:USA ?= {
-			relations:root >= relations_threshold:cordial
-		}
 	}
 
 	on_complete = {
-		trigger_event = { id = texan_war_of_independence.1 }
+		trigger_event = { id = great_cajun_rebellion.1 }
 	}
 
 	weight = 100
@@ -23,34 +19,6 @@
 	invalid = {
 		NOT = { exists = c:LOU }
 	}
-}
-
-je_texas_usa = {
-	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
-
-	group = je_group_usa_manifest_destiny
-
-	complete = {
-		exists = c:LOU
-		c:LOU ?= {
-			relations:root >= relations_threshold:cordial
-			is_subject = no
-			is_at_war = no
-		}
-	}
-
-	on_complete = {
-		custom_tooltip = texas_je_tt
-	}
-
-	invalid = {
-		OR = {
-			NOT = { exists = c:LOU }
-			c:LOU ?= { is_subject = yes }
-		}
-	}
-
-	weight = 100
-
-	transferable = no
+	
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }

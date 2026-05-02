@@ -12,7 +12,6 @@ STATES = {
 			}
 		}
 
-		add_homeland = cu:afro_american
 		add_homeland = cu:cajun
 		add_homeland = cu:afro_antillean
 		add_claim = c:SC1
